@@ -68,11 +68,11 @@ Git (`docs/tokens/`) is the source of truth. When syncing into Figma Variables, 
 
 Agents (and anyone using Cursor on this repo) should follow the project skill:
 
-[`.cursor/skills/figma-token-sync/SKILL.md`](../../.cursor/skills/figma-token-sync/SKILL.md)
+[`.cursor/skills/figma-token-sync/SKILL.md`](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/.cursor/skills/figma-token-sync/SKILL.md)
 
 Ask the agent something like: “Sync tokens to this Figma file …” and point at a Figma URL. Do not invent a different collection layout (for example Primitives + Color + Spacing).
 
-Also listed in root [AGENTS.md](../../AGENTS.md#figma-token-sync).
+Also listed in root [AGENTS.md](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/AGENTS.md#figma-token-sync).
 
 ## Build (site CSS)
 
@@ -108,12 +108,12 @@ Each foundation doc explains *why* and *how to name* tokens; JSON files hold *va
 
 | Foundation | Guide | Core file | Semantic file | Composite (examples) |
 |------------|-------|-----------|---------------|----------------------|
-| Color | [color.mdx](color) | [color.core.json](../tokens/core/color.core.json) | [color.semantic.json](../tokens/semantic/color.semantic.json) (+ [theme/dark](../tokens/theme/dark/color.semantic.json)) | — |
-| Spacing | [spacing.mdx](spacing) | [spacing.core.json](../tokens/core/spacing.core.json) | [spacing.semantic.json](../tokens/semantic/spacing.semantic.json) | — |
-| Typography | [typography.mdx](typography) | [typography.core.json](../tokens/core/typography.core.json) | [typography.semantic.json](../tokens/semantic/typography.semantic.json) | [typography.composite.json](../tokens/composite/typography.composite.json) |
-| Effects | [effects.mdx](effects) | [shadow.core.json](../tokens/core/shadow.core.json) | shadow tints in [color.semantic.json](../tokens/semantic/color.semantic.json) | [shadow.composite.json](../tokens/composite/shadow.composite.json), [gradient.composite.json](../tokens/composite/gradient.composite.json) |
-| Motion | [motion.mdx](motion) | [motion.core.json](../tokens/core/motion.core.json) (`duration`, `delay`, `easing`) | [motion.semantic.json](../tokens/semantic/motion.semantic.json) | [motion.composite.json](../tokens/composite/motion.composite.json) |
-| Border | — | [border.core.json](../tokens/core/border.core.json) (`border-width`, `border-style`) | — | [border.composite.json](../tokens/composite/border.composite.json) |
+| Color | [color](color) | [color.core.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/core/color.core.json) | [color.semantic.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/semantic/color.semantic.json) (+ [theme/dark](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/theme/dark/color.semantic.json)) | — |
+| Spacing | [spacing](spacing) | [spacing.core.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/core/spacing.core.json) | [spacing.semantic.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/semantic/spacing.semantic.json) | — |
+| Typography | [typography](typography) | [typography.core.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/core/typography.core.json) | [typography.semantic.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/semantic/typography.semantic.json) | [typography.composite.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/composite/typography.composite.json) |
+| Effects | [effects](effects) | [shadow.core.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/core/shadow.core.json) | shadow tints in [color.semantic.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/semantic/color.semantic.json) | [shadow.composite.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/composite/shadow.composite.json), [gradient.composite.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/composite/gradient.composite.json) |
+| Motion | [motion](motion) | [motion.core.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/core/motion.core.json) (`duration`, `delay`, `easing`) | [motion.semantic.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/semantic/motion.semantic.json) | [motion.composite.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/composite/motion.composite.json) |
+| Border | — | [border.core.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/core/border.core.json) (`border-width`, `border-style`) | — | [border.composite.json](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens/composite/border.composite.json) |
 
 ## Related docs
 

@@ -61,7 +61,7 @@ The system should tell users what happened, what went wrong, and what to do next
 
 Documentation is written so humans and AI agents can find authoritative answers without guessing.
 
-**Do:** Follow folder layers, link related docs, log open questions in [decisions-backlog.md](../governance/decisions-backlog).
+**Do:** Follow folder layers, link related docs, log open questions in [decisions-backlog](../governance/decisions-backlog).
 
 **Don't:** Scatter rules in chat threads or duplicate conflicting guidance.
 

@@ -43,7 +43,8 @@ update: January 1, 2026
 ## Linking
 
 - Cross-link related docs in a "Related docs" section at the bottom.
-- Use relative paths that match site routes (no `.md` / `.mdx` suffix), e.g. `../vision/design-principles`.
+- Use relative paths that match site routes (no `.md` / `.mdx` suffix), e.g. `../vision/design-principles`. Link text for those pages should also omit the extension.
+- Files that are **not** Astro pages (token JSON, templates, root `AGENTS.md`, `site/` source) must use GitHub URLs so they do not 404 on the docs site. Keep the filename (including extension) in the link text. Base for docs files: `https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs`.
 - When adding or renaming files, update `docs/README.md`.
 
 ## Values in examples

@@ -23,7 +23,7 @@ Tag releases in git when you publish meaningful snapshots of your fork (optional
 
 ## Tokens
 
-Token files live under `docs/tokens/` (`core/`, `semantic/`, `theme/`). See [tokens.md](../foundations/tokens).
+Token files live under `docs/tokens/` (`core/`, `semantic/`, `theme/`). See [tokens](../foundations/tokens).
 
 - **Patch** — Value tweak that preserves token names (e.g. slightly adjust primary hue).
 - **Minor** — New tokens, new theme variants, backward compatible.
@@ -40,7 +40,7 @@ When code ships:
 
 ## Changelog
 
-Maintain a `CHANGELOG.md` at the repo root when you begin tagging releases. Until then, use git history and [decisions-backlog.md](decisions-backlog) for notable decisions.
+Maintain a `CHANGELOG.md` at the repo root when you begin tagging releases. Until then, use git history and [decisions-backlog](decisions-backlog) for notable decisions.
 
 ## Related docs
 

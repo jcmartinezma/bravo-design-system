@@ -11,7 +11,7 @@ How AI agents should use this repository when helping build or extend a design s
 
 ## Before generating UI or copy
 
-1. Read [AGENTS.md](../../AGENTS.md) at the repo root.
+1. Read [AGENTS.md](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/AGENTS.md) at the repo root.
 2. Apply rules in `.cursor/rules/`.
 3. Follow the read order below for domain context.
 
@@ -19,8 +19,8 @@ How AI agents should use this repository when helping build or extend a design s
 
 When answering design system questions or implementing UI, consult docs in this order:
 
-1. **Governance** — [contribution-model.md](../governance/contribution-model), [quality-bar.md](../governance/quality-bar), [decisions-backlog.md](../governance/decisions-backlog)
-2. **Vision** — [design-principles.md](design-principles), [voice-and-tone.md](voice-and-tone), [writing-guidelines.md](writing-guidelines)
+1. **Governance** — [contribution-model](../governance/contribution-model), [quality-bar](../governance/quality-bar), [decisions-backlog](../governance/decisions-backlog)
+2. **Vision** — [design-principles](design-principles), [voice-and-tone](voice-and-tone), [writing-guidelines](writing-guidelines)
 3. **Foundations** — [color](../foundations/color), [typography](../foundations/typography), [spacing](../foundations/spacing), [effects](../foundations/effects), [motion](../foundations/motion), [accessibility](../foundations/accessibility), [tokens catalog](../foundations/tokens)
 4. **Token values** — `docs/tokens/core/`, `semantic/`, and `composite/` (example DTCG JSON)
 5. **Patterns** — check `docs/patterns/` for existing compositions
@@ -34,12 +34,12 @@ If a guideline, token, component spec, or pattern does not exist:
 
 1. **Do not silently guess** or hardcode values that contradict principles.
 2. **Tell the user** what is missing and the impact.
-3. **Ask the user** to add an entry to [decisions-backlog.md](../governance/decisions-backlog) with: date, category, description, severity, and suggested action.
+3. **Ask the user** to add an entry to [decisions-backlog](../governance/decisions-backlog) with: date, category, description, severity, and suggested action.
 
 ## When adding documentation
 
-- Copy from [components/_template/](../components/_template/) or [patterns/_template.md](../patterns/_template.md).
-- Update [docs/README.md](../readme) with links to new files.
+- Copy from [components/_template/](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/components/_template) or [patterns/_template.md](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/patterns/_template.md).
+- Update [docs/README](/README) with links to new files.
 - Cross-link related vision and foundation docs.
 
 ## Layering reminder

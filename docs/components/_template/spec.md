@@ -47,7 +47,7 @@ Describe parts of the component:
 
 ## Content
 
-- Label rules: see [writing-guidelines.md](../vision/writing-guidelines)
+- Label rules: see [writing-guidelines](../vision/writing-guidelines)
 - Max length / truncation: …
 
 ## Accessibility
@@ -74,6 +74,6 @@ List token names used — no raw values:
 
 ## Open questions
 
-Log unresolved items in [decisions-backlog.md](../governance/decisions-backlog).
+Log unresolved items in [decisions-backlog](../governance/decisions-backlog).
 
 - …

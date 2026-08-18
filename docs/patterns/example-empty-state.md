@@ -55,7 +55,7 @@ Center (or top-align on mobile) a concise message with optional illustration, ex
 
 ## Content
 
-Follow [writing-guidelines.md](../vision/writing-guidelines).
+Follow [writing-guidelines](../vision/writing-guidelines).
 
 - **Heading:** Noun phrase — "No projects yet"
 - **Body:** One sentence — purpose + encouragement
@@ -91,4 +91,4 @@ Example:
 
 ## Open questions
 
-- Should empty states support a secondary link (e.g. "Learn more")? Log decision in [decisions-backlog.md](../governance/decisions-backlog) when resolved.
+- Should empty states support a secondary link (e.g. "Learn more")? Log decision in [decisions-backlog](../governance/decisions-backlog) when resolved.

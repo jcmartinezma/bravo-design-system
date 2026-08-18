@@ -64,7 +64,7 @@ Hover and focus are **interaction** states. In Figma they are usually shown with
 
 ## Content
 
-Follow [writing-guidelines.md](../vision/writing-guidelines).
+Follow [writing-guidelines](../vision/writing-guidelines).
 
 - **Label:** Verb + object when helpful — “Create project”, not “Submit”
 - **Length:** Aim for 1–3 words; avoid wrapping on medium/large sizes
@@ -78,7 +78,7 @@ Example:
 
 ## Accessibility
 
-Baselines: [accessibility.md](../foundations/accessibility).
+Baselines: [accessibility](../foundations/accessibility).
 
 - **Keyboard:** Focusable in tab order. Activate with **Enter** or **Space**.
 - **Focus:** Always show a visible focus indicator. Do not remove outlines without a token-backed replacement.
@@ -88,7 +88,7 @@ Baselines: [accessibility.md](../foundations/accessibility).
 - **Loading:** Set `aria-busy="true"` while loading; announce completion via the resulting UI change (toast, navigation) rather than only a visual spinner.
 - **Contrast:** Label and icons must meet WCAG 2.1 AA against the button background in every appearance × state you ship.
 - **Target size:** Aim for at least **44×44 CSS px** hit area (padding can enlarge a visually smaller control).
-- **Motion:** Spinner and hover transitions honor `prefers-reduced-motion` — see [motion.mdx](../foundations/motion).
+- **Motion:** Spinner and hover transitions honor `prefers-reduced-motion` — see [motion](../foundations/motion).
 
 ## Tokens (when available)
 
@@ -111,7 +111,7 @@ Use **semantic** token names (and composites) — never hardcode hex or px in sp
 | Label typography | Composite `text.label` (or `text.size.xs` + `text.weight.medium` + `text.style.base`) |
 | Hover / press motion | `motion.speed.fast`, `motion.easing.out` |
 
-**Figma Variables:** bind fills, strokes, padding, gap, and radius to the **Semantic** collection (aliases into **Core**). Do not paste raw Core hex into the component. See [tokens.md](../foundations/tokens#figma-mapping).
+**Figma Variables:** bind fills, strokes, padding, gap, and radius to the **Semantic** collection (aliases into **Core**). Do not paste raw Core hex into the component. See [tokens](../foundations/tokens#figma-mapping).
 
 ## Figma mapping
 
@@ -143,6 +143,6 @@ Appearance=Danger, Size=Small, State=Disabled
 
 ## Open questions
 
-Log unresolved items in [decisions-backlog.md](../governance/decisions-backlog).
+Log unresolved items in [decisions-backlog](../governance/decisions-backlog).
 
 - …

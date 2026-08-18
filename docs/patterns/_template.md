@@ -49,7 +49,7 @@ List components and layout:
 
 ## Content
 
-Follow [writing-guidelines.md](../vision/writing-guidelines) and [voice-and-tone.md](../vision/voice-and-tone).
+Follow [writing-guidelines](../vision/writing-guidelines) and [voice-and-tone](../vision/voice-and-tone).
 
 - Heading: …
 - Body: …

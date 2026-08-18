@@ -46,7 +46,7 @@ Markdown / MDX under `../docs/` becomes pages on this site, except **components*
 
 Use the **sidebar** to navigate. Component links are generated automatically; other sections are listed in `src/data/nav.ts`.
 
-Internal links between docs omit the `.md` / `.mdx` extension so they match site routes (e.g. `../foundations/tokens`, not `tokens.md`). Links to root files such as `AGENTS.md` are for the repo/GitHub and will not resolve on the site. Template files (`_template.md`, `components/_template/`) are not published as pages.
+Internal links between docs omit the `.md` / `.mdx` extension so they match site routes (e.g. `../foundations/tokens`, not `tokens.md`). Files that are not site pages (token JSON, templates, root `AGENTS.md`, `site/` source) must link to GitHub (`https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/…`). Template files (`_template.md`, `components/_template/`) are not published as pages.
 
 ## Documentation
 
