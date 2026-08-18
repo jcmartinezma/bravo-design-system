@@ -1,0 +1,42 @@
+---
+description: Core design system layering, token naming, and decisions backlog workflow
+alwaysApply: true
+---
+
+# Design System Core
+
+## Layering
+
+Dependencies flow downward only:
+
+```
+vision → foundations → components → patterns
+```
+
+Governance wraps all layers. Do not reference patterns inside foundation token definitions.
+
+## Token and value rules
+
+- Never hardcode colors, spacing, or typography values in docs or examples when a token name can be used.
+- Foundation **guides** live in `docs/foundations/*.md`; token **values** live in `docs/tokens/` (`core/`, `semantic/`, `composite/`, `theme/`).
+- Reference token names from foundation docs and DTCG JSON (e.g. `{color.gray.100}`, `spacing.gap.md`).
+- This is a **starter pack** — extend tokens intentionally; do not generate exhaustive matrices unless asked.
+- When adding token files, update [docs/foundations/tokens.md](docs/foundations/tokens.md).
+
+## Documentation discipline
+
+- Prefer extending existing docs over duplicating guidance.
+- Only two README files exist: root `README.md` and `docs/README.md`. Do not create per-section READMEs.
+- When adding or renaming docs, update `docs/README.md`.
+
+## Unresolved issues
+
+When a gap, inconsistency, accessibility concern, or deferred decision is found:
+
+1. Do not silently guess or invent conflicting rules.
+2. Tell the user what is missing and the impact.
+3. Ask the user to add an entry to `docs/governance/decisions-backlog.md` with date, category, description, severity, and suggested action.
+
+## Read order
+
+See `AGENTS.md` and `docs/vision/agentic-workflow.md` for the full agent read order.

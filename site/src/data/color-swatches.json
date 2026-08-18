@@ -1,0 +1,745 @@
+{
+  "core": [
+    {
+      "name": "alpha",
+      "swatches": [
+        {
+          "tokenName": "color.alpha.100",
+          "cssName": "--color-alpha-100",
+          "displayValue": "rgba(0, 0, 0, 0.2)"
+        },
+        {
+          "tokenName": "color.alpha.200",
+          "cssName": "--color-alpha-200",
+          "displayValue": "rgba(0, 0, 0, 0.4)"
+        },
+        {
+          "tokenName": "color.alpha.300",
+          "cssName": "--color-alpha-300",
+          "displayValue": "rgba(0, 0, 0, 0.5)"
+        },
+        {
+          "tokenName": "color.alpha.400",
+          "cssName": "--color-alpha-400",
+          "displayValue": "rgba(0, 0, 0, 0.8)"
+        },
+        {
+          "tokenName": "color.alpha.500",
+          "cssName": "--color-alpha-500",
+          "displayValue": "rgba(0, 0, 0, 0.9)"
+        }
+      ]
+    },
+    {
+      "name": "amber",
+      "swatches": [
+        {
+          "tokenName": "color.amber.100",
+          "cssName": "--color-amber-100",
+          "displayValue": "#FFFBEB"
+        },
+        {
+          "tokenName": "color.amber.200",
+          "cssName": "--color-amber-200",
+          "displayValue": "#FEF3C7"
+        },
+        {
+          "tokenName": "color.amber.300",
+          "cssName": "--color-amber-300",
+          "displayValue": "#FDE68A"
+        },
+        {
+          "tokenName": "color.amber.400",
+          "cssName": "--color-amber-400",
+          "displayValue": "#FCD34D"
+        },
+        {
+          "tokenName": "color.amber.500",
+          "cssName": "--color-amber-500",
+          "displayValue": "#F59E0B"
+        },
+        {
+          "tokenName": "color.amber.600",
+          "cssName": "--color-amber-600",
+          "displayValue": "#D97706"
+        },
+        {
+          "tokenName": "color.amber.700",
+          "cssName": "--color-amber-700",
+          "displayValue": "#B45309"
+        },
+        {
+          "tokenName": "color.amber.800",
+          "cssName": "--color-amber-800",
+          "displayValue": "#92400E"
+        },
+        {
+          "tokenName": "color.amber.900",
+          "cssName": "--color-amber-900",
+          "displayValue": "#78350F"
+        },
+        {
+          "tokenName": "color.amber.1000",
+          "cssName": "--color-amber-1000",
+          "displayValue": "#451A03"
+        }
+      ]
+    },
+    {
+      "name": "black",
+      "swatches": [
+        {
+          "tokenName": "color.black",
+          "cssName": "--color-black",
+          "displayValue": "#000000"
+        }
+      ]
+    },
+    {
+      "name": "blue",
+      "swatches": [
+        {
+          "tokenName": "color.blue.100",
+          "cssName": "--color-blue-100",
+          "displayValue": "#EFF6FF"
+        },
+        {
+          "tokenName": "color.blue.200",
+          "cssName": "--color-blue-200",
+          "displayValue": "#DBEAFE"
+        },
+        {
+          "tokenName": "color.blue.300",
+          "cssName": "--color-blue-300",
+          "displayValue": "#BFDBFE"
+        },
+        {
+          "tokenName": "color.blue.400",
+          "cssName": "--color-blue-400",
+          "displayValue": "#93C5FD"
+        },
+        {
+          "tokenName": "color.blue.500",
+          "cssName": "--color-blue-500",
+          "displayValue": "#60A5FA"
+        },
+        {
+          "tokenName": "color.blue.600",
+          "cssName": "--color-blue-600",
+          "displayValue": "#3B82F6"
+        },
+        {
+          "tokenName": "color.blue.700",
+          "cssName": "--color-blue-700",
+          "displayValue": "#2563EB"
+        },
+        {
+          "tokenName": "color.blue.800",
+          "cssName": "--color-blue-800",
+          "displayValue": "#1D4ED8"
+        },
+        {
+          "tokenName": "color.blue.900",
+          "cssName": "--color-blue-900",
+          "displayValue": "#1E3A8A"
+        },
+        {
+          "tokenName": "color.blue.1000",
+          "cssName": "--color-blue-1000",
+          "displayValue": "#172554"
+        }
+      ]
+    },
+    {
+      "name": "gray",
+      "swatches": [
+        {
+          "tokenName": "color.gray.100",
+          "cssName": "--color-gray-100",
+          "displayValue": "#F7F8FA"
+        },
+        {
+          "tokenName": "color.gray.200",
+          "cssName": "--color-gray-200",
+          "displayValue": "#E8ECF1"
+        },
+        {
+          "tokenName": "color.gray.300",
+          "cssName": "--color-gray-300",
+          "displayValue": "#D1D7E0"
+        },
+        {
+          "tokenName": "color.gray.400",
+          "cssName": "--color-gray-400",
+          "displayValue": "#AEB7C5"
+        },
+        {
+          "tokenName": "color.gray.500",
+          "cssName": "--color-gray-500",
+          "displayValue": "#8793A3"
+        },
+        {
+          "tokenName": "color.gray.600",
+          "cssName": "--color-gray-600",
+          "displayValue": "#6B7585"
+        },
+        {
+          "tokenName": "color.gray.700",
+          "cssName": "--color-gray-700",
+          "displayValue": "#525B6A"
+        },
+        {
+          "tokenName": "color.gray.800",
+          "cssName": "--color-gray-800",
+          "displayValue": "#3D4553"
+        },
+        {
+          "tokenName": "color.gray.900",
+          "cssName": "--color-gray-900",
+          "displayValue": "#252B36"
+        },
+        {
+          "tokenName": "color.gray.1000",
+          "cssName": "--color-gray-1000",
+          "displayValue": "#12161F"
+        }
+      ]
+    },
+    {
+      "name": "green",
+      "swatches": [
+        {
+          "tokenName": "color.green.100",
+          "cssName": "--color-green-100",
+          "displayValue": "#F0FDF4"
+        },
+        {
+          "tokenName": "color.green.200",
+          "cssName": "--color-green-200",
+          "displayValue": "#DCFCE7"
+        },
+        {
+          "tokenName": "color.green.300",
+          "cssName": "--color-green-300",
+          "displayValue": "#BBF7D0"
+        },
+        {
+          "tokenName": "color.green.400",
+          "cssName": "--color-green-400",
+          "displayValue": "#86EFAC"
+        },
+        {
+          "tokenName": "color.green.500",
+          "cssName": "--color-green-500",
+          "displayValue": "#22C55E"
+        },
+        {
+          "tokenName": "color.green.600",
+          "cssName": "--color-green-600",
+          "displayValue": "#16A34A"
+        },
+        {
+          "tokenName": "color.green.700",
+          "cssName": "--color-green-700",
+          "displayValue": "#15803D"
+        },
+        {
+          "tokenName": "color.green.800",
+          "cssName": "--color-green-800",
+          "displayValue": "#166534"
+        },
+        {
+          "tokenName": "color.green.900",
+          "cssName": "--color-green-900",
+          "displayValue": "#14532D"
+        },
+        {
+          "tokenName": "color.green.1000",
+          "cssName": "--color-green-1000",
+          "displayValue": "#052E16"
+        }
+      ]
+    },
+    {
+      "name": "red",
+      "swatches": [
+        {
+          "tokenName": "color.red.100",
+          "cssName": "--color-red-100",
+          "displayValue": "#FEF2F2"
+        },
+        {
+          "tokenName": "color.red.200",
+          "cssName": "--color-red-200",
+          "displayValue": "#FEE2E2"
+        },
+        {
+          "tokenName": "color.red.300",
+          "cssName": "--color-red-300",
+          "displayValue": "#FECACA"
+        },
+        {
+          "tokenName": "color.red.400",
+          "cssName": "--color-red-400",
+          "displayValue": "#FCA5A5"
+        },
+        {
+          "tokenName": "color.red.500",
+          "cssName": "--color-red-500",
+          "displayValue": "#EF4444"
+        },
+        {
+          "tokenName": "color.red.600",
+          "cssName": "--color-red-600",
+          "displayValue": "#DC2626"
+        },
+        {
+          "tokenName": "color.red.700",
+          "cssName": "--color-red-700",
+          "displayValue": "#B91C1C"
+        },
+        {
+          "tokenName": "color.red.800",
+          "cssName": "--color-red-800",
+          "displayValue": "#991B1B"
+        },
+        {
+          "tokenName": "color.red.900",
+          "cssName": "--color-red-900",
+          "displayValue": "#7F1D1D"
+        },
+        {
+          "tokenName": "color.red.1000",
+          "cssName": "--color-red-1000",
+          "displayValue": "#450A0A"
+        }
+      ]
+    },
+    {
+      "name": "teal",
+      "swatches": [
+        {
+          "tokenName": "color.teal.100",
+          "cssName": "--color-teal-100",
+          "displayValue": "#F0FDFA"
+        },
+        {
+          "tokenName": "color.teal.200",
+          "cssName": "--color-teal-200",
+          "displayValue": "#CCFBF1"
+        },
+        {
+          "tokenName": "color.teal.300",
+          "cssName": "--color-teal-300",
+          "displayValue": "#99F6E4"
+        },
+        {
+          "tokenName": "color.teal.400",
+          "cssName": "--color-teal-400",
+          "displayValue": "#5EEAD4"
+        },
+        {
+          "tokenName": "color.teal.500",
+          "cssName": "--color-teal-500",
+          "displayValue": "#2DD4BF"
+        },
+        {
+          "tokenName": "color.teal.600",
+          "cssName": "--color-teal-600",
+          "displayValue": "#14B8A6"
+        },
+        {
+          "tokenName": "color.teal.700",
+          "cssName": "--color-teal-700",
+          "displayValue": "#0F766E"
+        },
+        {
+          "tokenName": "color.teal.800",
+          "cssName": "--color-teal-800",
+          "displayValue": "#115E59"
+        },
+        {
+          "tokenName": "color.teal.900",
+          "cssName": "--color-teal-900",
+          "displayValue": "#134E4A"
+        },
+        {
+          "tokenName": "color.teal.1000",
+          "cssName": "--color-teal-1000",
+          "displayValue": "#042F2E"
+        }
+      ]
+    },
+    {
+      "name": "transparent",
+      "swatches": [
+        {
+          "tokenName": "color.transparent",
+          "cssName": "--color-transparent",
+          "displayValue": "transparent"
+        }
+      ]
+    },
+    {
+      "name": "violet",
+      "swatches": [
+        {
+          "tokenName": "color.violet.100",
+          "cssName": "--color-violet-100",
+          "displayValue": "#F5F3FF"
+        },
+        {
+          "tokenName": "color.violet.200",
+          "cssName": "--color-violet-200",
+          "displayValue": "#EDE9FE"
+        },
+        {
+          "tokenName": "color.violet.300",
+          "cssName": "--color-violet-300",
+          "displayValue": "#DDD6FE"
+        },
+        {
+          "tokenName": "color.violet.400",
+          "cssName": "--color-violet-400",
+          "displayValue": "#C4B5FD"
+        },
+        {
+          "tokenName": "color.violet.500",
+          "cssName": "--color-violet-500",
+          "displayValue": "#A78BFA"
+        },
+        {
+          "tokenName": "color.violet.600",
+          "cssName": "--color-violet-600",
+          "displayValue": "#8B5CF6"
+        },
+        {
+          "tokenName": "color.violet.700",
+          "cssName": "--color-violet-700",
+          "displayValue": "#7C3AED"
+        },
+        {
+          "tokenName": "color.violet.800",
+          "cssName": "--color-violet-800",
+          "displayValue": "#6D28D9"
+        },
+        {
+          "tokenName": "color.violet.900",
+          "cssName": "--color-violet-900",
+          "displayValue": "#4C1D95"
+        },
+        {
+          "tokenName": "color.violet.1000",
+          "cssName": "--color-violet-1000",
+          "displayValue": "#2E1065"
+        }
+      ]
+    },
+    {
+      "name": "white",
+      "swatches": [
+        {
+          "tokenName": "color.white",
+          "cssName": "--color-white",
+          "displayValue": "#FFFFFF"
+        }
+      ]
+    }
+  ],
+  "semantic": [
+    {
+      "name": "bg",
+      "swatches": [
+        {
+          "tokenName": "color.bg.primary",
+          "cssName": "--color-bg-primary",
+          "displayValue": "→ color.white",
+          "displayValueDark": "→ color.gray.900"
+        },
+        {
+          "tokenName": "color.bg.secondary",
+          "cssName": "--color-bg-secondary",
+          "displayValue": "→ color.gray.100",
+          "displayValueDark": "→ color.gray.1000"
+        },
+        {
+          "tokenName": "color.bg.secondary.inverse",
+          "cssName": "--color-bg-secondary-inverse",
+          "displayValue": "→ color.gray.600",
+          "displayValueDark": "→ color.gray.100"
+        }
+      ]
+    },
+    {
+      "name": "border",
+      "swatches": [
+        {
+          "tokenName": "color.border.accent",
+          "cssName": "--color-border-accent",
+          "displayValue": "→ color.blue.600",
+          "displayValueDark": "→ color.blue.400"
+        },
+        {
+          "tokenName": "color.border.danger",
+          "cssName": "--color-border-danger",
+          "displayValue": "→ color.red.500",
+          "displayValueDark": "→ color.red.400"
+        },
+        {
+          "tokenName": "color.border.primary",
+          "cssName": "--color-border-primary",
+          "displayValue": "→ color.blue.400",
+          "displayValueDark": "→ color.gray.700"
+        },
+        {
+          "tokenName": "color.border.primary.disabled",
+          "cssName": "--color-border-primary-disabled",
+          "displayValue": "→ color.gray.100",
+          "displayValueDark": "→ color.gray.800"
+        },
+        {
+          "tokenName": "color.border.secondary",
+          "cssName": "--color-border-secondary",
+          "displayValue": "→ color.gray.300",
+          "displayValueDark": "→ color.gray.800"
+        },
+        {
+          "tokenName": "color.border.secondary.active",
+          "cssName": "--color-border-secondary-active",
+          "displayValue": "→ color.gray.100",
+          "displayValueDark": "→ color.gray.700"
+        },
+        {
+          "tokenName": "color.border.secondary.hover",
+          "cssName": "--color-border-secondary-hover",
+          "displayValue": "→ color.gray.200",
+          "displayValueDark": "→ color.gray.700"
+        },
+        {
+          "tokenName": "color.border.tertiary",
+          "cssName": "--color-border-tertiary",
+          "displayValue": "→ color.gray.200",
+          "displayValueDark": "→ color.gray.1000"
+        }
+      ]
+    },
+    {
+      "name": "icon",
+      "swatches": [
+        {
+          "tokenName": "color.icon.accent",
+          "cssName": "--color-icon-accent",
+          "displayValue": "→ color.blue.600",
+          "displayValueDark": "→ color.blue.600"
+        },
+        {
+          "tokenName": "color.icon.accent.active",
+          "cssName": "--color-icon-accent-active",
+          "displayValue": "→ color.blue.800",
+          "displayValueDark": "→ color.blue.500"
+        },
+        {
+          "tokenName": "color.icon.accent.hover",
+          "cssName": "--color-icon-accent-hover",
+          "displayValue": "→ color.blue.700",
+          "displayValueDark": "→ color.blue.300"
+        },
+        {
+          "tokenName": "color.icon.primary",
+          "cssName": "--color-icon-primary",
+          "displayValue": "→ color.blue.700",
+          "displayValueDark": "→ color.blue.200"
+        },
+        {
+          "tokenName": "color.icon.secondary",
+          "cssName": "--color-icon-secondary",
+          "displayValue": "→ color.gray.600",
+          "displayValueDark": "→ color.gray.100"
+        },
+        {
+          "tokenName": "color.icon.tertiary",
+          "cssName": "--color-icon-tertiary",
+          "displayValue": "→ color.gray.400",
+          "displayValueDark": "→ color.gray.200"
+        }
+      ]
+    },
+    {
+      "name": "shadow",
+      "swatches": [
+        {
+          "tokenName": "color.shadow.lg",
+          "cssName": "--color-shadow-lg",
+          "displayValue": "→ color.alpha.500",
+          "displayValueDark": "→ color.alpha.500"
+        },
+        {
+          "tokenName": "color.shadow.md",
+          "cssName": "--color-shadow-md",
+          "displayValue": "→ color.alpha.500",
+          "displayValueDark": "→ color.alpha.500"
+        },
+        {
+          "tokenName": "color.shadow.sm",
+          "cssName": "--color-shadow-sm",
+          "displayValue": "→ color.alpha.500",
+          "displayValueDark": "→ color.alpha.500"
+        }
+      ]
+    },
+    {
+      "name": "surface",
+      "swatches": [
+        {
+          "tokenName": "color.surface.danger",
+          "cssName": "--color-surface-danger",
+          "displayValue": "→ color.red.500",
+          "displayValueDark": "→ color.red.600"
+        },
+        {
+          "tokenName": "color.surface.info",
+          "cssName": "--color-surface-info",
+          "displayValue": "→ color.teal.500",
+          "displayValueDark": "→ color.teal.600"
+        },
+        {
+          "tokenName": "color.surface.primary",
+          "cssName": "--color-surface-primary",
+          "displayValue": "→ color.blue.700",
+          "displayValueDark": "→ color.blue.700"
+        },
+        {
+          "tokenName": "color.surface.primary.active",
+          "cssName": "--color-surface-primary-active",
+          "displayValue": "→ color.blue.400",
+          "displayValueDark": "→ color.blue.400"
+        },
+        {
+          "tokenName": "color.surface.primary.hover",
+          "cssName": "--color-surface-primary-hover",
+          "displayValue": "→ color.blue.600",
+          "displayValueDark": "→ color.blue.600"
+        },
+        {
+          "tokenName": "color.surface.secondary",
+          "cssName": "--color-surface-secondary",
+          "displayValue": "→ color.gray.200",
+          "displayValueDark": "→ color.gray.1000"
+        },
+        {
+          "tokenName": "color.surface.secondary.active",
+          "cssName": "--color-surface-secondary-active",
+          "displayValue": "→ color.gray.300",
+          "displayValueDark": "→ color.gray.800"
+        },
+        {
+          "tokenName": "color.surface.secondary.hover",
+          "cssName": "--color-surface-secondary-hover",
+          "displayValue": "→ color.gray.300",
+          "displayValueDark": "→ color.gray.900"
+        },
+        {
+          "tokenName": "color.surface.success",
+          "cssName": "--color-surface-success",
+          "displayValue": "→ color.green.500",
+          "displayValueDark": "→ color.green.600"
+        },
+        {
+          "tokenName": "color.surface.tertiary",
+          "cssName": "--color-surface-tertiary",
+          "displayValue": "→ color.gray.800",
+          "displayValueDark": "→ color.gray.1000"
+        },
+        {
+          "tokenName": "color.surface.warning",
+          "cssName": "--color-surface-warning",
+          "displayValue": "→ color.amber.500",
+          "displayValueDark": "→ color.amber.600"
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "swatches": [
+        {
+          "tokenName": "color.text.danger",
+          "cssName": "--color-text-danger",
+          "displayValue": "→ color.red.600",
+          "displayValueDark": "→ color.red.400"
+        },
+        {
+          "tokenName": "color.text.info",
+          "cssName": "--color-text-info",
+          "displayValue": "→ color.teal.700",
+          "displayValueDark": "→ color.teal.400"
+        },
+        {
+          "tokenName": "color.text.primary",
+          "cssName": "--color-text-primary",
+          "displayValue": "→ color.blue.700",
+          "displayValueDark": "→ color.blue.600"
+        },
+        {
+          "tokenName": "color.text.primary.active",
+          "cssName": "--color-text-primary-active",
+          "displayValue": "→ color.blue.400",
+          "displayValueDark": "→ color.blue.600"
+        },
+        {
+          "tokenName": "color.text.primary.hover",
+          "cssName": "--color-text-primary-hover",
+          "displayValue": "→ color.blue.600",
+          "displayValueDark": "→ color.blue.500"
+        },
+        {
+          "tokenName": "color.text.primary.inverse",
+          "cssName": "--color-text-primary-inverse",
+          "displayValue": "→ color.white",
+          "displayValueDark": "→ color.blue.200"
+        },
+        {
+          "tokenName": "color.text.secondary",
+          "cssName": "--color-text-secondary",
+          "displayValue": "→ color.gray.900",
+          "displayValueDark": "→ color.gray.200"
+        },
+        {
+          "tokenName": "color.text.secondary.disabled",
+          "cssName": "--color-text-secondary-disabled",
+          "displayValue": "→ color.gray.600",
+          "displayValueDark": "→ color.gray.600"
+        },
+        {
+          "tokenName": "color.text.secondary.inverse",
+          "cssName": "--color-text-secondary-inverse",
+          "displayValue": "→ color.gray.100",
+          "displayValueDark": "→ color.gray.800"
+        },
+        {
+          "tokenName": "color.text.success",
+          "cssName": "--color-text-success",
+          "displayValue": "→ color.green.700",
+          "displayValueDark": "→ color.green.400"
+        },
+        {
+          "tokenName": "color.text.tertiary",
+          "cssName": "--color-text-tertiary",
+          "displayValue": "→ color.gray.500",
+          "displayValueDark": "→ color.gray.500"
+        },
+        {
+          "tokenName": "color.text.tertiary.inverse",
+          "cssName": "--color-text-tertiary-inverse",
+          "displayValue": "→ color.gray.200",
+          "displayValueDark": "→ color.gray.700"
+        },
+        {
+          "tokenName": "color.text.warning",
+          "cssName": "--color-text-warning",
+          "displayValue": "→ color.amber.600",
+          "displayValueDark": "→ color.amber.400"
+        }
+      ]
+    }
+  ]
+}

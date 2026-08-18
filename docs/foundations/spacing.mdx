@@ -1,0 +1,28 @@
+---
+title: Spacing
+status: draft
+owner: community
+update: January 1, 2026
+---
+
+# Spacing
+
+Guidelines for layout rhythm, padding, margins, and gaps.
+
+## Core scale
+
+Define a base unit (this starter uses **4px**) and numbered steps. Values live in (../tokens/core/spacing.core.json).
+
+<SpacingCore />
+
+## Semantic aliases
+
+Map roles to core steps — UI code should prefer semantic names. See (../tokens/semantic/spacing.semantic.json).
+
+<SpacingSemantic />
+
+## Layout rhythm
+
+- **Inline spacing** — gap between items in a row (buttons, tags).
+- **Stack spacing** — vertical gap between blocks (form fields, list items).
+- **Inset spacing** — padding inside containers (cards, modals, panels).

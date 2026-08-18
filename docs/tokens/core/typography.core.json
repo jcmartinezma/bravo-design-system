@@ -1,0 +1,137 @@
+{
+  "$schema": "https://www.designtokens.org/tr/2025.10/format/",
+  "fontFamily": {
+    "$description": "Core font families. Use a single family name (Figma FONT_FAMILY cannot use CSS stacks). Load the same files in the docs site via site/src/styles/fonts.scss.",
+    "sans": {
+      "$type": "fontFamily",
+      "$value": "Asap",
+      "$description": "Sans-serif text — Asap from site/src/assets/fonts/Asap"
+    },
+    "serif": {
+      "$type": "fontFamily",
+      "$value": "Domine",
+      "$description": "Serif / display text — Domine from site/src/assets/fonts/Domine"
+    },
+    "monospace": {
+      "$type": "fontFamily",
+      "$value": "IBM Plex Mono",
+      "$description": "Monospace text — IBM Plex Mono from site/src/assets/fonts/IBM_Plex_Mono"
+    }
+  },
+  "fontWeight": {
+    "$description": "Core font weights",
+    "$type": "fontWeight",
+    "400": {
+      "$value": 400,
+      "$description": "fontWeight-400"
+    },
+    "500": {
+      "$value": 500,
+      "$description": "fontWeight-500"
+    },
+    "600": {
+      "$value": 600,
+      "$description": "fontWeight-600"
+    },
+    "700": {
+      "$value": 700,
+      "$description": "fontWeight-700"
+    },
+    "800": {
+      "$value": 800,
+      "$description": "fontWeight-800"
+    }
+  },
+  "fontSize": {
+    "$description": "Core type scale",
+    "$type": "dimension",
+    "100": {
+      "$value": { "value": 12, "unit": "px" },
+      "$description": "fontSize-100"
+    },
+    "200": {
+      "$value": { "value": 14, "unit": "px" },
+      "$description": "fontSize-200"
+    },
+    "300": {
+      "$value": { "value": 16, "unit": "px" },
+      "$description": "fontSize-300"
+    },
+    "400": {
+      "$value": { "value": 20, "unit": "px" },
+      "$description": "fontSize-400"
+    },
+    "500": {
+      "$value": { "value": 24, "unit": "px" },
+      "$description": "fontSize-500"
+    },
+    "600": {
+      "$value": { "value": 32, "unit": "px" },
+      "$description": "fontSize-600"
+    },
+    "700": {
+      "$value": { "value": 40, "unit": "px" },
+      "$description": "fontSize-700"
+    },
+    "800": {
+      "$value": { "value": 48, "unit": "px" },
+      "$description": "fontSize-800"
+    }
+  },
+  "lineHeight": {
+    "$description": "Core line heights (in pixels for readable UI text)",
+    "$type": "number",
+    "100": {
+      "$value": { "value": 12, "unit": "px" },
+      "$description": "Tight line height — headings and compact labels"
+    },
+    "200": {
+      "$value": { "value": 16, "unit": "px" },
+      "$description": "Default line height — body copy"
+    },
+    "300": {
+      "$value": { "value": 20, "unit": "px" },
+      "$description": "Relaxed line height — longer paragraphs"
+    },
+    "400": {
+      "$value": { "value": 24, "unit": "px" },
+      "$description": "Loose line height — spacious text blocks"
+    },
+    "500": {
+      "$value": { "value": 28, "unit": "px" },
+      "$description": "Loose line height — headings and compact labels"
+    },
+    "600": {
+      "$value": { "value": 32, "unit": "px" },
+      "$description": "Default line height — body copy"
+    },
+    "700": {
+      "$value": { "value": 36, "unit": "px" },
+      "$description": "Loose line height — spacious text blocks"
+    },
+    "800": {
+      "$value": { "value": 40, "unit": "px" },
+      "$description": "Loose line height — spacious text blocks"
+    }
+  },
+  "letterSpacing": {
+    "$description": "Core letter spacing (tracking). Uses em so spacing scales with font size.",
+    "$type": "dimension",
+    "0": {
+      "$value": { "value": 0, "unit": "px" },
+      "$description": "letterSpacing-0 — default / none"
+    },
+    "100": {
+      "$value": { "value": -0.2, "unit": "px" },
+      "$description": "letterSpacing-100 — slightly tight"
+    },
+    "200": {
+      "$value": { "value": 1, "unit": "px" },
+      "$description": "letterSpacing-200 — open (labels, nav)"
+    },
+    "300": {
+      "$value": { "value": 1.5, "unit": "px" },
+      "$description": "letterSpacing-300 — wide (eyebrows, all-caps)"
+    }
+  }
+}

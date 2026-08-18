@@ -1,0 +1,257 @@
+{
+  "$schema": "https://www.designtokens.org/tr/2025.10/format/",
+  "color": {
+    "$description": "Semantic color tokens. Naming: color-{element}-{hierarchy}-{state}. Default state uses $root (no state suffix).",
+    "$type": "color",
+    "bg": {
+      "$description": "Site backgrounds only",
+      "primary": {
+        "$root": {
+          "$value": "{color.white}",
+          "$description": "color-bg-primary — default page background"
+        }
+      },
+      "secondary": {
+        "$root": {
+          "$value": "{color.gray.100}",
+          "$description": "color-bg-secondary — secondary page background (default)"
+        },
+        "inverse": {
+          "$value": "{color.gray.600}",
+          "$description": "color-bg-secondary-inverse — inverse page background"
+        }
+      }
+    },
+    "surface": {
+      "$description": "Backgrounds of elements over the page (cards, panels, modals, badges)",
+      "primary": {
+        "$root": {
+          "$value": "{color.blue.700}",
+          "$description": "color-surface-primary — main interface surface"
+        },
+        "hover": {
+          "$value": "{color.blue.600}",
+          "$description": "color-surface-primary-hover — hover state for main surface"
+        },
+        "active": {
+          "$value": "{color.blue.400}",
+          "$description": "color-surface-primary-active — active or selected main surface"
+        }
+      },
+      "secondary": {
+        "$root": {
+          "$value": "{color.gray.200}",
+          "$description": "color-surface-secondary — default elevated surface"
+        },
+        "hover": {
+          "$value": "{color.gray.300}",
+          "$description": "color-surface-secondary-hover — hover state for secondary surface"
+        },
+        "active": {
+          "$value": "{color.gray.300}",
+          "$description": "color-surface-secondary-active — pressed or selected surface"
+        }
+      },
+      "tertiary": {
+        "$root": {
+          "$value": "{color.gray.800}",
+          "$description": "color-surface-tertiary — tertiary surface"
+        }
+      },
+      "success": {
+        "$root": {
+          "$value": "{color.green.500}",
+          "$description": "color-surface-success — success banner or badge background"
+        }
+      },
+      "warning": {
+        "$root": {
+          "$value": "{color.amber.500}",
+          "$description": "color-surface-warning — warning banner or badge background"
+        }
+      },
+      "danger": {
+        "$root": {
+          "$value": "{color.red.500}",
+          "$description": "color-surface-danger — error banner or destructive badge background"
+        }
+      },
+      "info": {
+        "$root": {
+          "$value": "{color.teal.500}",
+          "$description": "color-surface-info — informational banner or badge background"
+        }
+      }
+    },
+    "text": {
+      "$description": "Text and typography colors",
+      "primary": {
+        "$root": {
+          "$value": "{color.blue.700}",
+          "$description": "color-text-primary — headings and emphasis"
+        },
+        "hover": {
+          "$value": "{color.blue.600}",
+          "$description": "color-text-primary-hover — hover state for primary text"
+        },
+        "active": {
+          "$value": "{color.blue.400}",
+          "$description": "color-text-primary-active — active or selected primary text"
+        },
+        "inverse": {
+          "$value": "{color.white}",
+          "$description": "color-text-primary-inverse — headings on dark or brand surfaces"
+        }
+      },
+      "secondary": {
+        "$root": {
+          "$value": "{color.gray.900}",
+          "$description": "color-text-secondary — body copy and regular content"
+        },
+        "disabled": {
+          "$value": "{color.gray.600}",
+          "$description": "color-text-secondary-disabled"
+        },
+        "inverse": {
+          "$value": "{color.gray.100}",
+          "$description": "color-text-secondary-inverse — body copy on dark surfaces"
+        }
+      },
+      "tertiary": {
+        "$root": {
+          "$value": "{color.gray.500}",
+          "$description": "color-text-tertiary — captions, hints, and muted labels"
+        },
+        "inverse": {
+          "$value": "{color.gray.200}",
+          "$description": "color-text-tertiary-inverse — muted text on dark backgrounds"
+        }
+      },
+      "success": {
+        "$root": {
+          "$value": "{color.green.700}",
+          "$description": "color-text-success — success messages and positive labels"
+        }
+      },
+      "warning": {
+        "$root": {
+          "$value": "{color.amber.600}",
+          "$description": "color-text-warning — caution and alert copy"
+        }
+      },
+      "danger": {
+        "$root": {
+          "$value": "{color.red.600}",
+          "$description": "color-text-danger — error messages and destructive labels"
+        }
+      },
+      "info": {
+        "$root": {
+          "$value": "{color.teal.700}",
+          "$description": "color-text-info — informational messages and labels"
+        }
+      }
+    },
+    "border": {
+      "$description": "Borders, dividers, and lines",
+      "primary": {
+        "$root": {
+          "$value": "{color.blue.400}",
+          "$description": "color-border-primary — default dividers and outlines"
+        },
+        "disabled": {
+          "$value": "{color.gray.100}",
+          "$description": "color-border-primary-disabled — inactive input borders"
+        }
+      },
+      "secondary": {
+        "$root": {
+          "$value": "{color.gray.300}",
+          "$description": "color-border-secondary — secondary dividers and outlines"
+        },
+        "hover": {
+          "$value": "{color.gray.200}",
+          "$description": "color-border-secondary-hover — hover state for secondary border"
+        },
+        "active": {
+          "$value": "{color.gray.100}",
+          "$description": "color-border-secondary-active — active or selected secondary border"
+        }
+      },
+      "tertiary": {
+        "$root": {
+          "$value": "{color.gray.200}",
+          "$description": "color-border-tertiary — tertiary dividers and outlines"
+        }
+      },
+      "accent": {
+        "$root": {
+          "$value": "{color.blue.600}",
+          "$description": "color-border-accent — focus rings and selected outlines"
+        }
+      },
+      "danger": {
+        "$root": {
+          "$value": "{color.red.500}",
+          "$description": "color-border-danger — invalid input borders"
+        }
+      }
+    },
+    "icon": {
+      "$description": "SVG and graphic fills",
+      "primary": {
+        "$root": {
+          "$value": "{color.blue.700}",
+          "$description": "color-icon-primary — default icons matching primary text"
+        }
+      },
+      "secondary": {
+        "$root": {
+          "$value": "{color.gray.600}",
+          "$description": "color-icon-secondary — muted icons matching tertiary text"
+        }
+      },
+      "tertiary": {
+        "$root": {
+          "$value": "{color.gray.400}",
+          "$description": "color-icon-tertiary — tertiary icons"
+        }
+      },
+      "accent": {
+        "$root": {
+          "$value": "{color.blue.600}",
+          "$description": "color-icon-accent — accent icons on light surfaces"
+        },
+        "hover": {
+          "$value": "{color.blue.700}",
+          "$description": "color-icon-accent-hover"
+        },
+        "active": {
+          "$value": "{color.blue.800}",
+          "$description": "color-icon-accent-active"
+        }
+      }
+    },
+    "shadow": {
+      "$description": "Shadow tint colors for elevation composites",
+      "sm": {
+        "$root": {
+          "$value": "{color.alpha.500}",
+          "$description": "color-shadow-sm — light elevation tint"
+        }
+      },
+      "md": {
+        "$root": {
+          "$value": "{color.alpha.500}",
+          "$description": "color-shadow-md — medium elevation tint"
+        }
+      },
+      "lg": {
+        "$root": {
+          "$value": "{color.alpha.500}",
+          "$description": "color-shadow-lg — strong elevation tint"
+        }
+      }
+    }
+  }
+}

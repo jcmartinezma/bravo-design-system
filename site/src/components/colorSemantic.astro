@@ -1,0 +1,16 @@
+---
+/**
+ * Semantic color role swatches.
+ *
+ * Data: site/src/data/color-swatches.json (written by tokens:build).
+ * Labels show references like → color.gray.100 (light) / dark override; chips use var(--color-…).
+ * Theme switch toggles which reference label is visible.
+ *
+ * In a docs MDX file (no import needed — mapped in [...slug].astro):
+ *   <ColorSemantic />
+ */
+import swatches from '../data/color-swatches.json';
+import SwatchGroups from './SwatchGroups.astro';
+---
+
+<SwatchGroups label="Semantic colors" groups={swatches.semantic} />

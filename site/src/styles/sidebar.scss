@@ -1,0 +1,105 @@
+/**
+ * Sidebar — brand, nav sections, and links
+ */
+
+.sidebar {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xl);
+	width: 100%;
+	height: 100%;
+	padding: var(--spacing-lg);
+	background: var(--color-bg-secondary);
+	border-right: 1px solid var(--color-border-tertiary);
+	overflow-y: auto;
+
+	/* --- Brand ---------------------------------------------------------------- */
+
+	&__brand a {
+		font-size: var(--text-size-2xl);
+		font-weight: var(--text-weight-bold);
+		line-height: var(--text-leading-2xl);
+		text-decoration: none;
+
+		&:hover {
+			color: var(--color-icon-accent);
+		}
+	}
+
+	&__tagline {
+		margin: var(--spacing-xs) 0 0;
+		font-size: var(--text-size-xs);
+		font-weight: var(--text-weight-semibold);
+		line-height: var(--text-leading-sm);
+	}
+
+	/* --- Navigation ----------------------------------------------------------- */
+
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-md);
+	}
+
+	&__section ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-xs);
+	}
+
+	&__label {
+		margin: 0 0 var(--spacing-sm);
+		font-size: var(--text-size-sm);
+		font-weight: var(--text-weight-semibold);
+		color: var(--color-text-tertiary);
+		text-transform: uppercase;
+		letter-spacing: var(--text-letter-spacing-md);
+	}
+	&__close {
+		position: absolute;
+		top: var(--spacing-md);
+		right: var(--spacing-md);
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2rem;
+		height: 2rem;
+		border-radius: var(--radius-sm);
+		color: var(--color-icon-primary);
+		transition:
+			background-color var(--motion-speed-fast) var(--motion-easing-in-out),
+			color var(--motion-speed-fast) var(--motion-easing-in-out);
+
+		&:hover {
+			background: var(--color-surface-secondary-active);
+			color: var(--color-icon-accent);
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: var(--spacing-xs) var(--spacing-sm);
+		border-radius: var(--radius-sm);
+		font-size: var(--text-size-sm);
+		font-weight: var(--text-weight-semibold);
+		color: var(--color-text-secondary);
+		text-decoration: none;
+		transition:
+			background-color var(--motion-speed-fast) var(--motion-easing-in-out),
+			color var(--motion-speed-fast) var(--motion-easing-in-out);
+
+		&:hover {
+			background: var(--color-surface-secondary-hover);
+			color: var(--color-text-primary);
+		}
+
+		&.is-active {
+			background: var(--color-surface-secondary-active);
+			color: var(--color-text-primary);
+		}
+	}
+}

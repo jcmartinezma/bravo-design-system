@@ -1,0 +1,162 @@
+{
+  "$schema": "https://www.designtokens.org/tr/2025.10/format/",
+  "text": {
+    "$description": "Semantic typography roles — starter examples reference core size/weight tokens",
+    "style": {
+      "$description": "Font family roles for UI text",
+      "display": {
+        "$type": "fontFamily",
+        "$value": "{fontFamily.serif}",
+        "$description": "Display / heading face"
+      },
+      "base": {
+        "$type": "fontFamily",
+        "$value": "{fontFamily.sans}",
+        "$description": "Default UI and body face"
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": "{fontFamily.monospace}",
+        "$description": "Monospace face — code, IDs, tabular data"
+      }
+    },
+    "size": {
+      "$description": "Text size roles",
+      "xs": {
+        "$type": "dimension",
+        "$value": "{fontSize.100}",
+        "$description": "Tiny text size"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{fontSize.200}",
+        "$description": "Small text size"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{fontSize.300}",
+        "$description": "Medium text size"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{fontSize.400}",
+        "$description": "Large text size"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "{fontSize.500}",
+        "$description": "Extra large text size"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "{fontSize.600}",
+        "$description": "2× large text size"
+      },
+      "3xl": {
+        "$type": "dimension",
+        "$value": "{fontSize.700}",
+        "$description": "3× large text size — hero titles"
+      },
+      "4xl": {
+        "$type": "dimension",
+        "$value": "{fontSize.800}",
+        "$description": "4× large text size — display titles"
+      }
+    },
+    "weight": {
+      "$description": "Thickness of the text",
+      "normal": {
+        "$type": "fontWeight",
+        "$value": "{fontWeight.400}",
+        "$description": "Regular text weight"
+      },
+      "medium": {
+        "$type": "fontWeight",
+        "$value": "{fontWeight.500}",
+        "$description": "Medium text weight"
+      },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": "{fontWeight.600}",
+        "$description": "Semibold text weight"
+      },
+      "bold": {
+        "$type": "fontWeight",
+        "$value": "{fontWeight.700}",
+        "$description": "Bold text weight"
+      },
+      "extrabold": {
+        "$type": "fontWeight",
+        "$value": "{fontWeight.800}",
+        "$description": "Extra bold text weight"
+      }
+    },
+    "leading": {
+      "$description": "Line height roles",
+      "xs": {
+        "$type": "number",
+        "$value": "{lineHeight.100}",
+        "$description": "Extra tight line height for the smallest text"
+      },
+      "sm": {
+        "$type": "number",
+        "$value": "{lineHeight.200}",
+        "$description": "Tight line height for small or secondary text"
+      },
+      "md": {
+        "$type": "number",
+        "$value": "{lineHeight.300}",
+        "$description": "Standard line height for body text"
+      },
+      "lg": {
+        "$type": "number",
+        "$value": "{lineHeight.400}",
+        "$description": "Slightly relaxed line height for improved paragraph readability"
+      },
+      "xl": {
+        "$type": "number",
+        "$value": "{lineHeight.500}",
+        "$description": "Generous line height for subheadings or highlighted sections"
+      },
+      "2xl": {
+        "$type": "number",
+        "$value": "{lineHeight.600}",
+        "$description": "Wide line height recommended for headings"
+      },
+      "3xl": {
+        "$type": "number",
+        "$value": "{lineHeight.700}",
+        "$description": "Very wide line height for large headers"
+      },
+      "4xl": {
+        "$type": "number",
+        "$value": "{lineHeight.800}",
+        "$description": "Maximum line height for hero headers or extra large display text"
+      }
+ 
+    },
+    "letterSpacing": {
+      "$description": "Letter spacing (tracking) roles for UI text",
+      "xs": {
+        "$type": "dimension",
+        "$value": "{letterSpacing.100}",
+        "$description": "Tight tracking — dense headings"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{letterSpacing.0}",
+        "$description": "Default tracking — body and most UI text"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{letterSpacing.200}",
+        "$description": "Open tracking — labels, nav, small caps"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{letterSpacing.300}",
+        "$description": "Wide tracking — eyebrows and uppercase labels"
+      }
+    }
+  }
+}

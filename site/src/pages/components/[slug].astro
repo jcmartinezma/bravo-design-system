@@ -1,0 +1,50 @@
+---
+import { getCollection, render } from 'astro:content';
+import DocsLayout from '../../layouts/DocsLayout.astro';
+import { components, figmaEmbedUrl } from '../../data/load-components';
+
+export async function getStaticPaths() {
+	const docs = await getCollection('docs');
+	return components.flatMap((item) => {
+		const entry = docs.find((doc) => doc.id === `components/${item.slug}/spec`);
+		if (!entry) return [];
+		return [
+			{
+				params: { slug: item.slug },
+				props: { slug: item.slug, entry, metadata: item.metadata },
+			},
+		];
+	});
+}
+
+const { slug, entry, metadata } = Astro.props;
+const { Content } = await render(entry);
+
+const title = metadata.identification?.name || entry.data.title || 'Component';
+const description = metadata.metadata?.description;
+const embedUrl = figmaEmbedUrl(metadata);
+---
+
+<DocsLayout
+	title={title}
+	description={description}
+	currentPath={`/components/${slug}`}
+	status={entry.data.status}
+	owner={entry.data.owner}
+	update={entry.data.update}
+>
+	<h1>{title}</h1>
+	{description && <p>{description}</p>}
+	{embedUrl ? (
+		<figure class="component-embed">
+			<iframe title={`${title} in Figma`} src={embedUrl} allowfullscreen loading="lazy" />
+		</figure>
+	) : (
+		<p class="component-embed__missing">
+			No Figma embed yet. Add <code>fileKey</code> and <code>nodeId</code> in
+			<code>metadata.json</code>. The Figma file must allow embedding.
+		</p>
+	)}
+
+	<Content />
+</DocsLayout>

@@ -1,0 +1,334 @@
+{
+  "styles": [
+    {
+      "tokenName": "text.body",
+      "className": "text-body",
+      "element": null,
+      "description": "Paragraphs and descriptions",
+      "properties": [
+        {
+          "key": "fontFamily",
+          "cssProp": "font-family",
+          "cssVar": "--text-body-font-family"
+        },
+        {
+          "key": "fontSize",
+          "cssProp": "font-size",
+          "cssVar": "--text-body-font-size"
+        },
+        {
+          "key": "fontWeight",
+          "cssProp": "font-weight",
+          "cssVar": "--text-body-font-weight"
+        },
+        {
+          "key": "lineHeight",
+          "cssProp": "line-height",
+          "cssVar": "--text-body-line-height"
+        },
+        {
+          "key": "letterSpacing",
+          "cssProp": "letter-spacing",
+          "cssVar": "--text-body-letter-spacing"
+        }
+      ]
+    },
+    {
+      "tokenName": "text.caption",
+      "className": "text-caption",
+      "element": null,
+      "description": "Captions, small text, etc.",
+      "properties": [
+        {
+          "key": "fontFamily",
+          "cssProp": "font-family",
+          "cssVar": "--text-caption-font-family"
+        },
+        {
+          "key": "fontSize",
+          "cssProp": "font-size",
+          "cssVar": "--text-caption-font-size"
+        },
+        {
+          "key": "fontWeight",
+          "cssProp": "font-weight",
+          "cssVar": "--text-caption-font-weight"
+        },
+        {
+          "key": "lineHeight",
+          "cssProp": "line-height",
+          "cssVar": "--text-caption-line-height"
+        },
+        {
+          "key": "letterSpacing",
+          "cssProp": "letter-spacing",
+          "cssVar": "--text-caption-letter-spacing"
+        }
+      ]
+    },
+    {
+      "tokenName": "text.code",
+      "className": "text-code",
+      "element": null,
+      "description": "Inline code and monospace snippets",
+      "properties": [
+        {
+          "key": "fontFamily",
+          "cssProp": "font-family",
+          "cssVar": "--text-code-font-family"
+        },
+        {
+          "key": "fontSize",
+          "cssProp": "font-size",
+          "cssVar": "--text-code-font-size"
+        },
+        {
+          "key": "fontWeight",
+          "cssProp": "font-weight",
+          "cssVar": "--text-code-font-weight"
+        },
+        {
+          "key": "lineHeight",
+          "cssProp": "line-height",
+          "cssVar": "--text-code-line-height"
+        },
+        {
+          "key": "letterSpacing",
+          "cssProp": "letter-spacing",
+          "cssVar": "--text-code-letter-spacing"
+        }
+      ]
+    },
+    {
+      "tokenName": "text.heading.1",
+      "className": "text-heading-1",
+      "element": "h1",
+      "description": "Page titles (h1)",
+      "properties": [
+        {
+          "key": "fontFamily",
+          "cssProp": "font-family",
+          "cssVar": "--text-heading-1-font-family"
+        },
+        {
+          "key": "fontSize",
+          "cssProp": "font-size",
+          "cssVar": "--text-heading-1-font-size"
+        },
+        {
+          "key": "fontWeight",
+          "cssProp": "font-weight",
+          "cssVar": "--text-heading-1-font-weight"
+        },
+        {
+          "key": "lineHeight",
+          "cssProp": "line-height",
+          "cssVar": "--text-heading-1-line-height"
+        },
+        {
+          "key": "letterSpacing",
+          "cssProp": "letter-spacing",
+          "cssVar": "--text-heading-1-letter-spacing"
+        }
+      ]
+    },
+    {
+      "tokenName": "text.heading.2",
+      "className": "text-heading-2",
+      "element": "h2",
+      "description": "Section titles (h2)",
+      "properties": [
+        {
+          "key": "fontFamily",
+          "cssProp": "font-family",
+          "cssVar": "--text-heading-2-font-family"
+        },
+        {
+          "key": "fontSize",
+          "cssProp": "font-size",
+          "cssVar": "--text-heading-2-font-size"
+        },
+        {
+          "key": "fontWeight",
+          "cssProp": "font-weight",
+          "cssVar": "--text-heading-2-font-weight"
+        },
+        {
+          "key": "lineHeight",
+          "cssProp": "line-height",
+          "cssVar": "--text-heading-2-line-height"
+        },
+        {
+          "key": "letterSpacing",
+          "cssProp": "letter-spacing",
+          "cssVar": "--text-heading-2-letter-spacing"
+        }
+      ]
+    },
+    {
+      "tokenName": "text.heading.3",
+      "className": "text-heading-3",
+      "element": "h3",
+      "description": "Subsection titles (h3)",
+      "properties": [
+        {
+          "key": "fontFamily",
+          "cssProp": "font-family",
+          "cssVar": "--text-heading-3-font-family"
+        },
+        {
+          "key": "fontSize",
+          "cssProp": "font-size",
+          "cssVar": "--text-heading-3-font-size"
+        },
+        {
+          "key": "fontWeight",
+          "cssProp": "font-weight",
+          "cssVar": "--text-heading-3-font-weight"
+        },
+        {
+          "key": "lineHeight",
+          "cssProp": "line-height",
+          "cssVar": "--text-heading-3-line-height"
+        },
+        {
+          "key": "letterSpacing",
+          "cssProp": "letter-spacing",
+          "cssVar": "--text-heading-3-letter-spacing"
+        }
+      ]
+    },
+    {
+      "tokenName": "text.heading.4",
+      "className": "text-heading-4",
+      "element": "h4",
+      "description": "Minor headings (h4)",
+      "properties": [
+        {
+          "key": "fontFamily",
+          "cssProp": "font-family",
+          "cssVar": "--text-heading-4-font-family"
+        },
+        {
+          "key": "fontSize",
+          "cssProp": "font-size",
+          "cssVar": "--text-heading-4-font-size"
+        },
+        {
+          "key": "fontWeight",
+          "cssProp": "font-weight",
+          "cssVar": "--text-heading-4-font-weight"
+        },
+        {
+          "key": "lineHeight",
+          "cssProp": "line-height",
+          "cssVar": "--text-heading-4-line-height"
+        },
+        {
+          "key": "letterSpacing",
+          "cssProp": "letter-spacing",
+          "cssVar": "--text-heading-4-letter-spacing"
+        }
+      ]
+    },
+    {
+      "tokenName": "text.heading.5",
+      "className": "text-heading-5",
+      "element": "h5",
+      "description": "Small headings (h5)",
+      "properties": [
+        {
+          "key": "fontFamily",
+          "cssProp": "font-family",
+          "cssVar": "--text-heading-5-font-family"
+        },
+        {
+          "key": "fontSize",
+          "cssProp": "font-size",
+          "cssVar": "--text-heading-5-font-size"
+        },
+        {
+          "key": "fontWeight",
+          "cssProp": "font-weight",
+          "cssVar": "--text-heading-5-font-weight"
+        },
+        {
+          "key": "lineHeight",
+          "cssProp": "line-height",
+          "cssVar": "--text-heading-5-line-height"
+        },
+        {
+          "key": "letterSpacing",
+          "cssProp": "letter-spacing",
+          "cssVar": "--text-heading-5-letter-spacing"
+        }
+      ]
+    },
+    {
+      "tokenName": "text.heading.6",
+      "className": "text-heading-6",
+      "element": "h6",
+      "description": "Smallest headings (h6)",
+      "properties": [
+        {
+          "key": "fontFamily",
+          "cssProp": "font-family",
+          "cssVar": "--text-heading-6-font-family"
+        },
+        {
+          "key": "fontSize",
+          "cssProp": "font-size",
+          "cssVar": "--text-heading-6-font-size"
+        },
+        {
+          "key": "fontWeight",
+          "cssProp": "font-weight",
+          "cssVar": "--text-heading-6-font-weight"
+        },
+        {
+          "key": "lineHeight",
+          "cssProp": "line-height",
+          "cssVar": "--text-heading-6-line-height"
+        },
+        {
+          "key": "letterSpacing",
+          "cssProp": "letter-spacing",
+          "cssVar": "--text-heading-6-letter-spacing"
+        }
+      ]
+    },
+    {
+      "tokenName": "text.label",
+      "className": "text-label",
+      "element": null,
+      "description": "Form labels, buttons, navigation",
+      "properties": [
+        {
+          "key": "fontFamily",
+          "cssProp": "font-family",
+          "cssVar": "--text-label-font-family"
+        },
+        {
+          "key": "fontSize",
+          "cssProp": "font-size",
+          "cssVar": "--text-label-font-size"
+        },
+        {
+          "key": "fontWeight",
+          "cssProp": "font-weight",
+          "cssVar": "--text-label-font-weight"
+        },
+        {
+          "key": "lineHeight",
+          "cssProp": "line-height",
+          "cssVar": "--text-label-line-height"
+        },
+        {
+          "key": "letterSpacing",
+          "cssProp": "letter-spacing",
+          "cssVar": "--text-label-letter-spacing"
+        }
+      ]
+    }
+  ]
+}

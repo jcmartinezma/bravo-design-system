@@ -1,0 +1,28 @@
+{
+  "$schema": "https://www.designtokens.org/tr/2025.10/format/",
+  "gradient": {
+    "$description": "Composite color gradients (DTCG stops: color + position 0–1). Starter examples only. CSS maps to linear-gradient (top → bottom).",
+    "$type": "gradient",
+    "primary": {
+      "$description": "gradient-primary — brand accent wash (hero, banners)",
+      "$value": [
+        { "color": "{color.blue.100}", "position": 0 },
+        { "color": "{color.blue.500}", "position": 1 }
+      ]
+    },
+    "secondary": {
+      "$description": "gradient-secondary — soft neutral wash (page backgrounds)",
+      "$value": [
+        { "color": "{color.gray.100}", "position": 0 },
+        { "color": "{color.gray.300}", "position": 1 }
+      ]
+    },
+    "tertiary": {
+      "$description": "gradient-tertiary — fade to transparent (overlays)",
+      "$value": [
+        { "color": "{color.gray.200}", "position": 0 },
+        { "color": "{color.transparent}", "position": 1 }
+      ]
+    }
+  }
+}

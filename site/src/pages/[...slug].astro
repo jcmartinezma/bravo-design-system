@@ -1,0 +1,64 @@
+---
+import { getCollection, render } from 'astro:content';
+import DocsLayout from '../layouts/DocsLayout.astro';
+import ColorCore from '../components/colorCore.astro';
+import ColorSemantic from '../components/colorSemantic.astro';
+import TextStyles from '../components/TextStyles.astro';
+import SpacingCore from '../components/SpacingCore.astro';
+import SpacingSemantic from '../components/SpacingSemantic.astro';
+import MotionSwatches from '../components/MotionSwatches.astro';
+import EffectsSwatches from '../components/EffectsSwatches.astro';
+
+export async function getStaticPaths() {
+	const docs = await getCollection('docs');
+	return docs
+		.filter(
+			(entry) =>
+				!entry.id.endsWith('_template') &&
+				!entry.id.includes('/_template') &&
+				!entry.id.startsWith('components/') &&
+				/* Served by pages/getting-started.astro */
+				entry.id !== 'getting-started',
+		)
+		.map((entry) => ({
+			params: { slug: entry.id },
+			props: { entry },
+		}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const title =
+	entry.data.title ??
+	entry.id
+		.split('/')
+		.pop()
+		?.replace(/-/g, ' ')
+		.replace(/\b\w/g, (c) => c.toUpperCase()) ??
+	'Documentation';
+
+/**
+ * Components available inside docs MDX files (no import needed in the file).
+ * Use PascalCase tags — see site/AGENTS.md.
+ */
+const mdxComponents = {
+	ColorCore,
+	ColorSemantic,
+	TextStyles,
+	SpacingCore,
+	SpacingSemantic,
+	MotionSwatches,
+	EffectsSwatches,
+};
+---
+
+<DocsLayout
+	title={title}
+	currentPath={`/${entry.id}`}
+	status={entry.data.status}
+	owner={entry.data.owner}
+	update={entry.data.update}
+>
+	<Content components={mdxComponents} />
+</DocsLayout>

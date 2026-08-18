@@ -1,0 +1,69 @@
+---
+/**
+ * Effects previews: shadow elevation + gradient fills.
+ *
+ * Data: site/src/data/effects-previews.json (tokens:build).
+ * In MDX: <EffectsSwatches />
+ */
+import data from '../data/effects-previews.json';
+
+interface Preview {
+	tokenName: string;
+	cssName: string;
+	displayValue: string;
+	description?: string;
+}
+
+const shadows = data.shadows as Preview[];
+const gradients = data.gradients as Preview[];
+---
+
+<section class="effects-previews" aria-label="Effects">
+	{
+		shadows.length > 0 && (
+			<div class="effects-previews__group">
+				<h3 class="effects-previews__title">Shadows</h3>
+				<ul class="effects-previews__grid">
+					{shadows.map((item) => (
+						<li class="effects-previews__card">
+							<div
+								class="effects-previews__shadow-sample"
+								style={`box-shadow: var(${item.cssName})`}
+								aria-hidden="true"
+							/>
+							<code class="effects-previews__name">{item.tokenName}</code>
+							<span class="effects-previews__value">{item.displayValue}</span>
+							{item.description ? (
+								<p class="effects-previews__desc">{item.description}</p>
+							) : null}
+						</li>
+					))}
+				</ul>
+			</div>
+		)
+	}
+
+	{
+		gradients.length > 0 && (
+			<div class="effects-previews__group">
+				<h3 class="effects-previews__title">Gradients</h3>
+				<ul class="effects-previews__grid">
+					{gradients.map((item) => (
+						<li class="effects-previews__card">
+							<div
+								class="effects-previews__gradient-sample"
+								style={`background: var(${item.cssName})`}
+								aria-hidden="true"
+							/>
+							<code class="effects-previews__name">{item.tokenName}</code>
+							<span class="effects-previews__value">{item.displayValue}</span>
+							{item.description ? (
+								<p class="effects-previews__desc">{item.description}</p>
+							) : null}
+						</li>
+					))}
+				</ul>
+			</div>
+		)
+	}
+</section>

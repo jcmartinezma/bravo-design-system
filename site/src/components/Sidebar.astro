@@ -1,0 +1,96 @@
+---
+import { navSections } from '../data/nav';
+
+interface Props {
+	currentPath?: string;
+}
+
+const { currentPath = '' } = Astro.props;
+const normalized = currentPath.replace(/\/$/, '') || '/';
+
+function isActive(href: string) {
+	const target = href.replace(/\/$/, '') || '/';
+	return normalized === target;
+}
+---
+
+<aside class="sidebar" aria-label="Documentation">
+	<a class="sidebar__close" href="#!" aria-label="Close menu">
+		<svg class="sidebar__close-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+			<path d="M12.3004 0.292893C12.6909 -0.0976311 13.3239 -0.0976311 13.7145 0.292893C14.1049 0.683423 14.105 1.31645 13.7145 1.70696L8.41759 7.00285L13.7076 12.2929C14.0979 12.6834 14.0979 13.3165 13.7076 13.707C13.3172 14.0974 12.6841 14.0973 12.2936 13.707L7.00353 8.41692L1.71447 13.707C1.32396 14.0974 0.6909 14.0974 0.300403 13.707C-0.0900887 13.3165 -0.0900226 12.6834 0.300403 12.2929L5.58947 7.00285L0.29259 1.70696C-0.0975319 1.31651 -0.0975284 0.683342 0.29259 0.292893C0.683082 -0.0975983 1.3171 -0.0975322 1.70763 0.292893L7.00353 5.58879L12.3004 0.292893Z" fill="currentColor"/>
+		</svg>
+	</a>
+	<div class="sidebar__brand">
+		<a href="/">
+			<img src="../../bravo_logo_blue.svg" alt="Bravo" width="96" height="auto" />
+		</a>
+		<p class="sidebar__tagline">v1.0.0</p>
+	</div>
+
+	<div class="form form__select">
+		<label for="color-mode">Theme</label>
+		<select id="color-mode" aria-label="Color mode">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+			<option value="system">System</option>	
+		</select>
+	</div>
+	<nav class="sidebar__nav">
+		{
+			navSections.map((section) => (
+				<div class="sidebar__section">
+					<p class="sidebar__label">{section.label}</p>
+					<ul>
+						{section.items.map((item) => (
+							<li>
+								<a
+									href={item.href}
+									aria-current={isActive(item.href) ? 'page' : undefined}
+									class:list={['sidebar__link', { 'is-active': isActive(item.href) }]}
+								>
+									{item.label}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+			))
+		}
+	</nav>
+
+</aside>
+
+<script>
+	const STORAGE_KEY = 'ds-color-mode';
+	const el = document.getElementById('color-mode');
+	if (!(el instanceof HTMLSelectElement)) {
+		/* Sidebar not on this page */
+	} else {
+		const select: HTMLSelectElement = el;
+
+		function resolveTheme(mode: string) {
+			if (mode === 'dark') return 'dark';
+			if (mode === 'system') {
+				return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+			}
+			return 'light';
+		}
+
+		function applyMode(mode: string) {
+			const next = mode === 'dark' || mode === 'system' ? mode : 'light';
+			localStorage.setItem(STORAGE_KEY, next);
+			document.documentElement.dataset.theme = resolveTheme(next);
+			select.value = next;
+		}
+
+		applyMode(localStorage.getItem(STORAGE_KEY) || 'light');
+
+		select.addEventListener('change', () => applyMode(select.value));
+
+		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+			if ((localStorage.getItem(STORAGE_KEY) || 'light') === 'system') {
+				applyMode('system');
+			}
+		});
+	}
+</script>

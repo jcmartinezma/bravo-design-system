@@ -1,0 +1,110 @@
+{
+  "duration": [
+    {
+      "tokenName": "duration.100",
+      "cssName": "--duration-100",
+      "displayValue": "150ms",
+      "description": "Duration of 150ms",
+      "type": "duration"
+    },
+    {
+      "tokenName": "duration.200",
+      "cssName": "--duration-200",
+      "displayValue": "300ms",
+      "description": "Duration of 300ms",
+      "type": "duration"
+    },
+    {
+      "tokenName": "duration.300",
+      "cssName": "--duration-300",
+      "displayValue": "500ms",
+      "description": "Duration of 500ms",
+      "type": "duration"
+    }
+  ],
+  "delay": [
+    {
+      "tokenName": "delay.0",
+      "cssName": "--delay-0",
+      "displayValue": "0ms",
+      "description": "No delay — animation starts immediately",
+      "type": "duration"
+    },
+    {
+      "tokenName": "delay.100",
+      "cssName": "--delay-100",
+      "displayValue": "100ms",
+      "description": "Short delay of 100ms — staggered sequences",
+      "type": "duration"
+    }
+  ],
+  "speed": [
+    {
+      "tokenName": "motion.speed.fast",
+      "cssName": "--motion-speed-fast",
+      "displayValue": "→ duration.100",
+      "description": "motion-speed-fast — micro-interactions and quick feedback",
+      "type": "duration"
+    },
+    {
+      "tokenName": "motion.speed.normal",
+      "cssName": "--motion-speed-normal",
+      "displayValue": "→ duration.200",
+      "description": "motion-speed-normal — standard UI transitions",
+      "type": "duration"
+    },
+    {
+      "tokenName": "motion.speed.slow",
+      "cssName": "--motion-speed-slow",
+      "displayValue": "→ duration.300",
+      "description": "motion-speed-slow — larger moves (panels, page emphasis)",
+      "type": "duration"
+    }
+  ],
+  "easing": [
+    {
+      "tokenName": "motion.easing.in",
+      "cssName": "--motion-easing-in",
+      "displayValue": "cubic-bezier(0.4, 0, 1, 1)",
+      "description": "motion-easing-in — starts slow, speeds up (exits, dismissals)",
+      "type": "cubicBezier"
+    },
+    {
+      "tokenName": "motion.easing.in-out",
+      "cssName": "--motion-easing-in-out",
+      "displayValue": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "description": "motion-easing-in-out — smooth at both ends (default UI transitions)",
+      "type": "cubicBezier"
+    },
+    {
+      "tokenName": "motion.easing.out",
+      "cssName": "--motion-easing-out",
+      "displayValue": "cubic-bezier(0, 0, 0.2, 1)",
+      "description": "motion-easing-out — starts fast, slows down (entrances, settles)",
+      "type": "cubicBezier"
+    }
+  ],
+  "transition": [
+    {
+      "tokenName": "motion.transition.fast",
+      "cssName": "--motion-transition-fast",
+      "displayValue": "150ms 0ms cubic-bezier(0.4, 0, 0.2, 1)",
+      "description": "motion-transition-fast — micro-interactions and hover",
+      "type": "transition"
+    },
+    {
+      "tokenName": "motion.transition.normal",
+      "cssName": "--motion-transition-normal",
+      "displayValue": "300ms 0ms cubic-bezier(0.4, 0, 0.2, 1)",
+      "description": "motion-transition-normal — standard UI transitions",
+      "type": "transition"
+    },
+    {
+      "tokenName": "motion.transition.slow",
+      "cssName": "--motion-transition-slow",
+      "displayValue": "500ms 0ms cubic-bezier(0.4, 0, 0.2, 1)",
+      "description": "motion-transition-slow — larger moves (panels, emphasis)",
+      "type": "transition"
+    }
+  ]
+}

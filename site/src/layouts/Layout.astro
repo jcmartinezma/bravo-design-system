@@ -1,0 +1,71 @@
+---
+import '../styles/generated/tokens.css';
+import '../styles/generated/text-styles.css';
+import '../styles/main.scss';
+import Sidebar from '../components/Sidebar.astro';
+
+interface Props {
+	title: string;
+	description?: string;
+	currentPath?: string;
+	/** CSS class on the main article. Default `prose` for docs; use `home` for the landing hero. */
+	contentClass?: string;
+}
+
+const {
+	title = 'Design System',
+	description = 'Design system documentation',
+	currentPath = Astro.url.pathname,
+	contentClass = 'prose',
+} = Astro.props;
+const pageTitle = title === 'Bravo' ? 'Bravo · Design System Package' : (title === 'Design System' ? 'Design System' : `${title} · Bravo`);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content={description} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+		<script is:inline>
+			(function () {
+				var key = 'ds-color-mode';
+				var mode = localStorage.getItem(key) || 'light';
+				var theme = 'light';
+				if (mode === 'dark') theme = 'dark';
+				else if (mode === 'system') {
+					theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				}
+				document.documentElement.dataset.theme = theme;
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="shell">
+			<header class="topbar">
+				<a class="topbar__menu" href="#nav" aria-label="Open menu">
+					<svg class="topbar__menu-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<path d="M16 14H0V12H16V14Z" fill="currentColor" />
+						<path d="M16 8H0V6H16V8Z" fill="currentColor" />
+						<path d="M16 2H0V0H16V2Z" fill="currentColor" />
+					</svg>
+					Menu
+				</a>
+			</header>
+
+			<div class="shell__body">
+				<div class="shell__sidebar" id="nav">
+					<Sidebar currentPath={currentPath} />
+				</div>
+				<main class="shell__main">
+					<article class={contentClass}>
+						<slot />
+					</article>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>

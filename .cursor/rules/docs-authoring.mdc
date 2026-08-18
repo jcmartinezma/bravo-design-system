@@ -1,0 +1,52 @@
+---
+description: Markdown authoring standards for design system documentation
+globs: docs/**/*.{md,mdx}
+alwaysApply: false
+---
+
+# Docs Authoring
+
+## Frontmatter
+
+Every doc in `docs/` should start with:
+
+```yaml
+---
+title: Document Title
+status: draft
+owner: community
+update: January 1, 2026
+---
+```
+
+- Update `status` to `stable` when reviewed and agreed.
+- Set `update` to the last meaningful edit date (`Month D, YYYY`, e.g. `January 1, 2026`).
+
+## Markdown vs MDX
+
+- Use `.md` for normal guidelines.
+- Use `.mdx` when the page needs Astro components (e.g. color swatches).
+- In MDX, embed swatches with `<ColorCore />` and/or `<ColorSemantic />` (mapped in the docs site — no import required).
+
+## Structure
+
+- One H1 per file (the title).
+- Use H2 for major sections, H3 for subsections.
+- Keep paragraphs short; use tables and lists for scanability.
+
+## Language
+
+- Plain language; explain terms for beginners.
+- **Do** / **Don't** examples where principles apply.
+- Active voice; specific instructions over vague advice.
+
+## Linking
+
+- Cross-link related docs in a "Related docs" section at the bottom.
+- Use relative paths that match site routes (no `.md` / `.mdx` suffix), e.g. `../vision/design-principles`.
+- When adding or renaming files, update `docs/README.md`.
+
+## Values in examples
+
+- Reference token names, not raw hex or pixel values (unless defining a token).
+- Follow `docs/vision/writing-guidelines.md` for UI copy examples.

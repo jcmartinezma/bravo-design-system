@@ -1,2 +1,89 @@
-# agentic-design-system
-Starting point to build an Agentic Design System 
+# Bravo Design System
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+[![Starter pack](https://img.shields.io/badge/starter--pack-green.svg)](docs/README.md)
+
+A **free, public starter pack** for teams building design systems with AI agents.
+
+You get structure, agent rules, sample tokens, and a small docs site so you can extend with your brand without wading through exhaustive content.
+
+![Captura de pantalla del sistema Bravo](site/public/screenshot.png)
+
+## Quick start
+
+1. **Clone** this repository (or use it as a GitHub template).
+2. Replace example values in **[docs/tokens/](docs/tokens/)** with your brand.
+3. Customize **[docs/vision/](docs/vision/)** with your brand principles, voice, and writing rules.
+4. Copy **[docs/components/_template/](docs/components/_template/)** or **[docs/patterns/_template.md](docs/patterns/_template.md)** to add specs.
+5. AI agents: start at **[AGENTS.md](AGENTS.md)**.
+6. Optional — deploy the site or run it locally.
+
+## How to set up the Astro site
+
+You can host and automatically synchronize the docs site on any static hosting provider or run locally.  
+
+### Deploying to production (Netlify, Vercel, etc.)
+- Point your hosting provider to the `/site` directory as the project / base directory.
+- Keep the full repository checkout (the build reads `../docs` and `../docs/tokens` at **build time**; only the generated `dist/` is served).
+- Build command: `npm run build` (from `site/`). Connect your GitHub repository and follow the provider’s instructions to deploy.
+
+### Running locally
+```sh
+cd site
+npm install
+npm run dev
+```
+
+## Who this is for
+
+- **Design system leads** setting up a new system from scratch.
+- **Designers and engineers** who want clear doc + token structure before full implementation.
+- **Teams using Cursor or other AI agents** who need machine-readable conventions and human-readable context in one repo.
+
+## What you get
+
+- DTCG Tokens, Vision and Patterns docs
+- Templates for components and patterns
+- Agent rules and Skills
+- Governance rules
+- Docs site scaffold ([`site/`](site/), Astro)
+
+## What "agentic" means
+
+The repo is structured so agents can:
+
+- Find authoritative answers without guessing.
+- Generate tokens and components in Figma via MCP connections.
+- Write and update files to fill gaps.
+- Log unresolved issues to [decisions-backlog.md](docs/governance/decisions-backlog.md) instead of inventing conflicting rules.
+
+
+## Repository map
+
+| Path | Purpose |
+|------|---------|
+| [AGENTS.md](AGENTS.md) | Agent onboarding and read order (design system usage) |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+| [docs/vision/](docs/vision/) | Principles, voice, tone, agent workflow |
+| [docs/foundations/](docs/foundations/) | Foundation guidelines (markdown) |
+| [docs/tokens/](docs/tokens/) | Example token values (DTCG JSON) |
+| [docs/components/](docs/components/) | Component specs (includes [button example](docs/components/button/spec.md)) |
+| [docs/patterns/](docs/patterns/) | Pattern specs (includes [empty state example](docs/patterns/example-empty-state.md)) |
+| [docs/governance/](docs/governance/) | Contribution model, versioning, quality bar, [decisions backlog](docs/governance/decisions-backlog.md) |
+| [.cursor/rules/](.cursor/rules/) | Cursor agent rules for extending the design system |
+| [.cursor/skills/](.cursor/skills/) | Cursor agent skills |
+| [site/](site/) | Docs site (Astro) ||
+
+
+## Future enhacements
+- Improved collaboration and contribution workflow via Figma plugin.
+- Support for React components.
+- More basic components.
+
+## License
+
+This project is licensed under the [GNU General Public License v3.0](LICENSE). Derivative works must remain open under GPL. If you need a permissive license for a commercial fork, relicense your fork explicitly.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). Improvements to the starter template are welcome.

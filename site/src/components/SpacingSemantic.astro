@@ -1,0 +1,12 @@
+---
+/**
+ * Semantic spacing role previews.
+ *
+ * Data: site/src/data/spacing-swatches.json (tokens:build).
+ * In MDX: <SpacingSemantic />
+ */
+import data from '../data/spacing-swatches.json';
+import SpacingBars from './SpacingBars.astro';
+---
+
+<SpacingBars label="Semantic spacing" items={data.semantic} />

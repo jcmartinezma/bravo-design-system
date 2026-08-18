@@ -1,0 +1,108 @@
+/**
+ * Typography — base text, links, and markdown content (.prose)
+ */
+
+/* --- Page defaults -------------------------------------------------------- */
+
+body {
+	font-family: var(--text-body-font-family);
+	font-size: var(--text-body-font-size);
+	font-weight: var(--text-body-font-weight);
+	line-height: var(--text-body-line-height);
+	color: var(--color-text-secondary);
+	background-color: var(--color-bg-primary);
+}
+
+h1{
+	color: var(--color-text-primary);
+	margin-bottom: var(--spacing-sm);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-text-secondary);
+}
+h2 {
+	margin: var(--spacing-5xl) 0 var(--spacing-lg) 0;
+}
+p {
+	color: var(--color-text-secondary);
+	max-width: 90ch;
+}
+
+
+p,
+ul,
+ol {
+	margin: 0 0 var(--spacing-md);
+}
+
+ul,
+ol {
+	padding-left: var(--spacing-lg);
+}
+
+li {
+	margin-bottom: var(--spacing-xs);
+}
+h1 + p{
+	color: var(--color-text-tertiary);
+	margin-bottom: var(--spacing-4xl);
+}
+
+/* --- Links ---------------------------------------------------------------- */
+
+a {
+	color: var(--color-text-primary);
+	text-decoration: underline;
+
+	&:hover {
+		color: var(--color-text-primary-hover);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--color-text-primary);
+		outline-offset: 2px;
+	}
+}
+
+/* --- Inline / block code -------------------------------------------------- */
+
+code,
+pre {
+	font-family: var(--font-family-monospace);
+}
+
+code {
+	font-size: 0.9em;
+	padding: 0.1em 0.35em;
+	background: var(--color-surface-secondary);
+	border-radius: var(--radius-sm);
+	color: var(--color-text-secondary);
+}
+
+pre {
+	margin: var(--spacing-md) 0;
+	padding: var(--spacing-lg);
+	overflow-x: auto;
+	background: var(--color-surface-tertiary) !important;
+	border: 1px solid var(--color-border-tertiary) !important;
+	color: var(--color-text-secondary-inverse) !important;
+	border-radius: var(--radius-md);
+
+	code {
+		display: block;
+		padding: 0;
+		background: none;
+		color: var(--color-text-secondary-inverse);
+	}
+}
+
+[data-theme="dark"] {
+	pre, code {
+		color: var(--color-text-secondary) !important;
+	}
+}

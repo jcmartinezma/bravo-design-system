@@ -1,0 +1,50 @@
+---
+title: Color
+status: draft
+owner: community
+update: January 1, 2026
+---
+
+# Color
+
+Color defines hierarchy, state, and brand. This doc describes *roles* (what each color is for). Values live in [token files](tokens). <br />
+This starter includes **example tokens only** — extend or replace them for your brand.
+
+
+## Token files
+
+| Layer | File | Purpose |
+|-------|------|---------|
+| Core | ../tokens/core/color.core.json | Raw palette (hex ramps) |
+| Semantic | ../tokens/semantic/color.semantic.json | UI roles referencing core |
+
+Edit those JSON files to change colors. On the docs site (`cd site && npm run dev`), swatches below update after tokens rebuild (automatic in dev).
+
+## Core palette
+
+Primitive ramps from `color.core.json`:
+
+<ColorCore />
+
+## Semantic colors
+
+Semantic colors follow:
+
+```
+color-{element}-{hierarchy}-{state}
+```
+
+| Part | Values (examples) |
+|------|-------------------|
+| **Element** | `bg`, `surface`, `text`, `border`, `icon`, `shadow` |
+| **Hierarchy** | `primary`, `secondary`, `tertiary`, `accent`, `success`, `warning`, `danger`, `info` |
+| **State** | default (no suffix / `$root`), `hover`, `active`, `disabled`, `inverse` |
+
+UI roles from `color.semantic.json` (labels show the core reference):
+
+<ColorSemantic />
+
+## Light and dark
+
+Light is the default mode. Optional dark overrides live in ../tokens/theme/dark/color.semantic.json and apply when the docs site sets `data-theme="dark"`.
+

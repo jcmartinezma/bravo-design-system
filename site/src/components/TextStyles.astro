@@ -1,0 +1,64 @@
+---
+/**
+ * Preview of composite typography text styles.
+ *
+ * Data: site/src/data/text-styles.json (written by tokens:build).
+ * Samples use classes from generated/text-styles.css (e.g. .text-heading-1).
+ *
+ * In a docs MDX file (no import needed — mapped in [...slug].astro):
+ *   <TextStyles />
+ */
+import catalog from '../data/text-styles.json';
+
+interface TextStyleEntry {
+	tokenName: string;
+	className: string;
+	element: string | null;
+	description: string;
+	properties: { key: string; cssProp: string; cssVar: string }[];
+}
+
+const styles = catalog.styles as TextStyleEntry[];
+
+/** Short sample line for the preview (keeps the gallery readable). */
+function sampleFor(style: TextStyleEntry): string {
+	if (style.tokenName.startsWith('text.heading.')) {
+		return `Heading ${style.tokenName.split('.').pop()}`;
+	}
+	if (style.tokenName === 'text.body') {
+		return 'The quick brown fox jumps over the lazy dog.';
+	}
+	if (style.tokenName === 'text.label') {
+		return 'Label text';
+	}
+	return style.tokenName;
+}
+---
+
+<section class="text-styles" aria-label="Text styles">
+	<ul class="text-styles__list">
+		{
+			styles.map((style) => (
+				<li class="text-styles__item">
+					<p class:list={['text-styles__sample', style.className]}>{sampleFor(style)}</p>
+					<div class="text-styles__meta">
+						{style.element ? (
+							<span class="text-styles__tags">
+								<code>.{style.className}</code>
+								<span aria-hidden="true">·</span>
+								<code>&lt;{style.element}&gt;</code>
+							</span>
+						) : (
+							<span class="text-styles__tags">
+								<code>.{style.className}, {style.tokenName} CSS variable: var(--{style.tokenName})</code>
+							</span>
+						)}
+						{style.description ? (
+							<p class="text-styles__desc">{style.description}</p>
+						) : null}
+					</div>
+				</li>
+			))
+		}
+	</ul>
+</section>

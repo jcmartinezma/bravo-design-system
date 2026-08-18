@@ -1,0 +1,392 @@
+/**
+ * Layout — shell, topbar, main column, hero, and responsive breakpoints
+ */
+
+/* --- App shell ------------------------------------------------------------ */
+
+.shell {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	&__body {
+		display: flex;
+		flex: 1;
+		min-height: 0;
+	}
+
+	&__sidebar {
+		/* Mobile drawer: always mounted so transform can animate */
+		display: block;
+		position: fixed;
+		inset: 0 auto 0 0;
+		z-index: 20;
+		width: min(18rem, 85vw);
+		height: 100%;
+		flex: 0 0 15rem;
+		max-width: none;
+		border-right: 1px solid var(--color-border-tertiary);
+		transform: translateX(-100%);
+		visibility: hidden;
+		pointer-events: none;
+		transition:
+			transform var(--motion-speed-normal) var(--motion-easing-out),
+			visibility var(--motion-speed-normal);
+
+		/* Open when Menu links to #nav */
+		&:target {
+			transform: translateX(0);
+			visibility: visible;
+			pointer-events: auto;
+		}
+	}
+
+	&__main {
+		flex: 1;
+		min-width: 0;
+	}
+}
+
+/* --- Prose -------------------------------------------------------------- */
+
+.prose {
+	max-width: 1400px;
+	padding: var(--spacing-5xl) var(--spacing-xl) var(--spacing-3xl) var(--spacing-xl);
+}
+
+/* --- Mobile top bar ------------------------------------------------------- */
+
+.topbar {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-md);
+	padding: var(--spacing-sm) var(--spacing-md);
+	background: var(--color-surface-secondary);
+	border-bottom: 1px solid var(--color-border-tertiary);
+	position: fixed;
+    width: 100%;
+	z-index: 20;
+
+	&__menu {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--spacing-sm);
+		padding: var(--spacing-xs) var(--spacing-sm);
+		border-radius: var(--radius-sm);
+		font-size: var(--text-size-sm);
+		font-weight: var(--text-weight-semibold);
+		color: var(--color-text-primary);
+		text-decoration: none;
+		transition:
+			background-color var(--motion-speed-fast) var(--motion-easing-in-out),
+			color var(--motion-speed-fast) var(--motion-easing-in-out);
+
+		&:hover {
+			background: var(--color-surface-secondary-active);
+			color: var(--color-text-primary);
+		}
+	}
+
+	&__menu-icon {
+		flex-shrink: 0;
+	}
+
+	&__title {
+		font-size: var(--text-size-sm);
+		font-weight: var(--text-weight-semibold);
+		color: var(--color-text-primary);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+/* --- Hero (home) ---------------------------------------------------------- */
+
+.home {
+	max-width: none;
+	padding: var(--spacing-xl) var(--spacing-xl);
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	height: 100dvh;
+
+	.base {
+		position: absolute;
+		inset: 0;
+		z-index: 0;
+		background: linear-gradient(
+			191deg,
+			var(--color-blue-300) 0%,
+			var(--color-blue-200) 8%,
+			var(--color-blue-100) 47%,
+			var(--color-blue-100) 56%,
+			var(--color-gray-500) 90%,
+			var(--color-black) 100%
+		);
+	}
+
+	.treatment {
+		position: absolute;
+		inset: -20%;
+		z-index: 1;
+		background-image: conic-gradient(
+			from 89deg at 80% 30%,
+			color-mix(in srgb, var(--color-blue-400) 26%, transparent) 0%,
+			color-mix(in srgb, var(--color-blue-200) 20%, transparent) 15%,
+			color-mix(in srgb, var(--color-black) 40%, transparent) 30%,
+			color-mix(in srgb, var(--color-blue-200) 26%, transparent) 45%,
+			color-mix(in srgb, var(--color-blue-200) 20%, transparent) 60%,
+			color-mix(in srgb, var(--color-black) 40%, transparent) 75%,
+			color-mix(in srgb, var(--color-blue-400) 26%, transparent) 100%
+		);
+		filter: blur(60px);
+		opacity: 0.305;
+		mask-image: radial-gradient(circle at 80% 30%, var(--color-black) 0%, transparent 60%);
+	}
+
+	.glow {
+		position: absolute;
+		inset: 0;
+		z-index: 2;
+		background:
+			radial-gradient(ellipse at 41% 3%, color-mix(in srgb, var(--color-white) 22%, transparent), transparent 38%),
+			radial-gradient(ellipse at 60% 50%, color-mix(in srgb, var(--color-blue-200) 23%, transparent), transparent 42%);
+	}
+
+	.vignette {
+		position: absolute;
+		inset: 0;
+		z-index: 4;
+		background:
+			radial-gradient(
+				circle at center,
+				transparent 25%,
+				color-mix(in srgb, var(--color-blue-600) 21%, transparent) 58%,
+				color-mix(in srgb, var(--color-blue-600) 87%, transparent) 100%
+			),
+			linear-gradient(to bottom, transparent 45%, color-mix(in srgb, var(--color-blue-400) 82%, transparent) 100%);
+	}
+
+	.noise {
+		position: absolute;
+		inset: 0;
+		z-index: 5;
+		mix-blend-mode: soft-light;
+		opacity: 0.2;
+		background-image: url('data:image/svg+xml,...turbulence...');
+		background-size: 180px 180px;
+	}
+
+	.particles {
+		position: absolute;
+		inset: 0;
+		z-index: 3;
+		background:
+			radial-gradient(circle at 8% 13%, color-mix(in srgb, var(--color-blue-200) 35%, transparent) 0, transparent 3px),
+			radial-gradient(circle at 30% 86%, color-mix(in srgb, var(--color-blue-200) 18%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 21% 72%, color-mix(in srgb, var(--color-blue-200) 34%, transparent) 0, transparent 3px),
+			radial-gradient(circle at 52% 84%, color-mix(in srgb, var(--color-white) 12%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 52% 14%, color-mix(in srgb, var(--color-white) 38%, transparent) 0, transparent 3px),
+			radial-gradient(circle at 58% 33%, color-mix(in srgb, var(--color-white) 38%, transparent) 0, transparent 1px),
+			radial-gradient(circle at 70% 15%, color-mix(in srgb, var(--color-white) 15%, transparent) 0, transparent 3px),
+			radial-gradient(circle at 48% 68%, color-mix(in srgb, var(--color-white) 38%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 12% 10%, color-mix(in srgb, var(--color-white) 30%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 25% 43%, color-mix(in srgb, var(--color-blue-200) 15%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 83% 12%, color-mix(in srgb, var(--color-white) 12%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 32% 76%, color-mix(in srgb, var(--color-white) 22%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 17% 47%, color-mix(in srgb, var(--color-white) 32%, transparent) 0, transparent 3px),
+			radial-gradient(circle at 48% 77%, color-mix(in srgb, var(--color-blue-200) 36%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 28% 11%, color-mix(in srgb, var(--color-white) 18%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 29% 68%, color-mix(in srgb, var(--color-blue-200) 32%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 50% 52%, color-mix(in srgb, var(--color-blue-200) 15%, transparent) 0, transparent 3px),
+			radial-gradient(circle at 36% 84%, color-mix(in srgb, var(--color-white) 38%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 30% 36%, color-mix(in srgb, var(--color-white) 27%, transparent) 0, transparent 1px),
+			radial-gradient(circle at 6% 42%, color-mix(in srgb, var(--color-blue-200) 11%, transparent) 0, transparent 2px),
+			radial-gradient(circle at 21% 11%, color-mix(in srgb, var(--color-white) 26%, transparent) 0, transparent 1px);
+	}
+
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+
+	&__inner {
+		position: relative;
+		z-index: 100;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		max-width: 36rem;
+		width: 100%;
+		svg {
+			margin: 0 0 var(--spacing-md) 0;
+			height: var(--spacing-4xl);
+			width: auto;
+			fill: var(--color-icon-primary);
+		}
+	}
+
+	&__eyebrow {
+		margin: 0 0 var(--spacing-md);
+		font-family: var(--text-style-base);
+		font-size: var(--text-size-xs);
+		font-weight: var(--text-weight-semibold);
+		line-height: var(--text-leading-sm);
+		text-transform: uppercase;
+		color: var(--color-text-secondary);
+	}
+
+	&__brand {
+		margin: 0 0 var(--spacing-md);
+		font-family: var(--text-style-display);
+		font-size: var(--text-size-4xl);
+		font-weight: var(--text-weight-semibold);
+		line-height: var(--text-leading-4xl);
+	}
+
+	&__lede {
+		margin: 0 0 var(--spacing-xl);
+		font-size: var(--text-size-md);
+		font-weight: var(--text-weight-normal);
+		line-height: var(--text-leading-lg);
+		color: var(--color-text-secondary);
+		max-width: 32rem;
+	}
+
+	&__actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--spacing-md);
+		margin-top: var(--spacing-xl);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.hero {
+		&__glow,
+		&__eyebrow,
+		&__brand,
+		&__headline,
+		&__lede,
+		&__actions {
+			animation: none;
+		}
+	}
+}
+
+/* --- dark mode ------------------------------------------------------------ */
+
+[data-theme='dark'] {
+	.home {
+		background-color: var(--color-bg-secondary-inverse);
+
+		.base {
+			position: absolute;
+			inset: 0;
+			z-index: 0;
+			background: linear-gradient(
+				191deg,
+				var(--color-blue-100) 0%,
+				var(--color-blue-300) 8%,
+				var(--color-blue-600) 47%,
+				var(--color-blue-800) 56%,
+				var(--color-gray-800) 90%,
+				var(--color-black) 100%
+			);
+		}
+
+		.treatment {
+			position: absolute;
+			inset: -20%;
+			z-index: 1;
+			background-image: conic-gradient(
+				from 89deg at 80% 30%,
+				color-mix(in srgb, var(--color-blue-400) 26%, transparent) 0%,
+				color-mix(in srgb, var(--color-blue-200) 20%, transparent) 15%,
+				color-mix(in srgb, var(--color-black) 40%, transparent) 30%,
+				color-mix(in srgb, var(--color-blue-400) 26%, transparent) 45%,
+				color-mix(in srgb, var(--color-blue-200) 20%, transparent) 60%,
+				color-mix(in srgb, var(--color-black) 40%, transparent) 75%,
+				color-mix(in srgb, var(--color-blue-400) 26%, transparent) 100%
+			);
+			filter: blur(60px);
+			opacity: 0.305;
+			mask-image: radial-gradient(circle at 80% 30%, var(--color-black) 0%, transparent 60%);
+		}
+
+		.glow {
+			position: absolute;
+			inset: 0;
+			z-index: 2;
+			background:
+				radial-gradient(ellipse at 41% 3%, color-mix(in srgb, var(--color-white) 22%, transparent), transparent 38%),
+				radial-gradient(ellipse at 38% 32%, color-mix(in srgb, var(--color-blue-500) 23%, transparent), transparent 42%);
+		}
+
+		.vignette {
+			position: absolute;
+			inset: 0;
+			z-index: 4;
+			background:
+				radial-gradient(
+					circle at center,
+					transparent 25%,
+					color-mix(in srgb, var(--color-black) 21%, transparent) 58%,
+					color-mix(in srgb, var(--color-black) 87%, transparent) 100%
+				),
+				linear-gradient(to bottom, transparent 45%, color-mix(in srgb, var(--color-black) 82%, transparent) 100%);
+		}
+
+		.noise {
+			position: absolute;
+			inset: 0;
+			z-index: 5;
+			mix-blend-mode: soft-light;
+			opacity: 0.2;
+			background-image: url('data:image/svg+xml,...turbulence...');
+			background-size: 180px 180px;
+		}
+
+		.particles {
+			position: absolute;
+			inset: 0;
+			z-index: 3;
+			background:
+				radial-gradient(circle at 8% 13%, color-mix(in srgb, var(--color-blue-200) 35%, transparent) 0, transparent 3px),
+				radial-gradient(circle at 30% 86%, color-mix(in srgb, var(--color-blue-200) 18%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 21% 72%, color-mix(in srgb, var(--color-blue-200) 34%, transparent) 0, transparent 3px),
+				radial-gradient(circle at 52% 84%, color-mix(in srgb, var(--color-white) 12%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 52% 14%, color-mix(in srgb, var(--color-white) 38%, transparent) 0, transparent 3px),
+				radial-gradient(circle at 58% 33%, color-mix(in srgb, var(--color-white) 38%, transparent) 0, transparent 1px),
+				radial-gradient(circle at 70% 15%, color-mix(in srgb, var(--color-white) 15%, transparent) 0, transparent 3px),
+				radial-gradient(circle at 48% 68%, color-mix(in srgb, var(--color-white) 38%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 12% 10%, color-mix(in srgb, var(--color-white) 30%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 25% 43%, color-mix(in srgb, var(--color-blue-200) 15%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 83% 12%, color-mix(in srgb, var(--color-white) 12%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 32% 76%, color-mix(in srgb, var(--color-white) 22%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 17% 47%, color-mix(in srgb, var(--color-white) 32%, transparent) 0, transparent 3px),
+				radial-gradient(circle at 48% 77%, color-mix(in srgb, var(--color-blue-200) 36%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 28% 11%, color-mix(in srgb, var(--color-white) 18%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 29% 68%, color-mix(in srgb, var(--color-blue-200) 32%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 50% 52%, color-mix(in srgb, var(--color-blue-200) 15%, transparent) 0, transparent 3px),
+				radial-gradient(circle at 36% 84%, color-mix(in srgb, var(--color-white) 38%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 30% 36%, color-mix(in srgb, var(--color-white) 27%, transparent) 0, transparent 1px),
+				radial-gradient(circle at 6% 42%, color-mix(in srgb, var(--color-blue-200) 11%, transparent) 0, transparent 2px),
+				radial-gradient(circle at 21% 11%, color-mix(in srgb, var(--color-white) 26%, transparent) 0, transparent 1px);
+		}
+	}
+
+	.hero__brand {
+		color: var(--color-text-secondary);
+	}
+	.hero__inner {
+		svg {
+			fill: var(--color-icon-secondary);
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://www.designtokens.org/tr/2025.10/format/",
+  "radius": {
+    "$description": "Core border radius values",
+    "$type": "dimension",
+    "100": {
+      "$value": { "value": 4, "unit": "px" },
+      "$description": "Radius of 4px"
+    },
+    "200": {
+      "$value": { "value": 8, "unit": "px" },
+      "$description": "Radius of 8px"
+    },
+    "300": {
+      "$value": { "value": 16, "unit": "px" },
+      "$description": "Radius of 16px"
+    },
+    "400": {
+      "$value": { "value": 24, "unit": "px" },
+      "$description": "Radius of 24px"
+    },
+    "500": {
+      "$value": { "value": 9999, "unit": "px" },
+      "$description": "Pill / full radius (very large px stand-in for a capsule shape)"
+    }
+  }
+}

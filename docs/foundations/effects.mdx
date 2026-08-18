@@ -1,0 +1,40 @@
+---
+title: Effects
+status: draft
+owner: community
+update: January 1, 2026
+---
+
+# Effects
+
+Guidelines for elevation (shadows) and color washes (gradients). These are **composite** tokens — multi-property recipes that reference core and semantic values.
+
+- **Shadows** — depth and elevation for surfaces (cards, menus, modals).
+- **Gradients** — soft washes for heroes, banners, and overlays.
+
+Values live in:
+
+| Kind | File |
+|------|------|
+| Shadow composites | shadow.composite.json |
+| Shadow primitives | shadow.core.json |
+| Gradients | gradient.composite.json |
+
+## Preview
+
+Samples use CSS variables from the generated tokens (for example `box-shadow: var(--shadow-sm)` and `background: var(--gradient-primary)`).
+
+<EffectsSwatches />
+
+## Usage tips
+
+- Prefer composite names (`shadow.sm`, `gradient.primary`) in UI — do not invent one-off blur/offset values.
+- Keep elevation steps few; reserve stronger shadows for temporary surfaces (modals, popovers).
+- Pair gradients with accessible text contrast; do not rely on gradient alone for meaning.
+
+## Related docs
+
+- [Tokens catalog](tokens)
+- [Color](color)
+- [Motion](motion)
+- [Accessibility](accessibility)

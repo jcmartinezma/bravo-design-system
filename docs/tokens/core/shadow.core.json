@@ -1,0 +1,45 @@
+{
+  "$schema": "https://www.designtokens.org/tr/2025.10/format/",
+  "shadow": {
+    "$description": "Core shadow offsets and blur radii (raw dimensions)",
+    "$type": "dimension",
+    "offset": {
+      "0": {
+        "$value": { "value": 0, "unit": "px" },
+        "$description": "shadow-offset-0 — no offset"
+      },
+      "100": {
+        "$value": { "value": 2, "unit": "px" },
+        "$description": "shadow-offset-100 — slight offset"
+      },
+      "200": {
+        "$value": { "value": 4, "unit": "px" },
+        "$description": "shadow-offset-200 — medium offset"
+      },
+      "300": {
+        "$value": { "value": 8, "unit": "px" },
+        "$description": "shadow-offset-300 — large offset"
+      }
+    },
+    "blur": {
+      "100": {
+        "$value": { "value": 4, "unit": "px" },
+        "$description": "shadow-blur-100 — soft small blur"
+      },
+      "200": {
+        "$value": { "value": 8, "unit": "px" },
+        "$description": "shadow-blur-200 — medium blur"
+      },
+      "300": {
+        "$value": { "value": 16, "unit": "px" },
+        "$description": "shadow-blur-300 — large blur"
+      }
+    },
+    "spread": {
+      "0": {
+        "$value": { "value": 0, "unit": "px" },
+        "$description": "shadow-spread-0 — no spread"
+      }
+    }
+  }
+}

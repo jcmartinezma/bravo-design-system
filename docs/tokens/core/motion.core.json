@@ -1,0 +1,47 @@
+{
+  "$schema": "https://www.designtokens.org/tr/2025.10/format/",
+  "duration": {
+    "$description": "Core animation durations",
+    "$type": "duration",
+    "100": {
+      "$value": { "value": 150, "unit": "ms" },
+      "$description": "Duration of 150ms"
+    },
+    "200": {
+      "$value": { "value": 300, "unit": "ms" },
+      "$description": "Duration of 300ms"
+    },
+    "300": {
+      "$value": { "value": 500, "unit": "ms" },
+      "$description": "Duration of 500ms"
+    }
+  },
+  "delay": {
+    "$description": "Core animation delays — wait before a transition starts",
+    "$type": "duration",
+    "0": {
+      "$value": { "value": 0, "unit": "ms" },
+      "$description": "No delay — animation starts immediately"
+    },
+    "100": {
+      "$value": { "value": 100, "unit": "ms" },
+      "$description": "Short delay of 100ms — staggered sequences"
+    }
+  },
+  "easing": {
+    "$description": "Core cubic-bezier curves — how an animation accelerates over time",
+    "$type": "cubicBezier",
+    "100": {
+      "$value": [0.4, 0, 1, 1],
+      "$description": "Ease-in — starts slow, then speeds up (feels like an exit or departure)"
+    },
+    "200": {
+      "$value": [0, 0, 0.2, 1],
+      "$description": "Ease-out — starts fast, then slows down (feels like an arrival or settle)"
+    },
+    "300": {
+      "$value": [0.4, 0, 0.2, 1],
+      "$description": "Ease-in-out — slow at both ends, faster in the middle (smooth standard UI motion)"
+    }
+  }
+}
