@@ -1,4 +1,5 @@
 # Bravo Design System
+**v0.1.0**
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![Starter pack](https://img.shields.io/badge/starter--pack-green.svg)](docs/README.md)
@@ -14,7 +15,7 @@ You get structure, agent rules, sample tokens, and a small docs site so you can 
 1. **Clone** this repository (or use it as a GitHub template).
 2. Replace example values in **[docs/tokens/](docs/tokens/)** with your brand.
 3. Customize **[docs/vision/](docs/vision/)** with your brand principles, voice, and writing rules.
-4. Copy **[docs/components/_template/](docs/components/_template/)** or **[docs/patterns/_template.md](docs/patterns/_template.md)** to add specs.
+4. Copy **[docs/components/_template/](docs/components/_template/)** to add new components or ask your agent to generate new ones.
 5. AI agents: start at **[AGENTS.md](AGENTS.md)**.
 6. Optional — deploy the site or run it locally.
 
@@ -69,13 +70,12 @@ The repo is structured so agents can:
 | [docs/tokens/](docs/tokens/) | Example token values (DTCG JSON) |
 | [docs/components/](docs/components/) | Component specs (includes [button example](docs/components/button/spec.md)) |
 | [docs/patterns/](docs/patterns/) | Pattern specs (includes [empty state example](docs/patterns/example-empty-state.md)) |
-| [docs/governance/](docs/governance/) | Contribution model, versioning, quality bar, [decisions backlog](docs/governance/decisions-backlog.md) |
+| [docs/governance/](docs/governance/) | Contribution model, versioning (for *your* system), quality bar, [decisions backlog](docs/governance/decisions-backlog.md) |
 | [.cursor/rules/](.cursor/rules/) | Cursor agent rules for extending the design system |
 | [.cursor/skills/](.cursor/skills/) | Cursor agent skills |
-| [site/](site/) | Docs site (Astro) ||
+| [site/](site/) | Docs site (Astro) |
 
-
-## Future enhacements
+## Future enhancements
 - Improved collaboration and contribution workflow via Figma plugin.
 - Support for React components.
 - More basic components.

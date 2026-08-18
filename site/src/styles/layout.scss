@@ -224,21 +224,11 @@
 		max-width: 36rem;
 		width: 100%;
 		svg {
-			margin: 0 0 var(--spacing-md) 0;
+			margin: 0 0 var(--spacing-2xl) 0;
 			height: var(--spacing-4xl);
 			width: auto;
 			fill: var(--color-icon-primary);
 		}
-	}
-
-	&__eyebrow {
-		margin: 0 0 var(--spacing-md);
-		font-family: var(--text-style-base);
-		font-size: var(--text-size-xs);
-		font-weight: var(--text-weight-semibold);
-		line-height: var(--text-leading-sm);
-		text-transform: uppercase;
-		color: var(--color-text-secondary);
 	}
 
 	&__brand {

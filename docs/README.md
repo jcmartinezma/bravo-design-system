@@ -2,7 +2,7 @@
 title: Documentation
 status: draft
 owner: community
-update: January 1, 2026
+update: August 18, 2026
 ---
 
 # Documentation
@@ -11,11 +11,11 @@ Human-facing map of this design-system starter. AI agents should start at root [
 
 ## Suggested reading path
 
-1. [Get started](getting-started.md)
+1. [Get started](../README.md) — clone, tokens, and the docs site (starter pack). The site also has `/getting-started`.
 2. Vision — principles, voice, writing, agent workflow
 3. Foundations — tokens and guidelines
 4. Components and patterns — specs and examples
-5. Governance — how the system evolves
+5. Governance — how *your* system evolves
 
 ## Vision
 
@@ -62,7 +62,7 @@ Single reusable UI elements. Copy [`components/_template/`](components/_template
 | Doc | Purpose |
 |-----|---------|
 | [Contribution model](governance/contribution-model.md) | Who contributes and how |
-| [Versioning](governance/versioning.md) | How docs and tokens version |
+| [Versioning](governance/versioning.md) | How **your** docs and tokens version |
 | [Quality bar](governance/quality-bar.md) | Definition of done for specs |
 | [Decisions backlog](governance/decisions-backlog.md) | Open gaps and deferred decisions |
 
