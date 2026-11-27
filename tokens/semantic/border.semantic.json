@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "border": {
+    "width": {
+      "$description": "Border width roles referencing the core border scale. Stroke style (solid/dashed) stays literal in composites until a border-style core exists.",
+      "$type": "dimension",
+      "sm": {
+        "$value": "{border.100}",
+        "$description": "border-width-sm — hairline dividers and default outlines"
+      },
+      "md": {
+        "$value": "{border.200}",
+        "$description": "border-width-md — emphasis outlines and focus rings"
+      },
+      "lg": {
+        "$value": "{border.300}",
+        "$description": "border-width-lg — strong borders"
+      },
+      "xl": {
+        "$value": "{border.400}",
+        "$description": "border-width-xl — maximum stroke weight"
+      }
+    }
+  }
+}

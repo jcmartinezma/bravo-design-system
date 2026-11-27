@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "spacing": {
+    "$type": "dimension",
+    "$description": "Semantic spacing roles referencing the core scale (50, 100–1500). Use for padding, gaps, and layout separation.",
+    "2xs": {
+      "$value": "{spacing.50}",
+      "$description": "spacing-2xs — hairline gaps between tightly related elements"
+    },
+    "xs": {
+      "$value": "{spacing.100}",
+      "$description": "spacing-xs — tight gaps (icon next to label)"
+    },
+    "sm": {
+      "$value": "{spacing.200}",
+      "$description": "spacing-sm — compact padding and small stacks"
+    },
+    "md": {
+      "$value": "{spacing.300}",
+      "$description": "spacing-md — default gap between related items"
+    },
+    "lg": {
+      "$value": "{spacing.400}",
+      "$description": "spacing-lg — section padding and larger stacks"
+    },
+    "xl": {
+      "$value": "{spacing.500}",
+      "$description": "spacing-xl — generous breathing room inside layouts"
+    },
+    "2xl": {
+      "$value": "{spacing.600}",
+      "$description": "spacing-2xl — separation between major layout blocks"
+    },
+    "3xl": {
+      "$value": "{spacing.700}",
+      "$description": "spacing-3xl — large section separation"
+    },
+    "4xl": {
+      "$value": "{spacing.800}",
+      "$description": "spacing-4xl — page-level vertical rhythm"
+    },
+    "5xl": {
+      "$value": "{spacing.900}",
+      "$description": "spacing-5xl — wide page-level separation"
+    },
+    "6xl": {
+      "$value": "{spacing.1000}",
+      "$description": "spacing-6xl — hero and marketing block spacing"
+    },
+    "7xl": {
+      "$value": "{spacing.1100}",
+      "$description": "spacing-7xl — oversized layout separation"
+    },
+    "8xl": {
+      "$value": "{spacing.1200}",
+      "$description": "spacing-8xl — oversized layout separation"
+    },
+    "9xl": {
+      "$value": "{spacing.1300}",
+      "$description": "spacing-9xl — oversized layout separation"
+    },
+    "10xl": {
+      "$value": "{spacing.1400}",
+      "$description": "spacing-10xl — oversized layout separation"
+    },
+    "11xl": {
+      "$value": "{spacing.1500}",
+      "$description": "spacing-11xl — largest core spacing step"
+    }
+  }
+}

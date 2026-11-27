@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "border": {
+    "default": {
+      "$type": "border",
+      "$description": "border-default — default dividers and outlines. Style is a literal string — core has no border-style tokens.",
+      "$value": {
+        "color": "{color.border.neutral}",
+        "width": "{border.width.sm}",
+        "style": "solid"
+      }
+    },
+    "strong": {
+      "$type": "border",
+      "$description": "border-strong — emphasis outlines",
+      "$value": {
+        "color": "{color.border.neutral.strong}",
+        "width": "{border.width.md}",
+        "style": "solid"
+      }
+    }
+  }
+}

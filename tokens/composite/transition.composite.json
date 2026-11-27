@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "transition": {
+    "$description": "Composite transitions (duration + delay + easing). Starter examples only.",
+    "$type": "transition",
+    "fast": {
+      "$description": "transition-fast — micro-interactions and hover",
+      "$value": {
+        "duration": "{motion.speed.fast}",
+        "delay": "{motion.delay.none}",
+        "timingFunction": "{motion.easing.in-out}"
+      }
+    },
+    "normal": {
+      "$description": "transition-normal — standard UI transitions",
+      "$value": {
+        "duration": "{motion.speed.normal}",
+        "delay": "{motion.delay.none}",
+        "timingFunction": "{motion.easing.in-out}"
+      }
+    },
+    "slow": {
+      "$description": "transition-slow — larger moves (panels, emphasis)",
+      "$value": {
+        "duration": "{motion.speed.slow}",
+        "delay": "{motion.delay.none}",
+        "timingFunction": "{motion.easing.in-out}"
+      }
+    }
+  }
+}

@@ -22,11 +22,10 @@ update: January 1, 2026
 - Update `status` to `stable` when reviewed and agreed.
 - Set `update` to the last meaningful edit date (`Month D, YYYY`, e.g. `January 1, 2026`).
 
-## Markdown vs MDX
+## Format
 
-- Use `.md` for normal guidelines.
-- Use `.mdx` when the page needs Astro components (e.g. color swatches).
-- In MDX, embed swatches with `<ColorCore />` and/or `<ColorSemantic />` (mapped in the docs site — no import required).
+- Use `.md` for guidelines and specs.
+- Prefer `.md` unless Storybook MDX under `src/stories/` needs interactive docs.
 
 ## Structure
 
@@ -43,8 +42,7 @@ update: January 1, 2026
 ## Linking
 
 - Cross-link related docs in a "Related docs" section at the bottom.
-- Use relative paths that match site routes (no `.md` / `.mdx` suffix), e.g. `../vision/design-principles`. Link text for those pages should also omit the extension.
-- Files that are **not** Astro pages (token JSON, templates, root `AGENTS.md`, `site/` source) must use GitHub URLs so they do not 404 on the docs site. Keep the filename (including extension) in the link text. Base for docs files: `https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs`.
+- Use relative paths between docs (include the filename; `.md` is fine in the repo).
 - When adding or renaming files, update `docs/README.md`.
 
 ## Values in examples

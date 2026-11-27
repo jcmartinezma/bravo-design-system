@@ -1,38 +1,27 @@
-# OS
-.DS_Store
-Thumbs.db
-
-# Editors
-.idea/
-*.swp
-*.swo
-*~
-
-# Maintainer-only notes (not part of the published starter)
-.cursor/PLAN.md
-.cursor/AGENTS.dev.md
-.cursor/components_plan.md
-.cursor/rules/project-dev.mdc
-.cursor/plans/
-
-# Build output (future phases)
-dist/
-build/
-.storybook-static/
-
-# generated types
-.astro/
-.vscode/
-
-# dependencies
-node_modules/
-
-# logs
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
-# environment variables
-.env
-.env.production
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*storybook.log
+storybook-static

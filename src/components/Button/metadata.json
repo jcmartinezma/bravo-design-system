@@ -1,0 +1,15 @@
+{
+  "identification": {
+    "name": "Button",
+    "nodeId": "265:80",
+    "componentKey": "991d6c348fb85367916858df47d14e17c18ef4e6",
+    "assetId": "SymbolId:991d6c348fb85367916858df47d14e17c18ef4e6",
+    "libraryKey": "lk-local",
+    "fileKey": "ArGL69PcOZxU1vSAjdXz5b"
+  },
+  "metadata": {
+    "description": "Bravo DS Button. Appearance × Size × State. Loading is a boolean property. Source: src/components/Button/spec.md",
+    "path": "Button",
+    "page": "Button"
+  }
+}

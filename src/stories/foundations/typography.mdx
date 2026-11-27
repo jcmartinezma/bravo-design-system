@@ -1,0 +1,144 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Typography" />
+
+# Typography
+
+Guidelines for type scale, font families, and readable text. Example tokens illustrate the core → semantic → text-style pattern.
+
+## Text styles
+
+Use a named text style instead of combining size and weight by hand. Core tokens hold raw values; semantic tokens name size/weight/leading roles; **text styles** (composites) package those into usable recipes for UI and agents.
+
+<table>
+  <thead>
+    <tr>
+      <th>Token</th>
+      <th>Typical use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>typo.heading.1</code> … <code>6</code></td>
+      <td>Document hierarchy</td>
+    </tr>
+    <tr>
+      <td><code>typo.body</code></td>
+      <td>Paragraphs, descriptions</td>
+    </tr>
+    <tr>
+      <td><code>typo.label</code></td>
+      <td>Form labels, buttons, navigation</td>
+    </tr>
+    <tr>
+      <td><code>typo.caption</code></td>
+      <td>Captions and fine print</td>
+    </tr>
+    <tr>
+      <td><code>typo.code</code></td>
+      <td>Inline code / monospace</td>
+    </tr>
+  </tbody>
+</table>
+
+Defined in `tokens/composite/typography.composite.json`.
+
+## Semantic building blocks
+
+Pieces that text styles reference — use these only when defining or extending a text style, not as the default API in UI:
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Face</td>
+      <td>
+        <code>text.face.base</code>, <code>text.face.display</code>, <code>text.face.mono</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Size</td>
+      <td>
+        <code>text.size.xs</code> … <code>text.size.4xl</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Weight</td>
+      <td>
+        <code>text.weight.normal</code>, <code>medium</code>, <code>semibold</code>,{' '}
+        <code>bold</code>, <code>extrabold</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Leading</td>
+      <td>
+        <code>text.leading.xs</code> … <code>text.leading.4xl</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Letter spacing</td>
+      <td>
+        <code>text.letterSpacing.xs</code> … <code>text.letterSpacing.lg</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+File: `tokens/semantic/typography.semantic.json`.
+
+## Core tokens
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Families</td>
+      <td>
+        <code>font.families.sans</code>, <code>font.families.serif</code>,{' '}
+        <code>font.families.monospace</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Sizes</td>
+      <td>
+        <code>font.size.100</code>, <code>font.size.200</code>, <code>font.size.300</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Weights</td>
+      <td>
+        <code>font.weights.400</code>, <code>font.weights.600</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Line heights</td>
+      <td>
+        <code>font.line-height.100</code>, <code>font.line-height.200</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Letter spacing</td>
+      <td>
+        <code>font.letter-spacings.0</code>, <code>font.letter-spacings.200</code>,{' '}
+        <code>font.letter-spacings.300</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+File: `tokens/core/typography.core.json`.
+
+## Related docs
+
+- [Tokens](?path=/docs/foundations-tokens--docs)
+- [Accessibility](?path=/docs/foundations-accessibility--docs)

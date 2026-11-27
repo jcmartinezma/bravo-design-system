@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "border": {
+    "100": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.foundry.rem": {
+          "value": 0.0625,
+          "unit": "rem"
+        }
+      }
+    },
+    "200": {
+      "$type": "dimension",
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.foundry.rem": {
+          "value": 0.125,
+          "unit": "rem"
+        }
+      }
+    },
+    "300": {
+      "$type": "dimension",
+      "$value": {
+        "value": 3,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.foundry.rem": {
+          "value": 0.1875,
+          "unit": "rem"
+        }
+      }
+    },
+    "400": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.foundry.rem": {
+          "value": 0.25,
+          "unit": "rem"
+        }
+      }
+    }
+  }
+}

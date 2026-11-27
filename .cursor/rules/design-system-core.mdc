@@ -18,10 +18,10 @@ Governance wraps all layers. Do not reference patterns inside foundation token d
 ## Token and value rules
 
 - Never hardcode colors, spacing, or typography values in docs or examples when a token name can be used.
-- Foundation **guides** live in `docs/foundations/*.md`; token **values** live in `docs/tokens/` (`core/`, `semantic/`, `composite/`, `theme/`).
+- Foundation **guides** live in `docs/foundations/*.md`; token **values** live in `tokens/` (`core/`, `semantic/`, `composite/`, `theme/`).
 - Reference token names from foundation docs and DTCG JSON (e.g. `{color.gray.100}`, `spacing.gap.md`).
 - This is a **starter pack** — extend tokens intentionally; do not generate exhaustive matrices unless asked.
-- When adding token files, update [docs/foundations/tokens.md](docs/foundations/tokens.md).
+- When adding token files, update [docs/foundations/tokens.md](docs/foundations/tokens.md) and run `npm run tokens:build`.
 
 ## Documentation discipline
 

@@ -19,7 +19,7 @@ Small typos and clarifications are welcome.
 
 1. Copy [docs/components/_template/](docs/components/_template/) to `docs/components/your-component/`.
 2. Fill `metadata.json` and every section of `spec.md`, especially **Accessibility**.
-3. Add a row to the Components table in [docs/README.md](docs/README.md). The site nav updates from the folder — do not edit `site/src/data/nav.ts`.
+3. Add a row to the Components table in [docs/README.md](docs/README.md).
 
 ### Add a pattern
 

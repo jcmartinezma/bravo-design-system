@@ -1,42 +1,35 @@
 # Bravo Design System
-**v0.1.1**
+**v0.2.0**
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![Starter pack](https://img.shields.io/badge/starter--pack-green.svg)](docs/README.md)
 
 A **free, public starter pack** for teams building design systems with AI agents.
 
-You get structure, agent rules, sample tokens, and a small docs site so you can extend with your brand without wading through exhaustive content.
+You get structure, agent rules, sample tokens, and Storybook so you can extend with your brand without wading through exhaustive content.
 
-![Captura de pantalla del sistema Bravo](site/public/screenshot.png)
-
-## Site Demo
-[https://bravo-demo.netlify.app/](https://bravo-demo.netlify.app/)
-
+![Captura de pantalla del sistema Bravo](public/screenshot.png)
 
 ## Quick start
 
 1. **Clone** this repository (or use it as a GitHub template).
-2. Replace example values in **[docs/tokens/](docs/tokens/)** with your brand.
+2. Replace example values in **[tokens/](tokens/)** with your brand.
 3. Customize **[docs/vision/](docs/vision/)** with your brand principles, voice, and writing rules.
 4. Copy **[docs/components/_template/](docs/components/_template/)** to add new components or ask your agent to generate new ones.
 5. AI agents: start at **[AGENTS.md](AGENTS.md)**.
-6. Optional — deploy the site or run it locally.
+6. Optional — run Storybook locally to browse foundations and components.
 
-## How to set up the Astro site
+### Storybook
 
-You can host and automatically synchronize the docs site on any static hosting provider or run locally.  
-
-### Deploying to production (Netlify, Vercel, etc.)
-- Point your hosting provider to the `/site` directory as the project / base directory.
-- Keep the full repository checkout (the build reads `../docs` and `../docs/tokens` at **build time**; only the generated `dist/` is served).
-- Build command: `npm run build` (from `site/`). Connect your GitHub repository and follow the provider’s instructions to deploy.
-
-### Running locally
 ```sh
-cd site
 npm install
-npm run dev
+npm run storybook
+```
+
+Rebuild CSS from tokens when you change JSON under `tokens/`:
+
+```sh
+npm run tokens:build
 ```
 
 ## Who this is for
@@ -51,7 +44,7 @@ npm run dev
 - Templates for components and patterns
 - Agent rules and Skills
 - Governance rules
-- Docs site scaffold ([`site/`](site/), Astro)
+- Storybook for foundations and component previews
 
 ## What "agentic" means
 
@@ -71,13 +64,14 @@ The repo is structured so agents can:
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
 | [docs/vision/](docs/vision/) | Principles, voice, tone, agent workflow |
 | [docs/foundations/](docs/foundations/) | Foundation guidelines (markdown) |
-| [docs/tokens/](docs/tokens/) | Example token values (DTCG JSON) |
+| [tokens/](tokens/) | Example token values (DTCG JSON) |
 | [docs/components/](docs/components/) | Component specs (includes [button example](docs/components/button/spec.md)) |
 | [docs/patterns/](docs/patterns/) | Pattern specs (includes [empty state example](docs/patterns/example-empty-state.md)) |
 | [docs/governance/](docs/governance/) | Contribution model, versioning (for *your* system), quality bar, [decisions backlog](docs/governance/decisions-backlog.md) |
 | [.cursor/rules/](.cursor/rules/) | Cursor agent rules for extending the design system |
 | [.cursor/skills/](.cursor/skills/) | Cursor agent skills |
-| [site/](site/) | Docs site (Astro) |
+| [.storybook/](.storybook/) | Storybook config |
+| [src/](src/) | Stories and generated token CSS |
 
 ## Future enhancements
 - Improved collaboration and contribution workflow via Figma plugin.

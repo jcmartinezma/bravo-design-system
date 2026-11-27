@@ -11,7 +11,7 @@ How AI agents should use this repository when helping build or extend a design s
 
 ## Before generating UI or copy
 
-1. Read [AGENTS.md](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/AGENTS.md) at the repo root.
+1. Read [AGENTS.md](https://github.com/jcmartinezma/bravo-design-system/tree/main/AGENTS.md) at the repo root.
 2. Apply rules in `.cursor/rules/`.
 3. Follow the read order below for domain context.
 
@@ -22,7 +22,7 @@ When answering design system questions or implementing UI, consult docs in this 
 1. **Governance** — [contribution-model](../governance/contribution-model), [quality-bar](../governance/quality-bar), [decisions-backlog](../governance/decisions-backlog)
 2. **Vision** — [design-principles](design-principles), [voice-and-tone](voice-and-tone), [writing-guidelines](writing-guidelines)
 3. **Foundations** — [color](../foundations/color), [typography](../foundations/typography), [spacing](../foundations/spacing), [effects](../foundations/effects), [motion](../foundations/motion), [accessibility](../foundations/accessibility), [tokens catalog](../foundations/tokens)
-4. **Token values** — `docs/tokens/core/`, `semantic/`, and `composite/` (example DTCG JSON)
+4. **Token values** — `tokens/core/`, `semantic/`, and `composite/` (example DTCG JSON)
 5. **Patterns** — check `docs/patterns/` for existing compositions
 6. **Components** — check `docs/components/` for individual element specs
 
@@ -38,7 +38,7 @@ If a guideline, token, component spec, or pattern does not exist:
 
 ## When adding documentation
 
-- Copy from [components/_template/](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/components/_template) or [patterns/_template.md](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/patterns/_template.md).
+- Copy from [components/_template/](https://github.com/jcmartinezma/bravo-design-system/tree/main/docs/components/_template) or [patterns/_template.md](https://github.com/jcmartinezma/bravo-design-system/tree/main/docs/patterns/_template.md).
 - Update [docs/README](/README) with links to new files.
 - Cross-link related vision and foundation docs.
 

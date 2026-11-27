@@ -1,0 +1,99 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+import { ColorPalette } from './ColorPalette';
+
+<Meta title="Foundations/Color" />
+
+# Color
+
+Color defines hierarchy, state, and brand. This doc describes *roles* (what each color is for). Values live in the [token files](?path=/docs/foundations-tokens--docs).
+
+This starter includes **example tokens only** — extend or replace them for your brand.
+
+## Token files
+
+<table>
+  <thead>
+    <tr>
+      <th>Layer</th>
+      <th>File</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Core</td>
+      <td><code>tokens/core/color.core.json</code></td>
+      <td>Raw palette (hex ramps)</td>
+    </tr>
+    <tr>
+      <td>Semantic</td>
+      <td><code>tokens/semantic/color.semantic.json</code></td>
+      <td>UI roles referencing core</td>
+    </tr>
+  </tbody>
+</table>
+
+Edit those JSON files to change colors. Regenerate CSS with Style Dictionary when values change.
+
+## Core palette
+
+Primitive ramps from `color.core.json`. Each swatch shows the token name (for example `color.gray.100`) and hex value.
+
+<ColorPalette />
+
+## Semantic colors
+
+Semantic colors follow:
+
+<pre>{`color-{element}-{hierarchy}-{state}`}</pre>
+
+<table>
+  <thead>
+    <tr>
+      <th>Part</th>
+      <th>Values (examples)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Element</strong></td>
+      <td>
+        <code>bg</code>, <code>surface</code>, <code>text</code>, <code>border</code>,{' '}
+        <code>icon</code>, <code>shadow</code>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Hierarchy</strong></td>
+      <td>
+        <code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>accent</code>,{' '}
+        <code>success</code>, <code>warning</code>, <code>danger</code>, <code>info</code>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>State</strong></td>
+      <td>
+        default (no suffix / <code>$root</code>), <code>hover</code>, <code>active</code>,{' '}
+        <code>disabled</code>, <code>inverse</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+UI roles live in `color.semantic.json` and alias core tokens.
+
+## Light and dark
+
+Light is the default mode. Optional dark overrides live in `tokens/theme/dark/color.semantic.json`.
+
+## Accessibility
+
+- Text on backgrounds must meet **WCAG 2.1 AA** contrast (4.5:1 normal text, 3:1 large text).
+- Do not rely on color alone — pair with icons, labels, or patterns.
+- Test semantic colors with common color-vision deficiencies.
+
+## Related docs
+
+- [Tokens](?path=/docs/foundations-tokens--docs)
+- [Accessibility](?path=/docs/foundations-accessibility--docs)
+- [Effects](?path=/docs/foundations-effects--docs)

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "radius": {
+    "$description": "Semantic corner-radius roles for controls, surfaces, and pills.",
+    "$type": "dimension",
+    "none": {
+      "$value": "{radius.0}",
+      "$description": "radius-none — sharp corners (tables, dense data UI)"
+    },
+    "sm": {
+      "$value": "{radius.100}",
+      "$description": "radius-sm — subtle rounding for compact controls"
+    },
+    "md": {
+      "$value": "{radius.200}",
+      "$description": "radius-md — default rounding for buttons and inputs"
+    },
+    "lg": {
+      "$value": "{radius.300}",
+      "$description": "radius-lg — softer rounding for cards and panels"
+    },
+    "rounded": {
+      "$value": "{radius.full}",
+      "$description": "radius-rounded — fully rounded pills and avatars"
+    }
+  }
+}

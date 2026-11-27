@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "motion": {
+    "$description": "Semantic motion roles referencing core motion.duration, motion.delay, and motion.curve",
+    "speed": {
+      "$description": "How long a transition runs",
+      "instant": {
+        "$type": "duration",
+        "$value": "{motion.duration.0}",
+        "$description": "motion-speed-instant — no animation"
+      },
+      "fast": {
+        "$type": "duration",
+        "$value": "{motion.duration.100}",
+        "$description": "motion-speed-fast — micro-interactions and quick feedback"
+      },
+      "normal": {
+        "$type": "duration",
+        "$value": "{motion.duration.200}",
+        "$description": "motion-speed-normal — standard UI transitions"
+      },
+      "slow": {
+        "$type": "duration",
+        "$value": "{motion.duration.300}",
+        "$description": "motion-speed-slow — larger moves (panels, page emphasis)"
+      }
+    },
+    "delay": {
+      "$description": "Wait before a transition starts",
+      "$type": "duration",
+      "none": {
+        "$value": "{motion.delay.0}",
+        "$description": "motion-delay-none — start immediately"
+      },
+      "short": {
+        "$value": "{motion.delay.100}",
+        "$description": "motion-delay-short — brief stagger between sequenced motions"
+      },
+      "medium": {
+        "$value": "{motion.delay.200}",
+        "$description": "motion-delay-medium — noticeable stagger"
+      },
+      "long": {
+        "$value": "{motion.delay.300}",
+        "$description": "motion-delay-long — pronounced stagger"
+      }
+    },
+    "easing": {
+      "$description": "Semantic easing roles referencing core cubic-bezier curves",
+      "$type": "cubicBezier",
+      "linear": {
+        "$value": "{motion.curve.linear}",
+        "$description": "motion-easing-linear — constant speed"
+      },
+      "in": {
+        "$value": "{motion.curve.ease-in}",
+        "$description": "motion-easing-in — starts slow, speeds up (exits, dismissals)"
+      },
+      "out": {
+        "$value": "{motion.curve.ease-out}",
+        "$description": "motion-easing-out — starts fast, slows down (entrances, settles)"
+      },
+      "in-out": {
+        "$value": "{motion.curve.ease-in-out}",
+        "$description": "motion-easing-in-out — smooth at both ends (default UI transitions)"
+      }
+    }
+  }
+}

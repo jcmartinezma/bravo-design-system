@@ -1,0 +1,125 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "motion": {
+    "duration": {
+      "0": {
+        "$type": "duration",
+        "$value": {
+          "value": 0,
+          "unit": "ms"
+        },
+        "$description": "0 ms. The change is instant."
+      },
+      "100": {
+        "$type": "duration",
+        "$value": {
+          "value": 180,
+          "unit": "ms"
+        },
+        "$description": "180 ms"
+      },
+      "200": {
+        "$type": "duration",
+        "$value": {
+          "value": 252,
+          "unit": "ms"
+        },
+        "$description": "252 ms"
+      },
+      "300": {
+        "$type": "duration",
+        "$value": {
+          "value": 353,
+          "unit": "ms"
+        },
+        "$description": "353 ms"
+      }
+    },
+    "delay": {
+      "0": {
+        "$type": "duration",
+        "$value": {
+          "value": 0,
+          "unit": "ms"
+        },
+        "$description": "0 ms. It starts at once."
+      },
+      "100": {
+        "$type": "duration",
+        "$value": {
+          "value": 120,
+          "unit": "ms"
+        },
+        "$description": "120 ms"
+      },
+      "200": {
+        "$type": "duration",
+        "$value": {
+          "value": 168,
+          "unit": "ms"
+        },
+        "$description": "168 ms"
+      },
+      "300": {
+        "$type": "duration",
+        "$value": {
+          "value": 235,
+          "unit": "ms"
+        },
+        "$description": "235 ms"
+      }
+    },
+    "curve": {
+      "linear": {
+        "$type": "cubicBezier",
+        "$value": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "$description": "linear"
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.25,
+          0.1,
+          0.25,
+          1
+        ],
+        "$description": "ease"
+      },
+      "ease-in": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.42,
+          0,
+          1,
+          1
+        ],
+        "$description": "ease-in"
+      },
+      "ease-out": {
+        "$type": "cubicBezier",
+        "$value": [
+          0,
+          0,
+          0.58,
+          1
+        ],
+        "$description": "ease-out"
+      },
+      "ease-in-out": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.42,
+          0,
+          0.58,
+          1
+        ],
+        "$description": "ease-in-out"
+      }
+    }
+  }
+}

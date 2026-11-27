@@ -1,0 +1,364 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "font": {
+    "family": {
+      "font-1": {
+        "$type": "fontFamily",
+        "$value": "Domine",
+        "$description": "Font family 1."
+      },
+      "font-2": {
+        "$type": "fontFamily",
+        "$value": "Asap",
+        "$description": "Font family 2."
+      },
+      "font-3": {
+        "$type": "fontFamily",
+        "$value": "IBM Plex Mono",
+        "$description": "Font family 3."
+      }
+    },
+    "size": {
+      "100": {
+        "$type": "dimension",
+        "$value": {
+          "value": 12,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0.75,
+            "unit": "rem"
+          }
+        },
+        "$description": "12 px · step -1"
+      },
+      "200": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 1,
+            "unit": "rem"
+          }
+        },
+        "$description": "16 px · step 0"
+      },
+      "300": {
+        "$type": "dimension",
+        "$value": {
+          "value": 21,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 1.3125,
+            "unit": "rem"
+          }
+        },
+        "$description": "21 px · step 1"
+      },
+      "400": {
+        "$type": "dimension",
+        "$value": {
+          "value": 28,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 1.75,
+            "unit": "rem"
+          }
+        },
+        "$description": "28 px · step 2"
+      },
+      "500": {
+        "$type": "dimension",
+        "$value": {
+          "value": 38,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 2.375,
+            "unit": "rem"
+          }
+        },
+        "$description": "38 px · step 3"
+      },
+      "600": {
+        "$type": "dimension",
+        "$value": {
+          "value": 51,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 3.1875,
+            "unit": "rem"
+          }
+        },
+        "$description": "51 px · step 4"
+      },
+      "700": {
+        "$type": "dimension",
+        "$value": {
+          "value": 67,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 4.1875,
+            "unit": "rem"
+          }
+        },
+        "$description": "67 px · step 5"
+      }
+    },
+    "height": {
+      "100": {
+        "$type": "dimension",
+        "$value": {
+          "value": 19,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 1.1875,
+            "unit": "rem"
+          }
+        },
+        "$description": "19 px · step -1"
+      },
+      "200": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 1.5,
+            "unit": "rem"
+          }
+        },
+        "$description": "24 px · step 0"
+      },
+      "300": {
+        "$type": "dimension",
+        "$value": {
+          "value": 30,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 1.875,
+            "unit": "rem"
+          }
+        },
+        "$description": "29.8 px · step 1"
+      },
+      "400": {
+        "$type": "dimension",
+        "$value": {
+          "value": 37.5,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 2.3438,
+            "unit": "rem"
+          }
+        },
+        "$description": "37.5 px · step 2"
+      },
+      "500": {
+        "$type": "dimension",
+        "$value": {
+          "value": 48,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 3,
+            "unit": "rem"
+          }
+        },
+        "$description": "47.9 px · step 3"
+      },
+      "600": {
+        "$type": "dimension",
+        "$value": {
+          "value": 60,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 3.75,
+            "unit": "rem"
+          }
+        },
+        "$description": "60.2 px · step 4"
+      },
+      "700": {
+        "$type": "dimension",
+        "$value": {
+          "value": 73.5,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 4.5938,
+            "unit": "rem"
+          }
+        },
+        "$description": "73.7 px · step 5"
+      }
+    },
+    "spacing": {
+      "100": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1.5,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0.0938,
+            "unit": "rem"
+          }
+        },
+        "$description": "1.4 px · step -1"
+      },
+      "200": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1.5,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0.0938,
+            "unit": "rem"
+          }
+        },
+        "$description": "1.6 px · step 0"
+      },
+      "300": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1.5,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0.0938,
+            "unit": "rem"
+          }
+        },
+        "$description": "1.7 px · step 1"
+      },
+      "400": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1.5,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0.0938,
+            "unit": "rem"
+          }
+        },
+        "$description": "1.7 px · step 2"
+      },
+      "500": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1.5,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0.0938,
+            "unit": "rem"
+          }
+        },
+        "$description": "1.5 px · step 3"
+      },
+      "600": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0.0625,
+            "unit": "rem"
+          }
+        },
+        "$description": "1 px · step 4"
+      },
+      "700": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0,
+            "unit": "rem"
+          }
+        },
+        "$description": "0 px · step 5"
+      }
+    },
+    "weight": {
+      "01": {
+        "$type": "fontWeight",
+        "$value": 200,
+        "$description": "200."
+      },
+      "02": {
+        "$type": "fontWeight",
+        "$value": 300,
+        "$description": "300."
+      },
+      "03": {
+        "$type": "fontWeight",
+        "$value": 400,
+        "$description": "400."
+      },
+      "04": {
+        "$type": "fontWeight",
+        "$value": 500,
+        "$description": "500."
+      },
+      "05": {
+        "$type": "fontWeight",
+        "$value": 600,
+        "$description": "600."
+      },
+      "06": {
+        "$type": "fontWeight",
+        "$value": 700,
+        "$description": "700."
+      },
+      "07": {
+        "$type": "fontWeight",
+        "$value": 800,
+        "$description": "800."
+      },
+      "08": {
+        "$type": "fontWeight",
+        "$value": 900,
+        "$description": "900."
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "blur": {
+    "$description": "Semantic blur roles for backdrop filters and frosted glass effects.",
+    "$type": "dimension",
+    "none": {
+      "$value": "{blur.0}",
+      "$description": "blur-none — no blur"
+    },
+    "sm": {
+      "$value": "{blur.100}",
+      "$description": "blur-sm — subtle frosted surfaces"
+    },
+    "md": {
+      "$value": "{blur.200}",
+      "$description": "blur-md — default backdrop blur"
+    },
+    "lg": {
+      "$value": "{blur.300}",
+      "$description": "blur-lg — strong frosted overlays"
+    },
+    "xl": {
+      "$value": "{blur.400}",
+      "$description": "blur-xl — maximum blur"
+    }
+  }
+}

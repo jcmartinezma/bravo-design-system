@@ -31,12 +31,12 @@ Worked example: `docs/components/button/`.
    - `name`, `nodeId`, `componentKey`, `fileKey` (and `assetId` / `libraryKey` when present)
 4. Fill `metadata.description`, `path`, and `page` from Figma and the user.
 5. Fill every section of `spec.md` (patterns, anti-patterns, variants, **Accessibility**). Use token **names**, not raw hex/px. Do not invent product rules.
-6. Add a row in [docs/README.md](../../../docs/README.md). The docs site nav updates automatically — do **not** edit `site/src/data/nav.ts`.
-7. Point the user at `/components/{slug}` after `cd site && npm run dev`.
+6. Add a row in [docs/README.md](../../../docs/README.md).
+7. Point the user at Storybook (`npm run storybook`) if a story exists for the component.
 
 ## Do not
 
 - Publish `_template` as a component.
 - Create a loose `docs/components/{name}.md` (always a folder).
 - Write the design back into Figma (use **component-sync** only to validate).
-- Add npm packages or change site routing.
+- Add npm packages unless the user asked.

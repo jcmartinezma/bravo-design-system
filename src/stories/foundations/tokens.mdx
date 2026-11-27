@@ -1,0 +1,167 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Tokens" />
+
+# Tokens
+
+The design system includes a collection of tokens ready to use or customize.
+
+```
+tokens/
+├── core/                 # Layer 1 — raw values (hex, px, ms, font stacks)
+│   ├── color.core.json
+│   ├── spacing.core.json
+│   ├── typography.core.json
+│   ├── motion.core.json
+│   ├── radius.core.json
+│   ├── shadow.core.json
+│   └── border.core.json
+├── semantic/             # Layer 2 — UI roles referencing core
+│   ├── color.semantic.json
+│   ├── spacing.semantic.json
+│   ├── typography.semantic.json
+│   ├── motion.semantic.json
+│   └── radius.semantic.json
+├── composite/            # Layer 2.5 — multi-property DTCG composites
+│   ├── typography.composite.json
+│   ├── shadow.composite.json
+│   ├── motion.composite.json
+│   ├── border.composite.json
+│   └── gradient.composite.json
+└── theme/                # Layer 2b — per-mode semantic overrides
+    └── dark/
+        └── color.semantic.json   # dark aliases; light = semantic/ default
+```
+
+## Format
+
+All token files use [DTCG](https://www.designtokens.org/tr/2025.10/format/) JSON:
+
+- `$schema`, `$value`, `$type`, `$description`
+- Semantic and composite tokens reference other tokens with <code>{'{group.token.step}'}</code> (e.g. <code>{'{color.gray.100}'}</code>)
+- Default interactive state uses <code>$root</code> when sibling states exist
+- **Composite** types (`typography`, `shadow`, `transition`, `border`, `gradient`) group several sub-values that are applied together
+
+## Layer rules
+
+<table>
+  <thead>
+    <tr>
+      <th>Layer</th>
+      <th>Contains</th>
+      <th>Must not contain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Core</strong></td>
+      <td>Raw values only</td>
+      <td>Semantic roles, component names</td>
+    </tr>
+    <tr>
+      <td><strong>Semantic</strong></td>
+      <td>Roles + references to core</td>
+      <td>Hardcoded hex/px (use references)</td>
+    </tr>
+    <tr>
+      <td><strong>Composite</strong></td>
+      <td>Multi-property styles referencing core/semantic</td>
+      <td>Component names, raw palettes</td>
+    </tr>
+    <tr>
+      <td><strong>Theme</strong></td>
+      <td>Mode-specific semantic overrides</td>
+      <td>Duplicate core palettes</td>
+    </tr>
+    <tr>
+      <td><strong>Component</strong> (future)</td>
+      <td>
+        <code>button.bg</code> → <code>{'{color.bg.action.intense}'}</code>
+      </td>
+      <td>Raw values</td>
+    </tr>
+  </tbody>
+</table>
+
+## Figma mapping
+
+Git (`tokens/`) is the source of truth. When syncing into Figma Variables, mirror the same layers:
+
+<table>
+  <thead>
+    <tr>
+      <th>Repo</th>
+      <th>Figma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>tokens/core/</code></td>
+      <td>Collection <strong>Core</strong> (raw values)</td>
+    </tr>
+    <tr>
+      <td><code>tokens/semantic/</code></td>
+      <td>Collection <strong>Semantic</strong> (aliases to Core)</td>
+    </tr>
+    <tr>
+      <td><code>tokens/composite/</code></td>
+      <td>Text styles, effect styles, and paint styles for gradients (not variables)</td>
+    </tr>
+    <tr>
+      <td><code>tokens/theme/dark/</code></td>
+      <td>Extra mode on Semantic (Dark; light = default semantic)</td>
+    </tr>
+  </tbody>
+</table>
+
+Follow the project skill [`.cursor/skills/figma-token-sync/SKILL.md`](https://github.com/jcmartinezma/bravo-design-system/tree/main/.cursor/skills/figma-token-sync/SKILL.md).
+
+## Build (CSS)
+
+Generate CSS custom properties from these JSON files with Style Dictionary (or the previous site pipeline until migration is complete). Point the tool at:
+
+```js
+source: [
+  'tokens/core/**/*.json',
+  'tokens/semantic/**/*.json',
+  'tokens/composite/**/*.json',
+  'tokens/theme/dark/**/*.json',
+]
+```
+
+## Foundation guides
+
+<table>
+  <thead>
+    <tr>
+      <th>Foundation</th>
+      <th>Guide</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Color</td>
+      <td><a href="?path=/docs/foundations-color--docs">Color</a></td>
+    </tr>
+    <tr>
+      <td>Spacing</td>
+      <td><a href="?path=/docs/foundations-spacing--docs">Spacing</a></td>
+    </tr>
+    <tr>
+      <td>Typography</td>
+      <td><a href="?path=/docs/foundations-typography--docs">Typography</a></td>
+    </tr>
+    <tr>
+      <td>Iconography</td>
+      <td><a href="?path=/docs/foundations-iconography--docs">Iconography</a></td>
+    </tr>
+    <tr>
+      <td>Effects</td>
+      <td><a href="?path=/docs/foundations-effects--docs">Effects</a></td>
+    </tr>
+    <tr>
+      <td>Motion</td>
+      <td><a href="?path=/docs/foundations-motion--docs">Motion</a></td>
+    </tr>
+  </tbody>
+</table>

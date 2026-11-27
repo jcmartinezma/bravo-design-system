@@ -1,0 +1,31 @@
+---
+description: Maintainer-only — developing this starter pack (local, not published)
+alwaysApply: true
+---
+
+# Project development (local)
+
+You are helping **maintain the agentic-design-system starter pack itself**.
+
+This is different from helping someone *use* the starter to build their design system.
+
+## Local files (gitignored — not shipped)
+
+1. Read [`.cursor/AGENTS.dev.md`](../AGENTS.dev.md) for maintainer agent guidance.
+2. Read [`.cursor/plans/PLAN.md`](../plans/PLAN.md) for roadmap, phases, and the simplicity rule.
+3. Do not copy maintainer roadmap or tooling war stories into published `docs/` or root `AGENTS.md`.
+
+## Simplicity (tooling)
+
+Prefer the smallest solution that works for `npm run storybook` / `npm run tokens:build`. Do not add Node path helpers, markdown plugins, cache scripts, or `@types/*` “just in case.”
+
+Details: `.cursor/plans/PLAN.md` and `.cursor/AGENTS.dev.md`.
+
+## Separation rule
+
+| Audience | Where guidance lives |
+|----------|----------------------|
+| Teams building *their* design system | `AGENTS.md`, `docs/`, other `.cursor/rules/*.mdc` |
+| Maintainers of *this* starter repo | `.cursor/AGENTS.dev.md`, `.cursor/plans/PLAN.md`, this rule |
+
+When unclear, prefer the published design-system guides and ask before adding maintainer notes to synced files.

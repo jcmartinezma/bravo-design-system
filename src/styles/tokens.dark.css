@@ -1,0 +1,364 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+[data-theme="dark"] {
+  --color-bg-action-active: var(--color-gray-700); /** color-bg-action-active — Interactive control roles (buttons, links, toggles). Pressed or active state. */
+  --color-bg-action-disabled: var(--color-gray-800); /** color-bg-action-disabled — Interactive control roles (buttons, links, toggles). Disabled state. */
+  --color-bg-action-error-active: var(--color-red-700); /** color-bg-action-error-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Pressed or active state. */
+  --color-bg-action-error-disabled: var(--color-gray-800); /** color-bg-action-error-disabled — Interactive control roles (buttons, links, toggles). Error / destructive variant. Disabled state. */
+  --color-bg-action-error-hover: var(--color-red-800); /** color-bg-action-error-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Hover state. */
+  --color-bg-action-error-intense-active: var(--color-red-800); /** color-bg-action-error-intense-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Highest emphasis / solid treatment. Pressed or active state. */
+  --color-bg-action-error-intense-hover: var(--color-red-700); /** color-bg-action-error-intense-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Highest emphasis / solid treatment. Hover state. */
+  --color-bg-action-error-intense: var(--color-red-600); /** color-bg-action-error-intense — Interactive control roles (buttons, links, toggles). Error / destructive variant. Highest emphasis / solid treatment. */
+  --color-bg-action-error-subtle-active: var(--color-red-800); /** color-bg-action-error-subtle-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Lower emphasis / softer treatment. Pressed or active state. */
+  --color-bg-action-error-subtle-hover: var(--color-red-900); /** color-bg-action-error-subtle-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Lower emphasis / softer treatment. Hover state. */
+  --color-bg-action-error-subtle: var(--color-red-950); /** color-bg-action-error-subtle — Interactive control roles (buttons, links, toggles). Error / destructive variant. Lower emphasis / softer treatment. */
+  --color-bg-action-error: var(--color-red-900); /** color-bg-action-error — Interactive control roles (buttons, links, toggles). Error / destructive variant. */
+  --color-bg-action-hover: var(--color-gray-800); /** color-bg-action-hover — Interactive control roles (buttons, links, toggles). Hover state. */
+  --color-bg-action-intense-active: var(--color-gray-800); /** color-bg-action-intense-active — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment. Pressed or active state. */
+  --color-bg-action-intense-hover: var(--color-gray-700); /** color-bg-action-intense-hover — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment. Hover state. */
+  --color-bg-action-intense: var(--color-gray-300); /** color-bg-action-intense — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment. */
+  --color-bg-action-subtle-active: var(--color-gray-800); /** color-bg-action-subtle-active — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Pressed or active state. */
+  --color-bg-action-subtle-hover: var(--color-gray-900); /** color-bg-action-subtle-hover — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Hover state. */
+  --color-bg-action-subtle: var(--color-gray-950); /** color-bg-action-subtle — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. */
+  --color-bg-action-success-active: var(--color-green-700); /** color-bg-action-success-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Pressed or active state. */
+  --color-bg-action-success-disabled: var(--color-gray-800); /** color-bg-action-success-disabled — Interactive control roles (buttons, links, toggles). Success / positive variant. Disabled state. */
+  --color-bg-action-success-hover: var(--color-green-800); /** color-bg-action-success-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Hover state. */
+  --color-bg-action-success-intense-active: var(--color-green-800); /** color-bg-action-success-intense-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Highest emphasis / solid treatment. Pressed or active state. */
+  --color-bg-action-success-intense-hover: var(--color-green-700); /** color-bg-action-success-intense-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Highest emphasis / solid treatment. Hover state. */
+  --color-bg-action-success-intense: var(--color-green-600); /** color-bg-action-success-intense — Interactive control roles (buttons, links, toggles). Success / positive variant. Highest emphasis / solid treatment. */
+  --color-bg-action-success-subtle-active: var(--color-green-800); /** color-bg-action-success-subtle-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Lower emphasis / softer treatment. Pressed or active state. */
+  --color-bg-action-success-subtle-hover: var(--color-green-900); /** color-bg-action-success-subtle-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Lower emphasis / softer treatment. Hover state. */
+  --color-bg-action-success-subtle: var(--color-green-950); /** color-bg-action-success-subtle — Interactive control roles (buttons, links, toggles). Success / positive variant. Lower emphasis / softer treatment. */
+  --color-bg-action-success: var(--color-green-900); /** color-bg-action-success — Interactive control roles (buttons, links, toggles). Success / positive variant. */
+  --color-bg-action-warning-active: var(--color-amber-700); /** color-bg-action-warning-active — Interactive control roles (buttons, links, toggles). Warning / caution variant. Pressed or active state. */
+  --color-bg-action-warning-disabled: var(--color-gray-800); /** color-bg-action-warning-disabled — Interactive control roles (buttons, links, toggles). Warning / caution variant. Disabled state. */
+  --color-bg-action-warning-hover: var(--color-amber-800); /** color-bg-action-warning-hover — Interactive control roles (buttons, links, toggles). Warning / caution variant. Hover state. */
+  --color-bg-action-warning-intense-active: var(--color-amber-800); /** color-bg-action-warning-intense-active — Interactive control roles (buttons, links, toggles). Warning / caution variant. Highest emphasis / solid treatment. Pressed or active state. */
+  --color-bg-action-warning-intense-hover: var(--color-amber-700); /** color-bg-action-warning-intense-hover — Interactive control roles (buttons, links, toggles). Warning / caution variant. Highest emphasis / solid treatment. Hover state. */
+  --color-bg-action-warning-intense: var(--color-amber-600); /** color-bg-action-warning-intense — Interactive control roles (buttons, links, toggles). Warning / caution variant. Highest emphasis / solid treatment. */
+  --color-bg-action-warning-subtle-active: var(--color-amber-800); /** color-bg-action-warning-subtle-active — Interactive control roles (buttons, links, toggles). Warning / caution variant. Lower emphasis / softer treatment. Pressed or active state. */
+  --color-bg-action-warning-subtle-hover: var(--color-amber-900); /** color-bg-action-warning-subtle-hover — Interactive control roles (buttons, links, toggles). Warning / caution variant. Lower emphasis / softer treatment. Hover state. */
+  --color-bg-action-warning-subtle: var(--color-amber-950); /** color-bg-action-warning-subtle — Interactive control roles (buttons, links, toggles). Warning / caution variant. Lower emphasis / softer treatment. */
+  --color-bg-action-warning: var(--color-amber-900); /** color-bg-action-warning — Interactive control roles (buttons, links, toggles). Warning / caution variant. */
+  --color-bg-action: var(--color-gray-900); /** color-bg-action — Interactive control roles (buttons, links, toggles). */
+  --color-bg-brand-intense: var(--color-amber-600); /** color-bg-brand-intense — Brand accent roles. Highest emphasis / solid treatment. */
+  --color-bg-brand-subtle: var(--color-amber-950); /** color-bg-brand-subtle — Brand accent roles. Lower emphasis / softer treatment. */
+  --color-bg-brand: var(--color-amber-800); /** color-bg-brand — Brand accent roles. */
+  --color-bg-data-1: var(--color-blue-400); /** color-bg-data-1 — Categorical data visualization series. 1. */
+  --color-bg-data-2: var(--color-teal-400); /** color-bg-data-2 — Categorical data visualization series. 2. */
+  --color-bg-data-3: var(--color-amber-400); /** color-bg-data-3 — Categorical data visualization series. 3. */
+  --color-bg-data-4: var(--color-violet-400); /** color-bg-data-4 — Categorical data visualization series. 4. */
+  --color-bg-data-5: var(--color-green-400); /** color-bg-data-5 — Categorical data visualization series. 5. */
+  --color-bg-data-6: var(--color-red-400); /** color-bg-data-6 — Categorical data visualization series. 6. */
+  --color-bg-feedback-error-intense: var(--color-red-600); /** color-bg-feedback-error-intense — Status messaging roles (error, success, warning, info). Error / destructive variant. Highest emphasis / solid treatment. */
+  --color-bg-feedback-error-subtle: var(--color-red-950); /** color-bg-feedback-error-subtle — Status messaging roles (error, success, warning, info). Error / destructive variant. Lower emphasis / softer treatment. */
+  --color-bg-feedback-error: var(--color-red-900); /** color-bg-feedback-error — Status messaging roles (error, success, warning, info). Error / destructive variant. */
+  --color-bg-feedback-info-intense: var(--color-teal-600); /** color-bg-feedback-info-intense — Status messaging roles (error, success, warning, info). Informational variant. Highest emphasis / solid treatment. */
+  --color-bg-feedback-info-subtle: var(--color-teal-950); /** color-bg-feedback-info-subtle — Status messaging roles (error, success, warning, info). Informational variant. Lower emphasis / softer treatment. */
+  --color-bg-feedback-info: var(--color-teal-900); /** color-bg-feedback-info — Status messaging roles (error, success, warning, info). Informational variant. */
+  --color-bg-feedback-success-intense: var(--color-green-600); /** color-bg-feedback-success-intense — Status messaging roles (error, success, warning, info). Success / positive variant. Highest emphasis / solid treatment. */
+  --color-bg-feedback-success-subtle: var(--color-green-950); /** color-bg-feedback-success-subtle — Status messaging roles (error, success, warning, info). Success / positive variant. Lower emphasis / softer treatment. */
+  --color-bg-feedback-success: var(--color-green-900); /** color-bg-feedback-success — Status messaging roles (error, success, warning, info). Success / positive variant. */
+  --color-bg-feedback-warning-intense: var(--color-amber-600); /** color-bg-feedback-warning-intense — Status messaging roles (error, success, warning, info). Warning / caution variant. Highest emphasis / solid treatment. */
+  --color-bg-feedback-warning-subtle: var(--color-amber-950); /** color-bg-feedback-warning-subtle — Status messaging roles (error, success, warning, info). Warning / caution variant. Lower emphasis / softer treatment. */
+  --color-bg-feedback-warning: var(--color-amber-900); /** color-bg-feedback-warning — Status messaging roles (error, success, warning, info). Warning / caution variant. */
+  --color-bg-highlight-subtle: var(--color-amber-950); /** color-bg-highlight-subtle — Highlight and emphasis washes. Lower emphasis / softer treatment. */
+  --color-bg-highlight: var(--color-amber-900); /** color-bg-highlight — Highlight and emphasis washes. */
+  --color-bg-input-disabled: var(--color-gray-800); /** color-bg-input-disabled — Form field roles. Disabled state. */
+  --color-bg-input-hover: var(--color-gray-800); /** color-bg-input-hover — Form field roles. Hover state. */
+  --color-bg-input-subtle-hover: var(--color-gray-900); /** color-bg-input-subtle-hover — Form field roles. Lower emphasis / softer treatment. Hover state. */
+  --color-bg-input-subtle: var(--color-gray-950); /** color-bg-input-subtle — Form field roles. Lower emphasis / softer treatment. */
+  --color-bg-input: var(--color-gray-900); /** color-bg-input — Form field roles. */
+  --color-bg-neutral-active: var(--color-gray-600); /** color-bg-neutral-active — Neutral UI chrome without brand emphasis. Pressed or active state. */
+  --color-bg-neutral-disabled: var(--color-gray-900); /** color-bg-neutral-disabled — Neutral UI chrome without brand emphasis. Disabled state. */
+  --color-bg-neutral-hover: var(--color-gray-700); /** color-bg-neutral-hover — Neutral UI chrome without brand emphasis. Hover state. */
+  --color-bg-neutral-intense-active: var(--color-gray-200); /** color-bg-neutral-intense-active — Neutral UI chrome without brand emphasis. Highest emphasis / solid treatment. Pressed or active state. */
+  --color-bg-neutral-intense-hover: var(--color-gray-50); /** color-bg-neutral-intense-hover — Neutral UI chrome without brand emphasis. Highest emphasis / solid treatment. Hover state. */
+  --color-bg-neutral-intense-selected: var(--color-gray-300); /** color-bg-neutral-intense-selected — Neutral UI chrome without brand emphasis. Highest emphasis / solid treatment. Selected state. */
+  --color-bg-neutral-intense: var(--color-gray-100); /** color-bg-neutral-intense — Neutral UI chrome without brand emphasis. Highest emphasis / solid treatment. */
+  --color-bg-neutral-selected: var(--color-gray-900); /** color-bg-neutral-selected — Neutral UI chrome without brand emphasis. Selected state. */
+  --color-bg-neutral-strong-active: var(--color-gray-500); /** color-bg-neutral-strong-active — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Pressed or active state. */
+  --color-bg-neutral-strong-hover: var(--color-gray-600); /** color-bg-neutral-strong-hover — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Hover state. */
+  --color-bg-neutral-strong-selected: var(--color-gray-800); /** color-bg-neutral-strong-selected — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Selected state. */
+  --color-bg-neutral-strong: var(--color-gray-700); /** color-bg-neutral-strong — Neutral UI chrome without brand emphasis. Higher emphasis treatment. */
+  --color-bg-neutral-subtle-active: var(--color-gray-700); /** color-bg-neutral-subtle-active — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Pressed or active state. */
+  --color-bg-neutral-subtle-hover: var(--color-gray-800); /** color-bg-neutral-subtle-hover — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Hover state. */
+  --color-bg-neutral-subtle-selected: var(--color-gray-950); /** color-bg-neutral-subtle-selected — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Selected state. */
+  --color-bg-neutral-subtle: var(--color-gray-900); /** color-bg-neutral-subtle — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. */
+  --color-bg-neutral: var(--color-gray-800); /** color-bg-neutral — Neutral UI chrome without brand emphasis. */
+  --color-bg-surface-canvas: var(--color-gray-900); /** color-bg-surface-canvas — Page and container surface backgrounds. App canvas / page backdrop. */
+  --color-bg-surface-overlay: var(--color-gray-800); /** color-bg-surface-overlay — Page and container surface backgrounds. Modal and overlay surface. */
+  --color-bg-surface-raised: var(--color-gray-800); /** color-bg-surface-raised — Page and container surface backgrounds. Elevated surface above the canvas. */
+  --color-bg-surface-sunken: var(--color-gray-950); /** color-bg-surface-sunken — Page and container surface backgrounds. Recessed surface below the canvas. */
+  --color-bg-surface: var(--color-gray-900); /** color-bg-surface — Page and container surface backgrounds. */
+  --color-border-action-active: var(--color-gray-200); /** color-border-action-active — Interactive control roles (buttons, links, toggles). Pressed or active state. */
+  --color-border-action-disabled: var(--color-gray-700); /** color-border-action-disabled — Interactive control roles (buttons, links, toggles). Disabled state. */
+  --color-border-action-error-active: var(--color-red-200); /** color-border-action-error-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Pressed or active state. */
+  --color-border-action-error-disabled: var(--color-gray-700); /** color-border-action-error-disabled — Interactive control roles (buttons, links, toggles). Error / destructive variant. Disabled state. */
+  --color-border-action-error-hover: var(--color-red-300); /** color-border-action-error-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Hover state. */
+  --color-border-action-error: var(--color-red-400); /** color-border-action-error — Interactive control roles (buttons, links, toggles). Error / destructive variant. */
+  --color-border-action-hover: var(--color-gray-300); /** color-border-action-hover — Interactive control roles (buttons, links, toggles). Hover state. */
+  --color-border-action-intense-active: var(--color-gray-800); /** color-border-action-intense-active — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment. Pressed or active state. */
+  --color-border-action-intense-hover: var(--color-gray-700); /** color-border-action-intense-hover — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment. Hover state. */
+  --color-border-action-intense: var(--color-gray-600); /** color-border-action-intense — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment. */
+  --color-border-action-success-active: var(--color-green-200); /** color-border-action-success-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Pressed or active state. */
+  --color-border-action-success-disabled: var(--color-gray-700); /** color-border-action-success-disabled — Interactive control roles (buttons, links, toggles). Success / positive variant. Disabled state. */
+  --color-border-action-success-hover: var(--color-green-300); /** color-border-action-success-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Hover state. */
+  --color-border-action-success: var(--color-green-400); /** color-border-action-success — Interactive control roles (buttons, links, toggles). Success / positive variant. */
+  --color-border-action: var(--color-gray-400); /** color-border-action — Interactive control roles (buttons, links, toggles). */
+  --color-border-brand: var(--color-amber-400); /** color-border-brand — Brand accent roles. */
+  --color-border-data-1: var(--color-blue-400); /** color-border-data-1 — Categorical data visualization series. 1. */
+  --color-border-data-2: var(--color-teal-400); /** color-border-data-2 — Categorical data visualization series. 2. */
+  --color-border-data-3: var(--color-amber-400); /** color-border-data-3 — Categorical data visualization series. 3. */
+  --color-border-data-4: var(--color-violet-400); /** color-border-data-4 — Categorical data visualization series. 4. */
+  --color-border-data-5: var(--color-green-400); /** color-border-data-5 — Categorical data visualization series. 5. */
+  --color-border-data-6: var(--color-red-400); /** color-border-data-6 — Categorical data visualization series. 6. */
+  --color-border-feedback-error-subtle: var(--color-red-800); /** color-border-feedback-error-subtle — Status messaging roles (error, success, warning, info). Error / destructive variant. Lower emphasis / softer treatment. */
+  --color-border-feedback-error: var(--color-red-600); /** color-border-feedback-error — Status messaging roles (error, success, warning, info). Error / destructive variant. */
+  --color-border-feedback-info-subtle: var(--color-teal-800); /** color-border-feedback-info-subtle — Status messaging roles (error, success, warning, info). Informational variant. Lower emphasis / softer treatment. */
+  --color-border-feedback-info: var(--color-teal-600); /** color-border-feedback-info — Status messaging roles (error, success, warning, info). Informational variant. */
+  --color-border-feedback-success-subtle: var(--color-green-800); /** color-border-feedback-success-subtle — Status messaging roles (error, success, warning, info). Success / positive variant. Lower emphasis / softer treatment. */
+  --color-border-feedback-success: var(--color-green-600); /** color-border-feedback-success — Status messaging roles (error, success, warning, info). Success / positive variant. */
+  --color-border-feedback-warning-subtle: var(--color-amber-800); /** color-border-feedback-warning-subtle — Status messaging roles (error, success, warning, info). Warning / caution variant. Lower emphasis / softer treatment. */
+  --color-border-feedback-warning: var(--color-amber-600); /** color-border-feedback-warning — Status messaging roles (error, success, warning, info). Warning / caution variant. */
+  --color-border-input-disabled: var(--color-gray-700); /** color-border-input-disabled — Form field roles. Disabled state. */
+  --color-border-input-error-disabled: var(--color-gray-700); /** color-border-input-error-disabled — Form field roles. Error / destructive variant. Disabled state. */
+  --color-border-input-error-focus: var(--color-red-300); /** color-border-input-error-focus — Form field roles. Error / destructive variant. Focus state. */
+  --color-border-input-error-hover: var(--color-red-300); /** color-border-input-error-hover — Form field roles. Error / destructive variant. Hover state. */
+  --color-border-input-error-strong-focus: var(--color-red-200); /** color-border-input-error-strong-focus — Form field roles. Error / destructive variant. Higher emphasis treatment. Focus state. */
+  --color-border-input-error-strong-hover: var(--color-red-200); /** color-border-input-error-strong-hover — Form field roles. Error / destructive variant. Higher emphasis treatment. Hover state. */
+  --color-border-input-error-strong: var(--color-red-300); /** color-border-input-error-strong — Form field roles. Error / destructive variant. Higher emphasis treatment. */
+  --color-border-input-error: var(--color-red-400); /** color-border-input-error — Form field roles. Error / destructive variant. */
+  --color-border-input-focus: var(--color-amber-400); /** color-border-input-focus — Form field roles. Focus state. */
+  --color-border-input-hover: var(--color-gray-400); /** color-border-input-hover — Form field roles. Hover state. */
+  --color-border-input-strong-focus: var(--color-amber-400); /** color-border-input-strong-focus — Form field roles. Higher emphasis treatment. Focus state. */
+  --color-border-input-strong-hover: var(--color-gray-200); /** color-border-input-strong-hover — Form field roles. Higher emphasis treatment. Hover state. */
+  --color-border-input-strong: var(--color-gray-300); /** color-border-input-strong — Form field roles. Higher emphasis treatment. */
+  --color-border-input-success-disabled: var(--color-gray-700); /** color-border-input-success-disabled — Form field roles. Success / positive variant. Disabled state. */
+  --color-border-input-success-focus: var(--color-green-300); /** color-border-input-success-focus — Form field roles. Success / positive variant. Focus state. */
+  --color-border-input-success-hover: var(--color-green-300); /** color-border-input-success-hover — Form field roles. Success / positive variant. Hover state. */
+  --color-border-input-success-strong-focus: var(--color-green-200); /** color-border-input-success-strong-focus — Form field roles. Success / positive variant. Higher emphasis treatment. Focus state. */
+  --color-border-input-success-strong-hover: var(--color-green-200); /** color-border-input-success-strong-hover — Form field roles. Success / positive variant. Higher emphasis treatment. Hover state. */
+  --color-border-input-success-strong: var(--color-green-300); /** color-border-input-success-strong — Form field roles. Success / positive variant. Higher emphasis treatment. */
+  --color-border-input-success: var(--color-green-400); /** color-border-input-success — Form field roles. Success / positive variant. */
+  --color-border-input: var(--color-gray-500); /** color-border-input — Form field roles. */
+  --color-border-neutral-disabled: var(--color-gray-800); /** color-border-neutral-disabled — Neutral UI chrome without brand emphasis. Disabled state. */
+  --color-border-neutral-hover: var(--color-gray-600); /** color-border-neutral-hover — Neutral UI chrome without brand emphasis. Hover state. */
+  --color-border-neutral-selected: var(--color-gray-400); /** color-border-neutral-selected — Neutral UI chrome without brand emphasis. Selected state. */
+  --color-border-neutral-strong-hover: var(--color-gray-300); /** color-border-neutral-strong-hover — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Hover state. */
+  --color-border-neutral-strong: var(--color-gray-400); /** color-border-neutral-strong — Neutral UI chrome without brand emphasis. Higher emphasis treatment. */
+  --color-border-neutral-subtle-hover: var(--color-gray-700); /** color-border-neutral-subtle-hover — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Hover state. */
+  --color-border-neutral-subtle: var(--color-gray-800); /** color-border-neutral-subtle — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. */
+  --color-border-neutral: var(--color-gray-700); /** color-border-neutral — Neutral UI chrome without brand emphasis. */
+  --color-border-surface-raised: var(--color-gray-700); /** color-border-surface-raised — Page and container surface backgrounds. Elevated surface above the canvas. */
+  --color-border-surface: var(--color-gray-700); /** color-border-surface — Page and container surface backgrounds. */
+  --color-icon-action-active: var(--color-gray-50); /** color-icon-action-active — Interactive control roles (buttons, links, toggles). Pressed or active state. */
+  --color-icon-action-disabled: var(--color-gray-600); /** color-icon-action-disabled — Interactive control roles (buttons, links, toggles). Disabled state. */
+  --color-icon-action-error-active: var(--color-red-50); /** color-icon-action-error-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Pressed or active state. */
+  --color-icon-action-error-disabled: var(--color-gray-600); /** color-icon-action-error-disabled — Interactive control roles (buttons, links, toggles). Error / destructive variant. Disabled state. */
+  --color-icon-action-error-hover: var(--color-red-100); /** color-icon-action-error-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Hover state. */
+  --color-icon-action-error-strong-active: var(--color-red-50); /** color-icon-action-error-strong-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment. Pressed or active state. */
+  --color-icon-action-error-strong-hover: var(--color-red-50); /** color-icon-action-error-strong-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment. Hover state. */
+  --color-icon-action-error-strong: var(--color-red-100); /** color-icon-action-error-strong — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment. */
+  --color-icon-action-error: var(--color-red-200); /** color-icon-action-error — Interactive control roles (buttons, links, toggles). Error / destructive variant. */
+  --color-icon-action-hover: var(--color-gray-100); /** color-icon-action-hover — Interactive control roles (buttons, links, toggles). Hover state. */
+  --color-icon-action-strong-active: var(--color-gray-50); /** color-icon-action-strong-active — Interactive control roles (buttons, links, toggles). Higher emphasis treatment. Pressed or active state. */
+  --color-icon-action-strong-hover: var(--color-gray-50); /** color-icon-action-strong-hover — Interactive control roles (buttons, links, toggles). Higher emphasis treatment. Hover state. */
+  --color-icon-action-strong: var(--color-gray-100); /** color-icon-action-strong — Interactive control roles (buttons, links, toggles). Higher emphasis treatment. */
+  --color-icon-action-subtle-active: var(--color-gray-100); /** color-icon-action-subtle-active — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Pressed or active state. */
+  --color-icon-action-subtle-hover: var(--color-gray-200); /** color-icon-action-subtle-hover — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Hover state. */
+  --color-icon-action-subtle: var(--color-gray-300); /** color-icon-action-subtle — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. */
+  --color-icon-action-success-active: var(--color-green-50); /** color-icon-action-success-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Pressed or active state. */
+  --color-icon-action-success-disabled: var(--color-gray-600); /** color-icon-action-success-disabled — Interactive control roles (buttons, links, toggles). Success / positive variant. Disabled state. */
+  --color-icon-action-success-hover: var(--color-green-100); /** color-icon-action-success-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Hover state. */
+  --color-icon-action-success-strong-active: var(--color-green-50); /** color-icon-action-success-strong-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment. Pressed or active state. */
+  --color-icon-action-success-strong-hover: var(--color-green-50); /** color-icon-action-success-strong-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment. Hover state. */
+  --color-icon-action-success-strong: var(--color-green-100); /** color-icon-action-success-strong — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment. */
+  --color-icon-action-success: var(--color-green-200); /** color-icon-action-success — Interactive control roles (buttons, links, toggles). Success / positive variant. */
+  --color-icon-action: var(--color-gray-200); /** color-icon-action — Interactive control roles (buttons, links, toggles). */
+  --color-icon-brand: var(--color-amber-300); /** color-icon-brand — Brand accent roles. */
+  --color-icon-data-1: var(--color-blue-400); /** color-icon-data-1 — Categorical data visualization series. 1. */
+  --color-icon-data-2: var(--color-teal-400); /** color-icon-data-2 — Categorical data visualization series. 2. */
+  --color-icon-data-3: var(--color-amber-400); /** color-icon-data-3 — Categorical data visualization series. 3. */
+  --color-icon-data-4: var(--color-violet-400); /** color-icon-data-4 — Categorical data visualization series. 4. */
+  --color-icon-data-5: var(--color-green-400); /** color-icon-data-5 — Categorical data visualization series. 5. */
+  --color-icon-data-6: var(--color-red-400); /** color-icon-data-6 — Categorical data visualization series. 6. */
+  --color-icon-feedback-error-strong: var(--color-red-200); /** color-icon-feedback-error-strong — Status messaging roles (error, success, warning, info). Error / destructive variant. Higher emphasis treatment. */
+  --color-icon-feedback-error: var(--color-red-300); /** color-icon-feedback-error — Status messaging roles (error, success, warning, info). Error / destructive variant. */
+  --color-icon-feedback-info-strong: var(--color-teal-200); /** color-icon-feedback-info-strong — Status messaging roles (error, success, warning, info). Informational variant. Higher emphasis treatment. */
+  --color-icon-feedback-info: var(--color-teal-300); /** color-icon-feedback-info — Status messaging roles (error, success, warning, info). Informational variant. */
+  --color-icon-feedback-success-strong: var(--color-green-200); /** color-icon-feedback-success-strong — Status messaging roles (error, success, warning, info). Success / positive variant. Higher emphasis treatment. */
+  --color-icon-feedback-success: var(--color-green-300); /** color-icon-feedback-success — Status messaging roles (error, success, warning, info). Success / positive variant. */
+  --color-icon-feedback-warning-strong: var(--color-amber-200); /** color-icon-feedback-warning-strong — Status messaging roles (error, success, warning, info). Warning / caution variant. Higher emphasis treatment. */
+  --color-icon-feedback-warning: var(--color-amber-300); /** color-icon-feedback-warning — Status messaging roles (error, success, warning, info). Warning / caution variant. */
+  --color-icon-highlight: var(--color-amber-100); /** color-icon-highlight — Highlight and emphasis washes. */
+  --color-icon-input-disabled: var(--color-gray-600); /** color-icon-input-disabled — Form field roles. Disabled state. */
+  --color-icon-input-subtle: var(--color-gray-300); /** color-icon-input-subtle — Form field roles. Lower emphasis / softer treatment. */
+  --color-icon-input: var(--color-gray-100); /** color-icon-input — Form field roles. */
+  --color-icon-neutral-disabled: var(--color-gray-600); /** color-icon-neutral-disabled — Neutral UI chrome without brand emphasis. Disabled state. */
+  --color-icon-neutral-hover: var(--color-gray-100); /** color-icon-neutral-hover — Neutral UI chrome without brand emphasis. Hover state. */
+  --color-icon-neutral-selected: var(--color-gray-200); /** color-icon-neutral-selected — Neutral UI chrome without brand emphasis. Selected state. */
+  --color-icon-neutral-strong-hover: var(--color-gray-50); /** color-icon-neutral-strong-hover — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Hover state. */
+  --color-icon-neutral-strong-selected: var(--color-gray-100); /** color-icon-neutral-strong-selected — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Selected state. */
+  --color-icon-neutral-strong: var(--color-gray-50); /** color-icon-neutral-strong — Neutral UI chrome without brand emphasis. Higher emphasis treatment. */
+  --color-icon-neutral-subtle-hover: var(--color-gray-200); /** color-icon-neutral-subtle-hover — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Hover state. */
+  --color-icon-neutral-subtle-selected: var(--color-gray-300); /** color-icon-neutral-subtle-selected — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Selected state. */
+  --color-icon-neutral-subtle: var(--color-gray-300); /** color-icon-neutral-subtle — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. */
+  --color-icon-neutral: var(--color-gray-200); /** color-icon-neutral — Neutral UI chrome without brand emphasis. */
+  --color-icon-on-action-disabled: var(--color-gray-600); /** color-icon-on-action-disabled — Foreground that sits on action backgrounds. Disabled state. */
+  --color-icon-on-action-error-disabled: var(--color-gray-600); /** color-icon-on-action-error-disabled — Foreground that sits on action backgrounds. Error / destructive variant. Disabled state. */
+  --color-icon-on-action-error-intense: var(--color-white); /** color-icon-on-action-error-intense — Foreground that sits on action backgrounds. Error / destructive variant. Highest emphasis / solid treatment. */
+  --color-icon-on-action-error: var(--color-red-100); /** color-icon-on-action-error — Foreground that sits on action backgrounds. Error / destructive variant. */
+  --color-icon-on-action-intense: var(--color-white); /** color-icon-on-action-intense — Foreground that sits on action backgrounds. Highest emphasis / solid treatment. */
+  --color-icon-on-action-success-disabled: var(--color-gray-600); /** color-icon-on-action-success-disabled — Foreground that sits on action backgrounds. Success / positive variant. Disabled state. */
+  --color-icon-on-action-success-intense: var(--color-white); /** color-icon-on-action-success-intense — Foreground that sits on action backgrounds. Success / positive variant. Highest emphasis / solid treatment. */
+  --color-icon-on-action-success: var(--color-green-100); /** color-icon-on-action-success — Foreground that sits on action backgrounds. Success / positive variant. */
+  --color-icon-on-action-warning-disabled: var(--color-gray-600); /** color-icon-on-action-warning-disabled — Foreground that sits on action backgrounds. Warning / caution variant. Disabled state. */
+  --color-icon-on-action-warning-intense: var(--color-white); /** color-icon-on-action-warning-intense — Foreground that sits on action backgrounds. Warning / caution variant. Highest emphasis / solid treatment. */
+  --color-icon-on-action-warning: var(--color-amber-100); /** color-icon-on-action-warning — Foreground that sits on action backgrounds. Warning / caution variant. */
+  --color-icon-on-action: var(--color-gray-100); /** color-icon-on-action — Foreground that sits on action backgrounds. */
+  --color-icon-on-feedback-error-intense: var(--color-white); /** color-icon-on-feedback-error-intense — Foreground that sits on feedback backgrounds. Error / destructive variant. Highest emphasis / solid treatment. */
+  --color-icon-on-feedback-error-subtle: var(--color-red-200); /** color-icon-on-feedback-error-subtle — Foreground that sits on feedback backgrounds. Error / destructive variant. Lower emphasis / softer treatment. */
+  --color-icon-on-feedback-error: var(--color-red-100); /** color-icon-on-feedback-error — Foreground that sits on feedback backgrounds. Error / destructive variant. */
+  --color-icon-on-feedback-info-intense: var(--color-white); /** color-icon-on-feedback-info-intense — Foreground that sits on feedback backgrounds. Informational variant. Highest emphasis / solid treatment. */
+  --color-icon-on-feedback-info-subtle: var(--color-teal-200); /** color-icon-on-feedback-info-subtle — Foreground that sits on feedback backgrounds. Informational variant. Lower emphasis / softer treatment. */
+  --color-icon-on-feedback-info: var(--color-teal-100); /** color-icon-on-feedback-info — Foreground that sits on feedback backgrounds. Informational variant. */
+  --color-icon-on-feedback-success-intense: var(--color-white); /** color-icon-on-feedback-success-intense — Foreground that sits on feedback backgrounds. Success / positive variant. Highest emphasis / solid treatment. */
+  --color-icon-on-feedback-success-subtle: var(--color-green-200); /** color-icon-on-feedback-success-subtle — Foreground that sits on feedback backgrounds. Success / positive variant. Lower emphasis / softer treatment. */
+  --color-icon-on-feedback-success: var(--color-green-100); /** color-icon-on-feedback-success — Foreground that sits on feedback backgrounds. Success / positive variant. */
+  --color-icon-on-feedback-warning-intense: var(--color-white); /** color-icon-on-feedback-warning-intense — Foreground that sits on feedback backgrounds. Warning / caution variant. Highest emphasis / solid treatment. */
+  --color-icon-on-feedback-warning-subtle: var(--color-amber-200); /** color-icon-on-feedback-warning-subtle — Foreground that sits on feedback backgrounds. Warning / caution variant. Lower emphasis / softer treatment. */
+  --color-icon-on-feedback-warning: var(--color-amber-100); /** color-icon-on-feedback-warning — Foreground that sits on feedback backgrounds. Warning / caution variant. */
+  --color-icon-on-input-disabled: var(--color-gray-600); /** color-icon-on-input-disabled — Foreground that sits on input backgrounds. Disabled state. */
+  --color-icon-on-input-subtle: var(--color-gray-300); /** color-icon-on-input-subtle — Foreground that sits on input backgrounds. Lower emphasis / softer treatment. */
+  --color-icon-on-input: var(--color-gray-100); /** color-icon-on-input — Foreground that sits on input backgrounds. */
+  --color-icon-on-neutral-intense: var(--color-gray-950); /** color-icon-on-neutral-intense — Foreground that sits on neutral backgrounds. Highest emphasis / solid treatment. */
+  --color-icon-on-neutral-strong: var(--color-white); /** color-icon-on-neutral-strong — Foreground that sits on neutral backgrounds. Higher emphasis treatment. */
+  --color-icon-on-neutral-subtle: var(--color-gray-100); /** color-icon-on-neutral-subtle — Foreground that sits on neutral backgrounds. Lower emphasis / softer treatment. */
+  --color-icon-on-neutral: var(--color-gray-50); /** color-icon-on-neutral — Foreground that sits on neutral backgrounds. */
+  --color-icon-surface-strong: var(--color-gray-50); /** color-icon-surface-strong — Page and container surface backgrounds. Higher emphasis treatment. */
+  --color-icon-surface-subtle: var(--color-gray-300); /** color-icon-surface-subtle — Page and container surface backgrounds. Lower emphasis / softer treatment. */
+  --color-icon-surface: var(--color-gray-100); /** color-icon-surface — Page and container surface backgrounds. */
+  --color-outline-focus: var(--color-amber-400); /** color-outline-focus — Focus state. */
+  --color-text-accent-amber-intense: var(--color-amber-50); /** color-text-accent-amber-intense — Tinted accent text by hue. amber Highest emphasis / solid treatment. */
+  --color-text-accent-amber-minimal: var(--color-amber-400); /** color-text-accent-amber-minimal — Tinted accent text by hue. amber Lowest emphasis treatment. */
+  --color-text-accent-amber-strong: var(--color-amber-100); /** color-text-accent-amber-strong — Tinted accent text by hue. amber Higher emphasis treatment. */
+  --color-text-accent-amber-subtle: var(--color-amber-300); /** color-text-accent-amber-subtle — Tinted accent text by hue. amber Lower emphasis / softer treatment. */
+  --color-text-accent-amber: var(--color-amber-200); /** color-text-accent-amber — Tinted accent text by hue. amber. */
+  --color-text-accent-blue-intense: var(--color-blue-50); /** color-text-accent-blue-intense — Tinted accent text by hue. blue Highest emphasis / solid treatment. */
+  --color-text-accent-blue-minimal: var(--color-blue-400); /** color-text-accent-blue-minimal — Tinted accent text by hue. blue Lowest emphasis treatment. */
+  --color-text-accent-blue-strong: var(--color-blue-100); /** color-text-accent-blue-strong — Tinted accent text by hue. blue Higher emphasis treatment. */
+  --color-text-accent-blue-subtle: var(--color-blue-300); /** color-text-accent-blue-subtle — Tinted accent text by hue. blue Lower emphasis / softer treatment. */
+  --color-text-accent-blue: var(--color-blue-200); /** color-text-accent-blue — Tinted accent text by hue. blue. */
+  --color-text-accent-green-intense: var(--color-green-50); /** color-text-accent-green-intense — Tinted accent text by hue. green Highest emphasis / solid treatment. */
+  --color-text-accent-green-minimal: var(--color-green-400); /** color-text-accent-green-minimal — Tinted accent text by hue. green Lowest emphasis treatment. */
+  --color-text-accent-green-strong: var(--color-green-100); /** color-text-accent-green-strong — Tinted accent text by hue. green Higher emphasis treatment. */
+  --color-text-accent-green-subtle: var(--color-green-300); /** color-text-accent-green-subtle — Tinted accent text by hue. green Lower emphasis / softer treatment. */
+  --color-text-accent-green: var(--color-green-200); /** color-text-accent-green — Tinted accent text by hue. green. */
+  --color-text-accent-red-intense: var(--color-red-50); /** color-text-accent-red-intense — Tinted accent text by hue. red Highest emphasis / solid treatment. */
+  --color-text-accent-red-minimal: var(--color-red-400); /** color-text-accent-red-minimal — Tinted accent text by hue. red Lowest emphasis treatment. */
+  --color-text-accent-red-strong: var(--color-red-100); /** color-text-accent-red-strong — Tinted accent text by hue. red Higher emphasis treatment. */
+  --color-text-accent-red-subtle: var(--color-red-300); /** color-text-accent-red-subtle — Tinted accent text by hue. red Lower emphasis / softer treatment. */
+  --color-text-accent-red: var(--color-red-200); /** color-text-accent-red — Tinted accent text by hue. red. */
+  --color-text-accent-teal-intense: var(--color-teal-50); /** color-text-accent-teal-intense — Tinted accent text by hue. teal Highest emphasis / solid treatment. */
+  --color-text-accent-teal-minimal: var(--color-teal-400); /** color-text-accent-teal-minimal — Tinted accent text by hue. teal Lowest emphasis treatment. */
+  --color-text-accent-teal-strong: var(--color-teal-100); /** color-text-accent-teal-strong — Tinted accent text by hue. teal Higher emphasis treatment. */
+  --color-text-accent-teal-subtle: var(--color-teal-300); /** color-text-accent-teal-subtle — Tinted accent text by hue. teal Lower emphasis / softer treatment. */
+  --color-text-accent-teal: var(--color-teal-200); /** color-text-accent-teal — Tinted accent text by hue. teal. */
+  --color-text-accent-violet-intense: var(--color-violet-50); /** color-text-accent-violet-intense — Tinted accent text by hue. violet Highest emphasis / solid treatment. */
+  --color-text-accent-violet-minimal: var(--color-violet-400); /** color-text-accent-violet-minimal — Tinted accent text by hue. violet Lowest emphasis treatment. */
+  --color-text-accent-violet-strong: var(--color-violet-100); /** color-text-accent-violet-strong — Tinted accent text by hue. violet Higher emphasis treatment. */
+  --color-text-accent-violet-subtle: var(--color-violet-300); /** color-text-accent-violet-subtle — Tinted accent text by hue. violet Lower emphasis / softer treatment. */
+  --color-text-accent-violet: var(--color-violet-200); /** color-text-accent-violet — Tinted accent text by hue. violet. */
+  --color-text-action-active: var(--color-gray-50); /** color-text-action-active — Interactive control roles (buttons, links, toggles). Pressed or active state. */
+  --color-text-action-disabled: var(--color-gray-600); /** color-text-action-disabled — Interactive control roles (buttons, links, toggles). Disabled state. */
+  --color-text-action-error-active: var(--color-red-50); /** color-text-action-error-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Pressed or active state. */
+  --color-text-action-error-disabled: var(--color-gray-600); /** color-text-action-error-disabled — Interactive control roles (buttons, links, toggles). Error / destructive variant. Disabled state. */
+  --color-text-action-error-hover: var(--color-red-100); /** color-text-action-error-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Hover state. */
+  --color-text-action-error-strong-active: var(--color-red-50); /** color-text-action-error-strong-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment. Pressed or active state. */
+  --color-text-action-error-strong-hover: var(--color-red-50); /** color-text-action-error-strong-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment. Hover state. */
+  --color-text-action-error-strong: var(--color-red-100); /** color-text-action-error-strong — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment. */
+  --color-text-action-error: var(--color-red-200); /** color-text-action-error — Interactive control roles (buttons, links, toggles). Error / destructive variant. */
+  --color-text-action-hover: var(--color-gray-100); /** color-text-action-hover — Interactive control roles (buttons, links, toggles). Hover state. */
+  --color-text-action-strong-active: var(--color-gray-50); /** color-text-action-strong-active — Interactive control roles (buttons, links, toggles). Higher emphasis treatment. Pressed or active state. */
+  --color-text-action-strong-hover: var(--color-gray-50); /** color-text-action-strong-hover — Interactive control roles (buttons, links, toggles). Higher emphasis treatment. Hover state. */
+  --color-text-action-strong: var(--color-gray-100); /** color-text-action-strong — Interactive control roles (buttons, links, toggles). Higher emphasis treatment. */
+  --color-text-action-subtle-active: var(--color-gray-100); /** color-text-action-subtle-active — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Pressed or active state. */
+  --color-text-action-subtle-hover: var(--color-gray-200); /** color-text-action-subtle-hover — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Hover state. */
+  --color-text-action-subtle: var(--color-gray-300); /** color-text-action-subtle — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. */
+  --color-text-action-success-active: var(--color-green-50); /** color-text-action-success-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Pressed or active state. */
+  --color-text-action-success-disabled: var(--color-gray-600); /** color-text-action-success-disabled — Interactive control roles (buttons, links, toggles). Success / positive variant. Disabled state. */
+  --color-text-action-success-hover: var(--color-green-100); /** color-text-action-success-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Hover state. */
+  --color-text-action-success-strong-active: var(--color-green-50); /** color-text-action-success-strong-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment. Pressed or active state. */
+  --color-text-action-success-strong-hover: var(--color-green-50); /** color-text-action-success-strong-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment. Hover state. */
+  --color-text-action-success-strong: var(--color-green-100); /** color-text-action-success-strong — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment. */
+  --color-text-action-success: var(--color-green-200); /** color-text-action-success — Interactive control roles (buttons, links, toggles). Success / positive variant. */
+  --color-text-action: var(--color-gray-200); /** color-text-action — Interactive control roles (buttons, links, toggles). */
+  --color-text-brand: var(--color-gray-200); /** color-text-brand — Brand accent roles. */
+  --color-text-data-1: var(--color-blue-200); /** color-text-data-1 — Categorical data visualization series. 1. */
+  --color-text-data-2: var(--color-teal-200); /** color-text-data-2 — Categorical data visualization series. 2. */
+  --color-text-data-3: var(--color-amber-200); /** color-text-data-3 — Categorical data visualization series. 3. */
+  --color-text-data-4: var(--color-violet-200); /** color-text-data-4 — Categorical data visualization series. 4. */
+  --color-text-data-5: var(--color-green-200); /** color-text-data-5 — Categorical data visualization series. 5. */
+  --color-text-data-6: var(--color-red-200); /** color-text-data-6 — Categorical data visualization series. 6. */
+  --color-text-feedback-error-strong: var(--color-red-100); /** color-text-feedback-error-strong — Status messaging roles (error, success, warning, info). Error / destructive variant. Higher emphasis treatment. */
+  --color-text-feedback-error: var(--color-red-200); /** color-text-feedback-error — Status messaging roles (error, success, warning, info). Error / destructive variant. */
+  --color-text-feedback-info-strong: var(--color-teal-100); /** color-text-feedback-info-strong — Status messaging roles (error, success, warning, info). Informational variant. Higher emphasis treatment. */
+  --color-text-feedback-info: var(--color-teal-200); /** color-text-feedback-info — Status messaging roles (error, success, warning, info). Informational variant. */
+  --color-text-feedback-success-strong: var(--color-green-100); /** color-text-feedback-success-strong — Status messaging roles (error, success, warning, info). Success / positive variant. Higher emphasis treatment. */
+  --color-text-feedback-success: var(--color-green-200); /** color-text-feedback-success — Status messaging roles (error, success, warning, info). Success / positive variant. */
+  --color-text-feedback-warning-strong: var(--color-amber-100); /** color-text-feedback-warning-strong — Status messaging roles (error, success, warning, info). Warning / caution variant. Higher emphasis treatment. */
+  --color-text-feedback-warning: var(--color-amber-200); /** color-text-feedback-warning — Status messaging roles (error, success, warning, info). Warning / caution variant. */
+  --color-text-highlight: var(--color-amber-100); /** color-text-highlight — Highlight and emphasis washes. */
+  --color-text-input-disabled: var(--color-gray-600); /** color-text-input-disabled — Form field roles. Disabled state. */
+  --color-text-input-subtle: var(--color-gray-300); /** color-text-input-subtle — Form field roles. Lower emphasis / softer treatment. */
+  --color-text-input: var(--color-gray-100); /** color-text-input — Form field roles. */
+  --color-text-neutral-disabled: var(--color-gray-600); /** color-text-neutral-disabled — Neutral UI chrome without brand emphasis. Disabled state. */
+  --color-text-neutral-hover: var(--color-gray-100); /** color-text-neutral-hover — Neutral UI chrome without brand emphasis. Hover state. */
+  --color-text-neutral-selected: var(--color-gray-200); /** color-text-neutral-selected — Neutral UI chrome without brand emphasis. Selected state. */
+  --color-text-neutral-strong-hover: var(--color-gray-50); /** color-text-neutral-strong-hover — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Hover state. */
+  --color-text-neutral-strong-selected: var(--color-gray-100); /** color-text-neutral-strong-selected — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Selected state. */
+  --color-text-neutral-strong: var(--color-gray-50); /** color-text-neutral-strong — Neutral UI chrome without brand emphasis. Higher emphasis treatment. */
+  --color-text-neutral-subtle-hover: var(--color-gray-200); /** color-text-neutral-subtle-hover — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Hover state. */
+  --color-text-neutral-subtle-selected: var(--color-gray-300); /** color-text-neutral-subtle-selected — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Selected state. */
+  --color-text-neutral-subtle: var(--color-gray-300); /** color-text-neutral-subtle — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. */
+  --color-text-neutral: var(--color-gray-200); /** color-text-neutral — Neutral UI chrome without brand emphasis. */
+  --color-text-on-action-disabled: var(--color-gray-600); /** color-text-on-action-disabled — Foreground that sits on action backgrounds. Disabled state. */
+  --color-text-on-action-error-disabled: var(--color-gray-600); /** color-text-on-action-error-disabled — Foreground that sits on action backgrounds. Error / destructive variant. Disabled state. */
+  --color-text-on-action-error-intense: var(--color-white); /** color-text-on-action-error-intense — Foreground that sits on action backgrounds. Error / destructive variant. Highest emphasis / solid treatment. */
+  --color-text-on-action-error: var(--color-red-100); /** color-text-on-action-error — Foreground that sits on action backgrounds. Error / destructive variant. */
+  --color-text-on-action-intense: var(--color-white); /** color-text-on-action-intense — Foreground that sits on action backgrounds. Highest emphasis / solid treatment. */
+  --color-text-on-action-success-disabled: var(--color-gray-600); /** color-text-on-action-success-disabled — Foreground that sits on action backgrounds. Success / positive variant. Disabled state. */
+  --color-text-on-action-success-intense: var(--color-white); /** color-text-on-action-success-intense — Foreground that sits on action backgrounds. Success / positive variant. Highest emphasis / solid treatment. */
+  --color-text-on-action-success: var(--color-green-100); /** color-text-on-action-success — Foreground that sits on action backgrounds. Success / positive variant. */
+  --color-text-on-action-warning-disabled: var(--color-gray-600); /** color-text-on-action-warning-disabled — Foreground that sits on action backgrounds. Warning / caution variant. Disabled state. */
+  --color-text-on-action-warning-intense: var(--color-white); /** color-text-on-action-warning-intense — Foreground that sits on action backgrounds. Warning / caution variant. Highest emphasis / solid treatment. */
+  --color-text-on-action-warning: var(--color-amber-100); /** color-text-on-action-warning — Foreground that sits on action backgrounds. Warning / caution variant. */
+  --color-text-on-action: var(--color-gray-100); /** color-text-on-action — Foreground that sits on action backgrounds. */
+  --color-text-on-feedback-error-intense: var(--color-white); /** color-text-on-feedback-error-intense — Foreground that sits on feedback backgrounds. Error / destructive variant. Highest emphasis / solid treatment. */
+  --color-text-on-feedback-error-subtle: var(--color-red-200); /** color-text-on-feedback-error-subtle — Foreground that sits on feedback backgrounds. Error / destructive variant. Lower emphasis / softer treatment. */
+  --color-text-on-feedback-error: var(--color-red-100); /** color-text-on-feedback-error — Foreground that sits on feedback backgrounds. Error / destructive variant. */
+  --color-text-on-feedback-info-intense: var(--color-white); /** color-text-on-feedback-info-intense — Foreground that sits on feedback backgrounds. Informational variant. Highest emphasis / solid treatment. */
+  --color-text-on-feedback-info-subtle: var(--color-teal-200); /** color-text-on-feedback-info-subtle — Foreground that sits on feedback backgrounds. Informational variant. Lower emphasis / softer treatment. */
+  --color-text-on-feedback-info: var(--color-teal-100); /** color-text-on-feedback-info — Foreground that sits on feedback backgrounds. Informational variant. */
+  --color-text-on-feedback-success-intense: var(--color-white); /** color-text-on-feedback-success-intense — Foreground that sits on feedback backgrounds. Success / positive variant. Highest emphasis / solid treatment. */
+  --color-text-on-feedback-success-subtle: var(--color-green-200); /** color-text-on-feedback-success-subtle — Foreground that sits on feedback backgrounds. Success / positive variant. Lower emphasis / softer treatment. */
+  --color-text-on-feedback-success: var(--color-green-100); /** color-text-on-feedback-success — Foreground that sits on feedback backgrounds. Success / positive variant. */
+  --color-text-on-feedback-warning-intense: var(--color-white); /** color-text-on-feedback-warning-intense — Foreground that sits on feedback backgrounds. Warning / caution variant. Highest emphasis / solid treatment. */
+  --color-text-on-feedback-warning-subtle: var(--color-amber-200); /** color-text-on-feedback-warning-subtle — Foreground that sits on feedback backgrounds. Warning / caution variant. Lower emphasis / softer treatment. */
+  --color-text-on-feedback-warning: var(--color-amber-100); /** color-text-on-feedback-warning — Foreground that sits on feedback backgrounds. Warning / caution variant. */
+  --color-text-on-input-disabled: var(--color-gray-600); /** color-text-on-input-disabled — Foreground that sits on input backgrounds. Disabled state. */
+  --color-text-on-input-subtle: var(--color-gray-300); /** color-text-on-input-subtle — Foreground that sits on input backgrounds. Lower emphasis / softer treatment. */
+  --color-text-on-input: var(--color-gray-100); /** color-text-on-input — Foreground that sits on input backgrounds. */
+  --color-text-on-neutral-intense: var(--color-gray-950); /** color-text-on-neutral-intense — Foreground that sits on neutral backgrounds. Highest emphasis / solid treatment. */
+  --color-text-on-neutral-strong: var(--color-white); /** color-text-on-neutral-strong — Foreground that sits on neutral backgrounds. Higher emphasis treatment. */
+  --color-text-on-neutral-subtle: var(--color-gray-100); /** color-text-on-neutral-subtle — Foreground that sits on neutral backgrounds. Lower emphasis / softer treatment. */
+  --color-text-on-neutral: var(--color-gray-50); /** color-text-on-neutral — Foreground that sits on neutral backgrounds. */
+  --color-text-surface-intense: var(--color-gray-50); /** color-text-surface-intense — Page and container surface backgrounds. Highest emphasis / solid treatment. */
+  --color-text-surface-minimal: var(--color-gray-400); /** color-text-surface-minimal — Page and container surface backgrounds. Lowest emphasis treatment. */
+  --color-text-surface-strong: var(--color-gray-100); /** color-text-surface-strong — Page and container surface backgrounds. Higher emphasis treatment. */
+  --color-text-surface-subtle: var(--color-gray-300); /** color-text-surface-subtle — Page and container surface backgrounds. Lower emphasis / softer treatment. */
+  --color-text-surface: var(--color-gray-200); /** color-text-surface — Page and container surface backgrounds. */
+}

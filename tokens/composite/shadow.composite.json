@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "shadow": {
+    "$description": "Composite elevation shadows. offsetX is 0 (no shadow.x in core). Color uses core gray.950 — Figma Semantic has no color/shadow/* roles.",
+    "$type": "shadow",
+    "sm": {
+      "$description": "shadow-sm — subtle elevation (cards, menus)",
+      "$value": {
+        "color": "{color.gray.950}",
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": "{shadow.y.100}",
+        "blur": "{shadow.blur.100}",
+        "spread": "{shadow.spread.100}"
+      }
+    },
+    "md": {
+      "$description": "shadow-md — medium elevation (modals, popovers)",
+      "$value": {
+        "color": "{color.gray.950}",
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": "{shadow.y.200}",
+        "blur": "{shadow.blur.200}",
+        "spread": "{shadow.spread.200}"
+      }
+    },
+    "lg": {
+      "$description": "shadow-lg — strong elevation (dialogs, overlays)",
+      "$value": {
+        "color": "{color.gray.950}",
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": "{shadow.y.300}",
+        "blur": "{shadow.blur.300}",
+        "spread": "{shadow.spread.300}"
+      }
+    }
+  }
+}

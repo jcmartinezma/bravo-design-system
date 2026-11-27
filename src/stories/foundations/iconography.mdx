@@ -1,0 +1,65 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+import { IconGallery } from './IconGallery';
+
+<Meta title="Foundations/Iconography" />
+
+# Iconography
+
+Icons reinforce actions and status. SVG sources live in `public/svg/`; React components are generated into `src/icons/` and use `currentColor` so they inherit text or icon color tokens.
+
+## Usage
+
+Import by component name or look up by kebab-case name:
+
+```tsx
+import { Search, icons } from '../../icons';
+
+<Search />
+const Icon = icons['search'];
+```
+
+Pass the kebab-case name to components that accept `IconName` (for example Button `leadingIcon` / `trailingIcon`):
+
+```tsx
+<Button label="Search" leadingIcon="search" />
+```
+
+## Catalog
+
+Each tile shows the glyph and the **name** to use in code (`IconName`).
+
+<IconGallery />
+
+## Source files
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>public/svg/icon-*.svg</code></td>
+      <td>Source artwork</td>
+    </tr>
+    <tr>
+      <td><code>src/icons/*.tsx</code></td>
+      <td>React components (<code>currentColor</code>)</td>
+    </tr>
+    <tr>
+      <td><code>src/icons/index.ts</code></td>
+      <td>
+        <code>icons</code> map, <code>iconNames</code>, <code>IconName</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## Related docs
+
+- [Color](?path=/docs/foundations-color--docs) — `color.icon.*` roles
+- [Accessibility](?path=/docs/foundations-accessibility--docs)
+- [Tokens](?path=/docs/foundations-tokens--docs)

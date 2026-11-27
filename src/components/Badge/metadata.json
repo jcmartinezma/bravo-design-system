@@ -1,0 +1,15 @@
+{
+  "identification": {
+    "name": "Badge",
+    "nodeId": "265:138",
+    "componentKey": "e12774549d2bb4dfee06a8d16f0157e401b05b89",
+    "assetId": "SymbolId:e12774549d2bb4dfee06a8d16f0157e401b05b89",
+    "libraryKey": "lk-local",
+    "fileKey": "ArGL69PcOZxU1vSAjdXz5b"
+  },
+  "metadata": {
+    "description": "Bravo DS Badge. Tone × Appearance × Size. Compact status or category label.",
+    "path": "Badge",
+    "page": "Button"
+  }
+}

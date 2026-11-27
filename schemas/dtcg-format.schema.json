@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.schemas/dtcg-format.schema.json",
+  "title": "DTCG design tokens (local)",
+  "description": "Local JSON Schema for Design Tokens Community Group style files. Used instead of https://www.designtokens.org/schemas/… which editors often cannot load (403 / missing).",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "$description": { "type": "string" },
+    "$type": { "$ref": "#/$defs/tokenType" },
+    "$extensions": { "type": "object" }
+  },
+  "additionalProperties": {
+    "$ref": "#/$defs/groupOrToken"
+  },
+  "$defs": {
+    "tokenType": {
+      "type": "string",
+      "enum": [
+        "color",
+        "dimension",
+        "fontFamily",
+        "fontWeight",
+        "duration",
+        "cubicBezier",
+        "number",
+        "strokeStyle",
+        "border",
+        "transition",
+        "shadow",
+        "gradient",
+        "typography"
+      ]
+    },
+    "dimensionValue": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "required": ["value", "unit"],
+          "properties": {
+            "value": { "type": "number" },
+            "unit": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+    "colorValue": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": {
+            "colorSpace": { "type": "string" },
+            "components": {
+              "type": "array",
+              "items": { "type": "number" }
+            },
+            "alpha": { "type": "number" },
+            "hex": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+    "token": {
+      "type": "object",
+      "required": ["$value"],
+      "properties": {
+        "$value": true,
+        "$type": { "$ref": "#/$defs/tokenType" },
+        "$description": { "type": "string" },
+        "$extensions": { "type": "object" }
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/groupOrToken"
+      }
+    },
+    "group": {
+      "type": "object",
+      "properties": {
+        "$description": { "type": "string" },
+        "$type": { "$ref": "#/$defs/tokenType" },
+        "$extensions": { "type": "object" }
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/groupOrToken"
+      }
+    },
+    "groupOrToken": {
+      "oneOf": [
+        { "$ref": "#/$defs/token" },
+        { "$ref": "#/$defs/group" }
+      ]
+    }
+  }
+}

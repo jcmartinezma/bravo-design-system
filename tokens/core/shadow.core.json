@@ -1,0 +1,154 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "shadow": {
+    "y": {
+      "100": {
+        "$type": "dimension",
+        "$value": {
+          "value": 7,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0.4375,
+            "unit": "rem"
+          }
+        },
+        "$description": "color #000000"
+      },
+      "200": {
+        "$type": "dimension",
+        "$value": {
+          "value": 13,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0.8125,
+            "unit": "rem"
+          }
+        },
+        "$description": "color #000000"
+      },
+      "300": {
+        "$type": "dimension",
+        "$value": {
+          "value": 25,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 1.5625,
+            "unit": "rem"
+          }
+        },
+        "$description": "color #000000"
+      }
+    },
+    "blur": {
+      "100": {
+        "$type": "dimension",
+        "$value": {
+          "value": 6,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0.375,
+            "unit": "rem"
+          }
+        },
+        "$description": "color #000000"
+      },
+      "200": {
+        "$type": "dimension",
+        "$value": {
+          "value": 11,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 0.6875,
+            "unit": "rem"
+          }
+        },
+        "$description": "color #000000"
+      },
+      "300": {
+        "$type": "dimension",
+        "$value": {
+          "value": 22,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": 1.375,
+            "unit": "rem"
+          }
+        },
+        "$description": "color #000000"
+      }
+    },
+    "spread": {
+      "100": {
+        "$type": "dimension",
+        "$value": {
+          "value": -1,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": -0.0625,
+            "unit": "rem"
+          }
+        },
+        "$description": "color #000000"
+      },
+      "200": {
+        "$type": "dimension",
+        "$value": {
+          "value": -2,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": -0.125,
+            "unit": "rem"
+          }
+        },
+        "$description": "color #000000"
+      },
+      "300": {
+        "$type": "dimension",
+        "$value": {
+          "value": -4,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.foundry.rem": {
+            "value": -0.25,
+            "unit": "rem"
+          }
+        },
+        "$description": "color #000000"
+      }
+    },
+    "opacity": {
+      "100": {
+        "$type": "number",
+        "$value": 0.06,
+        "$description": "color #000000"
+      },
+      "200": {
+        "$type": "number",
+        "$value": 0.08,
+        "$description": "color #000000"
+      },
+      "300": {
+        "$type": "number",
+        "$value": 0.11,
+        "$description": "color #000000"
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "typo": {
+    "$description": "Composite typography styles. Token refs for face/size/weight/leading; literals for CSS font props not in the token set (style, variant, width/stretch).",
+    "heading": {
+      "1": {
+        "$type": "typography",
+        "$description": "Page titles (h1)",
+        "$value": {
+          "fontStyle": "normal",
+          "fontVariant": "normal",
+          "fontWeight": "{text.weight.extrabold}",
+          "fontWidth": "normal",
+          "fontSize": "{text.size.3xl}",
+          "lineHeight": "{text.leading.3xl}",
+          "fontFamily": "{text.face.display}"
+        }
+      },
+      "2": {
+        "$type": "typography",
+        "$description": "Section titles (h2)",
+        "$value": {
+          "fontStyle": "normal",
+          "fontVariant": "normal",
+          "fontWeight": "{text.weight.bold}",
+          "fontWidth": "normal",
+          "fontSize": "{text.size.xl}",
+          "lineHeight": "{text.leading.xl}",
+          "fontFamily": "{text.face.base}"
+        }
+      },
+      "3": {
+        "$type": "typography",
+        "$description": "Subsection titles (h3)",
+        "$value": {
+          "fontStyle": "normal",
+          "fontVariant": "normal",
+          "fontWeight": "{text.weight.bold}",
+          "fontWidth": "normal",
+          "fontSize": "{text.size.lg}",
+          "lineHeight": "{text.leading.lg}",
+          "fontFamily": "{text.face.base}"
+        }
+      },
+      "4": {
+        "$type": "typography",
+        "$description": "Minor headings (h4)",
+        "$value": {
+          "fontStyle": "normal",
+          "fontVariant": "normal",
+          "fontWeight": "{text.weight.bold}",
+          "fontWidth": "normal",
+          "fontSize": "{text.size.md}",
+          "lineHeight": "{text.leading.md}",
+          "fontFamily": "{text.face.base}"
+        }
+      }
+    },
+    "body": {
+      "$type": "typography",
+      "$description": "Paragraphs and descriptions",
+      "$value": {
+        "fontStyle": "normal",
+        "fontVariant": "normal",
+        "fontWeight": "{text.weight.normal}",
+        "fontWidth": "normal",
+        "fontSize": "{text.size.sm}",
+        "lineHeight": "{text.leading.lg}",
+        "fontFamily": "{text.face.base}"
+      }
+    },
+    "label": {
+      "$type": "typography",
+      "$description": "Form labels, buttons, navigation",
+      "$value": {
+        "fontStyle": "normal",
+        "fontVariant": "normal",
+        "fontWeight": "{text.weight.normal}",
+        "fontWidth": "normal",
+        "fontSize": "{text.size.xs}",
+        "lineHeight": "{text.leading.sm}",
+        "fontFamily": "{text.face.base}"
+      }
+    },
+    "caption": {
+      "$type": "typography",
+      "$description": "Captions, small text, etc.",
+      "$value": {
+        "fontStyle": "normal",
+        "fontVariant": "normal",
+        "fontWeight": "{text.weight.medium}",
+        "fontWidth": "normal",
+        "fontSize": "{text.size.xs}",
+        "lineHeight": "{text.leading.sm}",
+        "fontFamily": "{text.face.base}"
+      }
+    },
+    "code": {
+      "$type": "typography",
+      "$description": "Inline code and monospace snippets",
+      "$value": {
+        "fontStyle": "normal",
+        "fontVariant": "normal",
+        "fontWeight": "{text.weight.normal}",
+        "fontWidth": "normal",
+        "fontSize": "{text.size.sm}",
+        "lineHeight": "{text.leading.md}",
+        "fontFamily": "{text.face.mono}"
+      }
+    }
+  }
+}

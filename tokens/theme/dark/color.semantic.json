@@ -1,0 +1,1487 @@
+{
+  "$schema": "../../../schemas/dtcg-format.schema.json",
+  "color": {
+    "$description": "Dark mode overrides for semantic color roles (Figma Semantic Dark). Core palette is unchanged; only aliases flip.",
+    "$type": "color",
+    "bg": {
+      "action": {
+        "active": {
+          "$value": "{color.gray.700}",
+          "$description": "color-bg-action-active — Interactive control roles (buttons, links, toggles). Pressed or active state."
+        },
+        "disabled": {
+          "$value": "{color.gray.800}",
+          "$description": "color-bg-action-disabled — Interactive control roles (buttons, links, toggles). Disabled state."
+        },
+        "error": {
+          "active": {
+            "$value": "{color.red.700}",
+            "$description": "color-bg-action-error-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Pressed or active state."
+          },
+          "disabled": {
+            "$value": "{color.gray.800}",
+            "$description": "color-bg-action-error-disabled — Interactive control roles (buttons, links, toggles). Error / destructive variant. Disabled state."
+          },
+          "hover": {
+            "$value": "{color.red.800}",
+            "$description": "color-bg-action-error-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Hover state."
+          },
+          "intense": {
+            "active": {
+              "$value": "{color.red.800}",
+              "$description": "color-bg-action-error-intense-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Highest emphasis / solid treatment. Pressed or active state."
+            },
+            "hover": {
+              "$value": "{color.red.700}",
+              "$description": "color-bg-action-error-intense-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Highest emphasis / solid treatment. Hover state."
+            },
+            "$value": "{color.red.600}",
+            "$description": "color-bg-action-error-intense — Interactive control roles (buttons, links, toggles). Error / destructive variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "active": {
+              "$value": "{color.red.800}",
+              "$description": "color-bg-action-error-subtle-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Lower emphasis / softer treatment. Pressed or active state."
+            },
+            "hover": {
+              "$value": "{color.red.900}",
+              "$description": "color-bg-action-error-subtle-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Lower emphasis / softer treatment. Hover state."
+            },
+            "$value": "{color.red.950}",
+            "$description": "color-bg-action-error-subtle — Interactive control roles (buttons, links, toggles). Error / destructive variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.red.900}",
+          "$description": "color-bg-action-error — Interactive control roles (buttons, links, toggles). Error / destructive variant."
+        },
+        "hover": {
+          "$value": "{color.gray.800}",
+          "$description": "color-bg-action-hover — Interactive control roles (buttons, links, toggles). Hover state."
+        },
+        "intense": {
+          "active": {
+            "$value": "{color.gray.800}",
+            "$description": "color-bg-action-intense-active — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment. Pressed or active state."
+          },
+          "hover": {
+            "$value": "{color.gray.700}",
+            "$description": "color-bg-action-intense-hover — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment. Hover state."
+          },
+          "$value": "{color.gray.300}",
+          "$description": "color-bg-action-intense — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment."
+        },
+        "subtle": {
+          "active": {
+            "$value": "{color.gray.800}",
+            "$description": "color-bg-action-subtle-active — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Pressed or active state."
+          },
+          "hover": {
+            "$value": "{color.gray.900}",
+            "$description": "color-bg-action-subtle-hover — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Hover state."
+          },
+          "$value": "{color.gray.950}",
+          "$description": "color-bg-action-subtle — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment."
+        },
+        "success": {
+          "active": {
+            "$value": "{color.green.700}",
+            "$description": "color-bg-action-success-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Pressed or active state."
+          },
+          "disabled": {
+            "$value": "{color.gray.800}",
+            "$description": "color-bg-action-success-disabled — Interactive control roles (buttons, links, toggles). Success / positive variant. Disabled state."
+          },
+          "hover": {
+            "$value": "{color.green.800}",
+            "$description": "color-bg-action-success-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Hover state."
+          },
+          "intense": {
+            "active": {
+              "$value": "{color.green.800}",
+              "$description": "color-bg-action-success-intense-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Highest emphasis / solid treatment. Pressed or active state."
+            },
+            "hover": {
+              "$value": "{color.green.700}",
+              "$description": "color-bg-action-success-intense-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Highest emphasis / solid treatment. Hover state."
+            },
+            "$value": "{color.green.600}",
+            "$description": "color-bg-action-success-intense — Interactive control roles (buttons, links, toggles). Success / positive variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "active": {
+              "$value": "{color.green.800}",
+              "$description": "color-bg-action-success-subtle-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Lower emphasis / softer treatment. Pressed or active state."
+            },
+            "hover": {
+              "$value": "{color.green.900}",
+              "$description": "color-bg-action-success-subtle-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Lower emphasis / softer treatment. Hover state."
+            },
+            "$value": "{color.green.950}",
+            "$description": "color-bg-action-success-subtle — Interactive control roles (buttons, links, toggles). Success / positive variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.green.900}",
+          "$description": "color-bg-action-success — Interactive control roles (buttons, links, toggles). Success / positive variant."
+        },
+        "warning": {
+          "active": {
+            "$value": "{color.amber.700}",
+            "$description": "color-bg-action-warning-active — Interactive control roles (buttons, links, toggles). Warning / caution variant. Pressed or active state."
+          },
+          "disabled": {
+            "$value": "{color.gray.800}",
+            "$description": "color-bg-action-warning-disabled — Interactive control roles (buttons, links, toggles). Warning / caution variant. Disabled state."
+          },
+          "hover": {
+            "$value": "{color.amber.800}",
+            "$description": "color-bg-action-warning-hover — Interactive control roles (buttons, links, toggles). Warning / caution variant. Hover state."
+          },
+          "intense": {
+            "active": {
+              "$value": "{color.amber.800}",
+              "$description": "color-bg-action-warning-intense-active — Interactive control roles (buttons, links, toggles). Warning / caution variant. Highest emphasis / solid treatment. Pressed or active state."
+            },
+            "hover": {
+              "$value": "{color.amber.700}",
+              "$description": "color-bg-action-warning-intense-hover — Interactive control roles (buttons, links, toggles). Warning / caution variant. Highest emphasis / solid treatment. Hover state."
+            },
+            "$value": "{color.amber.600}",
+            "$description": "color-bg-action-warning-intense — Interactive control roles (buttons, links, toggles). Warning / caution variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "active": {
+              "$value": "{color.amber.800}",
+              "$description": "color-bg-action-warning-subtle-active — Interactive control roles (buttons, links, toggles). Warning / caution variant. Lower emphasis / softer treatment. Pressed or active state."
+            },
+            "hover": {
+              "$value": "{color.amber.900}",
+              "$description": "color-bg-action-warning-subtle-hover — Interactive control roles (buttons, links, toggles). Warning / caution variant. Lower emphasis / softer treatment. Hover state."
+            },
+            "$value": "{color.amber.950}",
+            "$description": "color-bg-action-warning-subtle — Interactive control roles (buttons, links, toggles). Warning / caution variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.amber.900}",
+          "$description": "color-bg-action-warning — Interactive control roles (buttons, links, toggles). Warning / caution variant."
+        },
+        "$value": "{color.gray.900}",
+        "$description": "color-bg-action — Interactive control roles (buttons, links, toggles)."
+      },
+      "brand": {
+        "intense": {
+          "$value": "{color.amber.600}",
+          "$description": "color-bg-brand-intense — Brand accent roles. Highest emphasis / solid treatment."
+        },
+        "subtle": {
+          "$value": "{color.amber.950}",
+          "$description": "color-bg-brand-subtle — Brand accent roles. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.amber.800}",
+        "$description": "color-bg-brand — Brand accent roles."
+      },
+      "data": {
+        "1": {
+          "$value": "{color.blue.400}",
+          "$description": "color-bg-data-1 — Categorical data visualization series. 1."
+        },
+        "2": {
+          "$value": "{color.teal.400}",
+          "$description": "color-bg-data-2 — Categorical data visualization series. 2."
+        },
+        "3": {
+          "$value": "{color.amber.400}",
+          "$description": "color-bg-data-3 — Categorical data visualization series. 3."
+        },
+        "4": {
+          "$value": "{color.violet.400}",
+          "$description": "color-bg-data-4 — Categorical data visualization series. 4."
+        },
+        "5": {
+          "$value": "{color.green.400}",
+          "$description": "color-bg-data-5 — Categorical data visualization series. 5."
+        },
+        "6": {
+          "$value": "{color.red.400}",
+          "$description": "color-bg-data-6 — Categorical data visualization series. 6."
+        },
+        "$description": "Categorical data visualization series."
+      },
+      "feedback": {
+        "error": {
+          "intense": {
+            "$value": "{color.red.600}",
+            "$description": "color-bg-feedback-error-intense — Status messaging roles (error, success, warning, info). Error / destructive variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.red.950}",
+            "$description": "color-bg-feedback-error-subtle — Status messaging roles (error, success, warning, info). Error / destructive variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.red.900}",
+          "$description": "color-bg-feedback-error — Status messaging roles (error, success, warning, info). Error / destructive variant."
+        },
+        "info": {
+          "intense": {
+            "$value": "{color.teal.600}",
+            "$description": "color-bg-feedback-info-intense — Status messaging roles (error, success, warning, info). Informational variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.teal.950}",
+            "$description": "color-bg-feedback-info-subtle — Status messaging roles (error, success, warning, info). Informational variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.teal.900}",
+          "$description": "color-bg-feedback-info — Status messaging roles (error, success, warning, info). Informational variant."
+        },
+        "success": {
+          "intense": {
+            "$value": "{color.green.600}",
+            "$description": "color-bg-feedback-success-intense — Status messaging roles (error, success, warning, info). Success / positive variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.green.950}",
+            "$description": "color-bg-feedback-success-subtle — Status messaging roles (error, success, warning, info). Success / positive variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.green.900}",
+          "$description": "color-bg-feedback-success — Status messaging roles (error, success, warning, info). Success / positive variant."
+        },
+        "warning": {
+          "intense": {
+            "$value": "{color.amber.600}",
+            "$description": "color-bg-feedback-warning-intense — Status messaging roles (error, success, warning, info). Warning / caution variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.amber.950}",
+            "$description": "color-bg-feedback-warning-subtle — Status messaging roles (error, success, warning, info). Warning / caution variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.amber.900}",
+          "$description": "color-bg-feedback-warning — Status messaging roles (error, success, warning, info). Warning / caution variant."
+        },
+        "$description": "Status messaging roles (error, success, warning, info)."
+      },
+      "highlight": {
+        "subtle": {
+          "$value": "{color.amber.950}",
+          "$description": "color-bg-highlight-subtle — Highlight and emphasis washes. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.amber.900}",
+        "$description": "color-bg-highlight — Highlight and emphasis washes."
+      },
+      "input": {
+        "disabled": {
+          "$value": "{color.gray.800}",
+          "$description": "color-bg-input-disabled — Form field roles. Disabled state."
+        },
+        "hover": {
+          "$value": "{color.gray.800}",
+          "$description": "color-bg-input-hover — Form field roles. Hover state."
+        },
+        "subtle": {
+          "hover": {
+            "$value": "{color.gray.900}",
+            "$description": "color-bg-input-subtle-hover — Form field roles. Lower emphasis / softer treatment. Hover state."
+          },
+          "$value": "{color.gray.950}",
+          "$description": "color-bg-input-subtle — Form field roles. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.900}",
+        "$description": "color-bg-input — Form field roles."
+      },
+      "neutral": {
+        "active": {
+          "$value": "{color.gray.600}",
+          "$description": "color-bg-neutral-active — Neutral UI chrome without brand emphasis. Pressed or active state."
+        },
+        "disabled": {
+          "$value": "{color.gray.900}",
+          "$description": "color-bg-neutral-disabled — Neutral UI chrome without brand emphasis. Disabled state."
+        },
+        "hover": {
+          "$value": "{color.gray.700}",
+          "$description": "color-bg-neutral-hover — Neutral UI chrome without brand emphasis. Hover state."
+        },
+        "intense": {
+          "active": {
+            "$value": "{color.gray.200}",
+            "$description": "color-bg-neutral-intense-active — Neutral UI chrome without brand emphasis. Highest emphasis / solid treatment. Pressed or active state."
+          },
+          "hover": {
+            "$value": "{color.gray.50}",
+            "$description": "color-bg-neutral-intense-hover — Neutral UI chrome without brand emphasis. Highest emphasis / solid treatment. Hover state."
+          },
+          "selected": {
+            "$value": "{color.gray.300}",
+            "$description": "color-bg-neutral-intense-selected — Neutral UI chrome without brand emphasis. Highest emphasis / solid treatment. Selected state."
+          },
+          "$value": "{color.gray.100}",
+          "$description": "color-bg-neutral-intense — Neutral UI chrome without brand emphasis. Highest emphasis / solid treatment."
+        },
+        "selected": {
+          "$value": "{color.gray.900}",
+          "$description": "color-bg-neutral-selected — Neutral UI chrome without brand emphasis. Selected state."
+        },
+        "strong": {
+          "active": {
+            "$value": "{color.gray.500}",
+            "$description": "color-bg-neutral-strong-active — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Pressed or active state."
+          },
+          "hover": {
+            "$value": "{color.gray.600}",
+            "$description": "color-bg-neutral-strong-hover — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Hover state."
+          },
+          "selected": {
+            "$value": "{color.gray.800}",
+            "$description": "color-bg-neutral-strong-selected — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Selected state."
+          },
+          "$value": "{color.gray.700}",
+          "$description": "color-bg-neutral-strong — Neutral UI chrome without brand emphasis. Higher emphasis treatment."
+        },
+        "subtle": {
+          "active": {
+            "$value": "{color.gray.700}",
+            "$description": "color-bg-neutral-subtle-active — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Pressed or active state."
+          },
+          "hover": {
+            "$value": "{color.gray.800}",
+            "$description": "color-bg-neutral-subtle-hover — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Hover state."
+          },
+          "selected": {
+            "$value": "{color.gray.950}",
+            "$description": "color-bg-neutral-subtle-selected — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Selected state."
+          },
+          "$value": "{color.gray.900}",
+          "$description": "color-bg-neutral-subtle — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.800}",
+        "$description": "color-bg-neutral — Neutral UI chrome without brand emphasis."
+      },
+      "surface": {
+        "canvas": {
+          "$value": "{color.gray.900}",
+          "$description": "color-bg-surface-canvas — Page and container surface backgrounds. App canvas / page backdrop."
+        },
+        "overlay": {
+          "$value": "{color.gray.800}",
+          "$description": "color-bg-surface-overlay — Page and container surface backgrounds. Modal and overlay surface."
+        },
+        "raised": {
+          "$value": "{color.gray.800}",
+          "$description": "color-bg-surface-raised — Page and container surface backgrounds. Elevated surface above the canvas."
+        },
+        "sunken": {
+          "$value": "{color.gray.950}",
+          "$description": "color-bg-surface-sunken — Page and container surface backgrounds. Recessed surface below the canvas."
+        },
+        "$value": "{color.gray.900}",
+        "$description": "color-bg-surface — Page and container surface backgrounds."
+      },
+      "$description": "Background fills for surfaces, controls, feedback, and data."
+    },
+    "border": {
+      "action": {
+        "active": {
+          "$value": "{color.gray.200}",
+          "$description": "color-border-action-active — Interactive control roles (buttons, links, toggles). Pressed or active state."
+        },
+        "disabled": {
+          "$value": "{color.gray.700}",
+          "$description": "color-border-action-disabled — Interactive control roles (buttons, links, toggles). Disabled state."
+        },
+        "error": {
+          "active": {
+            "$value": "{color.red.200}",
+            "$description": "color-border-action-error-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Pressed or active state."
+          },
+          "disabled": {
+            "$value": "{color.gray.700}",
+            "$description": "color-border-action-error-disabled — Interactive control roles (buttons, links, toggles). Error / destructive variant. Disabled state."
+          },
+          "hover": {
+            "$value": "{color.red.300}",
+            "$description": "color-border-action-error-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Hover state."
+          },
+          "$value": "{color.red.400}",
+          "$description": "color-border-action-error — Interactive control roles (buttons, links, toggles). Error / destructive variant."
+        },
+        "hover": {
+          "$value": "{color.gray.300}",
+          "$description": "color-border-action-hover — Interactive control roles (buttons, links, toggles). Hover state."
+        },
+        "intense": {
+          "active": {
+            "$value": "{color.gray.800}",
+            "$description": "color-border-action-intense-active — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment. Pressed or active state."
+          },
+          "hover": {
+            "$value": "{color.gray.700}",
+            "$description": "color-border-action-intense-hover — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment. Hover state."
+          },
+          "$value": "{color.gray.600}",
+          "$description": "color-border-action-intense — Interactive control roles (buttons, links, toggles). Highest emphasis / solid treatment."
+        },
+        "success": {
+          "active": {
+            "$value": "{color.green.200}",
+            "$description": "color-border-action-success-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Pressed or active state."
+          },
+          "disabled": {
+            "$value": "{color.gray.700}",
+            "$description": "color-border-action-success-disabled — Interactive control roles (buttons, links, toggles). Success / positive variant. Disabled state."
+          },
+          "hover": {
+            "$value": "{color.green.300}",
+            "$description": "color-border-action-success-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Hover state."
+          },
+          "$value": "{color.green.400}",
+          "$description": "color-border-action-success — Interactive control roles (buttons, links, toggles). Success / positive variant."
+        },
+        "$value": "{color.gray.400}",
+        "$description": "color-border-action — Interactive control roles (buttons, links, toggles)."
+      },
+      "brand": {
+        "$value": "{color.amber.400}",
+        "$description": "color-border-brand — Brand accent roles."
+      },
+      "data": {
+        "1": {
+          "$value": "{color.blue.400}",
+          "$description": "color-border-data-1 — Categorical data visualization series. 1."
+        },
+        "2": {
+          "$value": "{color.teal.400}",
+          "$description": "color-border-data-2 — Categorical data visualization series. 2."
+        },
+        "3": {
+          "$value": "{color.amber.400}",
+          "$description": "color-border-data-3 — Categorical data visualization series. 3."
+        },
+        "4": {
+          "$value": "{color.violet.400}",
+          "$description": "color-border-data-4 — Categorical data visualization series. 4."
+        },
+        "5": {
+          "$value": "{color.green.400}",
+          "$description": "color-border-data-5 — Categorical data visualization series. 5."
+        },
+        "6": {
+          "$value": "{color.red.400}",
+          "$description": "color-border-data-6 — Categorical data visualization series. 6."
+        },
+        "$description": "Categorical data visualization series."
+      },
+      "feedback": {
+        "error": {
+          "subtle": {
+            "$value": "{color.red.800}",
+            "$description": "color-border-feedback-error-subtle — Status messaging roles (error, success, warning, info). Error / destructive variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.red.600}",
+          "$description": "color-border-feedback-error — Status messaging roles (error, success, warning, info). Error / destructive variant."
+        },
+        "info": {
+          "subtle": {
+            "$value": "{color.teal.800}",
+            "$description": "color-border-feedback-info-subtle — Status messaging roles (error, success, warning, info). Informational variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.teal.600}",
+          "$description": "color-border-feedback-info — Status messaging roles (error, success, warning, info). Informational variant."
+        },
+        "success": {
+          "subtle": {
+            "$value": "{color.green.800}",
+            "$description": "color-border-feedback-success-subtle — Status messaging roles (error, success, warning, info). Success / positive variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.green.600}",
+          "$description": "color-border-feedback-success — Status messaging roles (error, success, warning, info). Success / positive variant."
+        },
+        "warning": {
+          "subtle": {
+            "$value": "{color.amber.800}",
+            "$description": "color-border-feedback-warning-subtle — Status messaging roles (error, success, warning, info). Warning / caution variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.amber.600}",
+          "$description": "color-border-feedback-warning — Status messaging roles (error, success, warning, info). Warning / caution variant."
+        },
+        "$description": "Status messaging roles (error, success, warning, info)."
+      },
+      "input": {
+        "disabled": {
+          "$value": "{color.gray.700}",
+          "$description": "color-border-input-disabled — Form field roles. Disabled state."
+        },
+        "error": {
+          "disabled": {
+            "$value": "{color.gray.700}",
+            "$description": "color-border-input-error-disabled — Form field roles. Error / destructive variant. Disabled state."
+          },
+          "focus": {
+            "$value": "{color.red.300}",
+            "$description": "color-border-input-error-focus — Form field roles. Error / destructive variant. Focus state."
+          },
+          "hover": {
+            "$value": "{color.red.300}",
+            "$description": "color-border-input-error-hover — Form field roles. Error / destructive variant. Hover state."
+          },
+          "strong": {
+            "focus": {
+              "$value": "{color.red.200}",
+              "$description": "color-border-input-error-strong-focus — Form field roles. Error / destructive variant. Higher emphasis treatment. Focus state."
+            },
+            "hover": {
+              "$value": "{color.red.200}",
+              "$description": "color-border-input-error-strong-hover — Form field roles. Error / destructive variant. Higher emphasis treatment. Hover state."
+            },
+            "$value": "{color.red.300}",
+            "$description": "color-border-input-error-strong — Form field roles. Error / destructive variant. Higher emphasis treatment."
+          },
+          "$value": "{color.red.400}",
+          "$description": "color-border-input-error — Form field roles. Error / destructive variant."
+        },
+        "focus": {
+          "$value": "{color.amber.400}",
+          "$description": "color-border-input-focus — Form field roles. Focus state."
+        },
+        "hover": {
+          "$value": "{color.gray.400}",
+          "$description": "color-border-input-hover — Form field roles. Hover state."
+        },
+        "strong": {
+          "focus": {
+            "$value": "{color.amber.400}",
+            "$description": "color-border-input-strong-focus — Form field roles. Higher emphasis treatment. Focus state."
+          },
+          "hover": {
+            "$value": "{color.gray.200}",
+            "$description": "color-border-input-strong-hover — Form field roles. Higher emphasis treatment. Hover state."
+          },
+          "$value": "{color.gray.300}",
+          "$description": "color-border-input-strong — Form field roles. Higher emphasis treatment."
+        },
+        "success": {
+          "disabled": {
+            "$value": "{color.gray.700}",
+            "$description": "color-border-input-success-disabled — Form field roles. Success / positive variant. Disabled state."
+          },
+          "focus": {
+            "$value": "{color.green.300}",
+            "$description": "color-border-input-success-focus — Form field roles. Success / positive variant. Focus state."
+          },
+          "hover": {
+            "$value": "{color.green.300}",
+            "$description": "color-border-input-success-hover — Form field roles. Success / positive variant. Hover state."
+          },
+          "strong": {
+            "focus": {
+              "$value": "{color.green.200}",
+              "$description": "color-border-input-success-strong-focus — Form field roles. Success / positive variant. Higher emphasis treatment. Focus state."
+            },
+            "hover": {
+              "$value": "{color.green.200}",
+              "$description": "color-border-input-success-strong-hover — Form field roles. Success / positive variant. Higher emphasis treatment. Hover state."
+            },
+            "$value": "{color.green.300}",
+            "$description": "color-border-input-success-strong — Form field roles. Success / positive variant. Higher emphasis treatment."
+          },
+          "$value": "{color.green.400}",
+          "$description": "color-border-input-success — Form field roles. Success / positive variant."
+        },
+        "$value": "{color.gray.500}",
+        "$description": "color-border-input — Form field roles."
+      },
+      "neutral": {
+        "disabled": {
+          "$value": "{color.gray.800}",
+          "$description": "color-border-neutral-disabled — Neutral UI chrome without brand emphasis. Disabled state."
+        },
+        "hover": {
+          "$value": "{color.gray.600}",
+          "$description": "color-border-neutral-hover — Neutral UI chrome without brand emphasis. Hover state."
+        },
+        "selected": {
+          "$value": "{color.gray.400}",
+          "$description": "color-border-neutral-selected — Neutral UI chrome without brand emphasis. Selected state."
+        },
+        "strong": {
+          "hover": {
+            "$value": "{color.gray.300}",
+            "$description": "color-border-neutral-strong-hover — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Hover state."
+          },
+          "$value": "{color.gray.400}",
+          "$description": "color-border-neutral-strong — Neutral UI chrome without brand emphasis. Higher emphasis treatment."
+        },
+        "subtle": {
+          "hover": {
+            "$value": "{color.gray.700}",
+            "$description": "color-border-neutral-subtle-hover — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Hover state."
+          },
+          "$value": "{color.gray.800}",
+          "$description": "color-border-neutral-subtle — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.700}",
+        "$description": "color-border-neutral — Neutral UI chrome without brand emphasis."
+      },
+      "surface": {
+        "raised": {
+          "$value": "{color.gray.700}",
+          "$description": "color-border-surface-raised — Page and container surface backgrounds. Elevated surface above the canvas."
+        },
+        "$value": "{color.gray.700}",
+        "$description": "color-border-surface — Page and container surface backgrounds."
+      },
+      "$description": "Stroke and divider colors for surfaces, controls, and inputs."
+    },
+    "icon": {
+      "action": {
+        "active": {
+          "$value": "{color.gray.50}",
+          "$description": "color-icon-action-active — Interactive control roles (buttons, links, toggles). Pressed or active state."
+        },
+        "disabled": {
+          "$value": "{color.gray.600}",
+          "$description": "color-icon-action-disabled — Interactive control roles (buttons, links, toggles). Disabled state."
+        },
+        "error": {
+          "active": {
+            "$value": "{color.red.50}",
+            "$description": "color-icon-action-error-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Pressed or active state."
+          },
+          "disabled": {
+            "$value": "{color.gray.600}",
+            "$description": "color-icon-action-error-disabled — Interactive control roles (buttons, links, toggles). Error / destructive variant. Disabled state."
+          },
+          "hover": {
+            "$value": "{color.red.100}",
+            "$description": "color-icon-action-error-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Hover state."
+          },
+          "strong": {
+            "active": {
+              "$value": "{color.red.50}",
+              "$description": "color-icon-action-error-strong-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment. Pressed or active state."
+            },
+            "hover": {
+              "$value": "{color.red.50}",
+              "$description": "color-icon-action-error-strong-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment. Hover state."
+            },
+            "$value": "{color.red.100}",
+            "$description": "color-icon-action-error-strong — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment."
+          },
+          "$value": "{color.red.200}",
+          "$description": "color-icon-action-error — Interactive control roles (buttons, links, toggles). Error / destructive variant."
+        },
+        "hover": {
+          "$value": "{color.gray.100}",
+          "$description": "color-icon-action-hover — Interactive control roles (buttons, links, toggles). Hover state."
+        },
+        "strong": {
+          "active": {
+            "$value": "{color.gray.50}",
+            "$description": "color-icon-action-strong-active — Interactive control roles (buttons, links, toggles). Higher emphasis treatment. Pressed or active state."
+          },
+          "hover": {
+            "$value": "{color.gray.50}",
+            "$description": "color-icon-action-strong-hover — Interactive control roles (buttons, links, toggles). Higher emphasis treatment. Hover state."
+          },
+          "$value": "{color.gray.100}",
+          "$description": "color-icon-action-strong — Interactive control roles (buttons, links, toggles). Higher emphasis treatment."
+        },
+        "subtle": {
+          "active": {
+            "$value": "{color.gray.100}",
+            "$description": "color-icon-action-subtle-active — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Pressed or active state."
+          },
+          "hover": {
+            "$value": "{color.gray.200}",
+            "$description": "color-icon-action-subtle-hover — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Hover state."
+          },
+          "$value": "{color.gray.300}",
+          "$description": "color-icon-action-subtle — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment."
+        },
+        "success": {
+          "active": {
+            "$value": "{color.green.50}",
+            "$description": "color-icon-action-success-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Pressed or active state."
+          },
+          "disabled": {
+            "$value": "{color.gray.600}",
+            "$description": "color-icon-action-success-disabled — Interactive control roles (buttons, links, toggles). Success / positive variant. Disabled state."
+          },
+          "hover": {
+            "$value": "{color.green.100}",
+            "$description": "color-icon-action-success-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Hover state."
+          },
+          "strong": {
+            "active": {
+              "$value": "{color.green.50}",
+              "$description": "color-icon-action-success-strong-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment. Pressed or active state."
+            },
+            "hover": {
+              "$value": "{color.green.50}",
+              "$description": "color-icon-action-success-strong-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment. Hover state."
+            },
+            "$value": "{color.green.100}",
+            "$description": "color-icon-action-success-strong — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment."
+          },
+          "$value": "{color.green.200}",
+          "$description": "color-icon-action-success — Interactive control roles (buttons, links, toggles). Success / positive variant."
+        },
+        "$value": "{color.gray.200}",
+        "$description": "color-icon-action — Interactive control roles (buttons, links, toggles)."
+      },
+      "brand": {
+        "$value": "{color.amber.300}",
+        "$description": "color-icon-brand — Brand accent roles."
+      },
+      "data": {
+        "1": {
+          "$value": "{color.blue.400}",
+          "$description": "color-icon-data-1 — Categorical data visualization series. 1."
+        },
+        "2": {
+          "$value": "{color.teal.400}",
+          "$description": "color-icon-data-2 — Categorical data visualization series. 2."
+        },
+        "3": {
+          "$value": "{color.amber.400}",
+          "$description": "color-icon-data-3 — Categorical data visualization series. 3."
+        },
+        "4": {
+          "$value": "{color.violet.400}",
+          "$description": "color-icon-data-4 — Categorical data visualization series. 4."
+        },
+        "5": {
+          "$value": "{color.green.400}",
+          "$description": "color-icon-data-5 — Categorical data visualization series. 5."
+        },
+        "6": {
+          "$value": "{color.red.400}",
+          "$description": "color-icon-data-6 — Categorical data visualization series. 6."
+        },
+        "$description": "Categorical data visualization series."
+      },
+      "feedback": {
+        "error": {
+          "strong": {
+            "$value": "{color.red.200}",
+            "$description": "color-icon-feedback-error-strong — Status messaging roles (error, success, warning, info). Error / destructive variant. Higher emphasis treatment."
+          },
+          "$value": "{color.red.300}",
+          "$description": "color-icon-feedback-error — Status messaging roles (error, success, warning, info). Error / destructive variant."
+        },
+        "info": {
+          "strong": {
+            "$value": "{color.teal.200}",
+            "$description": "color-icon-feedback-info-strong — Status messaging roles (error, success, warning, info). Informational variant. Higher emphasis treatment."
+          },
+          "$value": "{color.teal.300}",
+          "$description": "color-icon-feedback-info — Status messaging roles (error, success, warning, info). Informational variant."
+        },
+        "success": {
+          "strong": {
+            "$value": "{color.green.200}",
+            "$description": "color-icon-feedback-success-strong — Status messaging roles (error, success, warning, info). Success / positive variant. Higher emphasis treatment."
+          },
+          "$value": "{color.green.300}",
+          "$description": "color-icon-feedback-success — Status messaging roles (error, success, warning, info). Success / positive variant."
+        },
+        "warning": {
+          "strong": {
+            "$value": "{color.amber.200}",
+            "$description": "color-icon-feedback-warning-strong — Status messaging roles (error, success, warning, info). Warning / caution variant. Higher emphasis treatment."
+          },
+          "$value": "{color.amber.300}",
+          "$description": "color-icon-feedback-warning — Status messaging roles (error, success, warning, info). Warning / caution variant."
+        },
+        "$description": "Status messaging roles (error, success, warning, info)."
+      },
+      "highlight": {
+        "$value": "{color.amber.100}",
+        "$description": "color-icon-highlight — Highlight and emphasis washes."
+      },
+      "input": {
+        "disabled": {
+          "$value": "{color.gray.600}",
+          "$description": "color-icon-input-disabled — Form field roles. Disabled state."
+        },
+        "subtle": {
+          "$value": "{color.gray.300}",
+          "$description": "color-icon-input-subtle — Form field roles. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.100}",
+        "$description": "color-icon-input — Form field roles."
+      },
+      "neutral": {
+        "disabled": {
+          "$value": "{color.gray.600}",
+          "$description": "color-icon-neutral-disabled — Neutral UI chrome without brand emphasis. Disabled state."
+        },
+        "hover": {
+          "$value": "{color.gray.100}",
+          "$description": "color-icon-neutral-hover — Neutral UI chrome without brand emphasis. Hover state."
+        },
+        "selected": {
+          "$value": "{color.gray.200}",
+          "$description": "color-icon-neutral-selected — Neutral UI chrome without brand emphasis. Selected state."
+        },
+        "strong": {
+          "hover": {
+            "$value": "{color.gray.50}",
+            "$description": "color-icon-neutral-strong-hover — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Hover state."
+          },
+          "selected": {
+            "$value": "{color.gray.100}",
+            "$description": "color-icon-neutral-strong-selected — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Selected state."
+          },
+          "$value": "{color.gray.50}",
+          "$description": "color-icon-neutral-strong — Neutral UI chrome without brand emphasis. Higher emphasis treatment."
+        },
+        "subtle": {
+          "hover": {
+            "$value": "{color.gray.200}",
+            "$description": "color-icon-neutral-subtle-hover — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Hover state."
+          },
+          "selected": {
+            "$value": "{color.gray.300}",
+            "$description": "color-icon-neutral-subtle-selected — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Selected state."
+          },
+          "$value": "{color.gray.300}",
+          "$description": "color-icon-neutral-subtle — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.200}",
+        "$description": "color-icon-neutral — Neutral UI chrome without brand emphasis."
+      },
+      "on-action": {
+        "disabled": {
+          "$value": "{color.gray.600}",
+          "$description": "color-icon-on-action-disabled — Foreground that sits on action backgrounds. Disabled state."
+        },
+        "error": {
+          "disabled": {
+            "$value": "{color.gray.600}",
+            "$description": "color-icon-on-action-error-disabled — Foreground that sits on action backgrounds. Error / destructive variant. Disabled state."
+          },
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-icon-on-action-error-intense — Foreground that sits on action backgrounds. Error / destructive variant. Highest emphasis / solid treatment."
+          },
+          "$value": "{color.red.100}",
+          "$description": "color-icon-on-action-error — Foreground that sits on action backgrounds. Error / destructive variant."
+        },
+        "intense": {
+          "$value": "{color.white}",
+          "$description": "color-icon-on-action-intense — Foreground that sits on action backgrounds. Highest emphasis / solid treatment."
+        },
+        "success": {
+          "disabled": {
+            "$value": "{color.gray.600}",
+            "$description": "color-icon-on-action-success-disabled — Foreground that sits on action backgrounds. Success / positive variant. Disabled state."
+          },
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-icon-on-action-success-intense — Foreground that sits on action backgrounds. Success / positive variant. Highest emphasis / solid treatment."
+          },
+          "$value": "{color.green.100}",
+          "$description": "color-icon-on-action-success — Foreground that sits on action backgrounds. Success / positive variant."
+        },
+        "warning": {
+          "disabled": {
+            "$value": "{color.gray.600}",
+            "$description": "color-icon-on-action-warning-disabled — Foreground that sits on action backgrounds. Warning / caution variant. Disabled state."
+          },
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-icon-on-action-warning-intense — Foreground that sits on action backgrounds. Warning / caution variant. Highest emphasis / solid treatment."
+          },
+          "$value": "{color.amber.100}",
+          "$description": "color-icon-on-action-warning — Foreground that sits on action backgrounds. Warning / caution variant."
+        },
+        "$value": "{color.gray.100}",
+        "$description": "color-icon-on-action — Foreground that sits on action backgrounds."
+      },
+      "on-feedback": {
+        "error": {
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-icon-on-feedback-error-intense — Foreground that sits on feedback backgrounds. Error / destructive variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.red.200}",
+            "$description": "color-icon-on-feedback-error-subtle — Foreground that sits on feedback backgrounds. Error / destructive variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.red.100}",
+          "$description": "color-icon-on-feedback-error — Foreground that sits on feedback backgrounds. Error / destructive variant."
+        },
+        "info": {
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-icon-on-feedback-info-intense — Foreground that sits on feedback backgrounds. Informational variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.teal.200}",
+            "$description": "color-icon-on-feedback-info-subtle — Foreground that sits on feedback backgrounds. Informational variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.teal.100}",
+          "$description": "color-icon-on-feedback-info — Foreground that sits on feedback backgrounds. Informational variant."
+        },
+        "success": {
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-icon-on-feedback-success-intense — Foreground that sits on feedback backgrounds. Success / positive variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.green.200}",
+            "$description": "color-icon-on-feedback-success-subtle — Foreground that sits on feedback backgrounds. Success / positive variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.green.100}",
+          "$description": "color-icon-on-feedback-success — Foreground that sits on feedback backgrounds. Success / positive variant."
+        },
+        "warning": {
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-icon-on-feedback-warning-intense — Foreground that sits on feedback backgrounds. Warning / caution variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.amber.200}",
+            "$description": "color-icon-on-feedback-warning-subtle — Foreground that sits on feedback backgrounds. Warning / caution variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.amber.100}",
+          "$description": "color-icon-on-feedback-warning — Foreground that sits on feedback backgrounds. Warning / caution variant."
+        },
+        "$description": "Foreground that sits on feedback backgrounds."
+      },
+      "on-input": {
+        "disabled": {
+          "$value": "{color.gray.600}",
+          "$description": "color-icon-on-input-disabled — Foreground that sits on input backgrounds. Disabled state."
+        },
+        "subtle": {
+          "$value": "{color.gray.300}",
+          "$description": "color-icon-on-input-subtle — Foreground that sits on input backgrounds. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.100}",
+        "$description": "color-icon-on-input — Foreground that sits on input backgrounds."
+      },
+      "on-neutral": {
+        "intense": {
+          "$value": "{color.gray.950}",
+          "$description": "color-icon-on-neutral-intense — Foreground that sits on neutral backgrounds. Highest emphasis / solid treatment."
+        },
+        "strong": {
+          "$value": "{color.white}",
+          "$description": "color-icon-on-neutral-strong — Foreground that sits on neutral backgrounds. Higher emphasis treatment."
+        },
+        "subtle": {
+          "$value": "{color.gray.100}",
+          "$description": "color-icon-on-neutral-subtle — Foreground that sits on neutral backgrounds. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.50}",
+        "$description": "color-icon-on-neutral — Foreground that sits on neutral backgrounds."
+      },
+      "surface": {
+        "strong": {
+          "$value": "{color.gray.50}",
+          "$description": "color-icon-surface-strong — Page and container surface backgrounds. Higher emphasis treatment."
+        },
+        "subtle": {
+          "$value": "{color.gray.300}",
+          "$description": "color-icon-surface-subtle — Page and container surface backgrounds. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.100}",
+        "$description": "color-icon-surface — Page and container surface backgrounds."
+      },
+      "$description": "Icon and glyph fills, mirroring text roles where applicable."
+    },
+    "outline": {
+      "focus": {
+        "$value": "{color.amber.400}",
+        "$description": "color-outline-focus — Focus state."
+      },
+      "$description": "Focus and emphasis outlines (not regular borders)."
+    },
+    "text": {
+      "accent": {
+        "amber": {
+          "intense": {
+            "$value": "{color.amber.50}",
+            "$description": "color-text-accent-amber-intense — Tinted accent text by hue. amber Highest emphasis / solid treatment."
+          },
+          "minimal": {
+            "$value": "{color.amber.400}",
+            "$description": "color-text-accent-amber-minimal — Tinted accent text by hue. amber Lowest emphasis treatment."
+          },
+          "strong": {
+            "$value": "{color.amber.100}",
+            "$description": "color-text-accent-amber-strong — Tinted accent text by hue. amber Higher emphasis treatment."
+          },
+          "subtle": {
+            "$value": "{color.amber.300}",
+            "$description": "color-text-accent-amber-subtle — Tinted accent text by hue. amber Lower emphasis / softer treatment."
+          },
+          "$value": "{color.amber.200}",
+          "$description": "color-text-accent-amber — Tinted accent text by hue. amber."
+        },
+        "blue": {
+          "intense": {
+            "$value": "{color.blue.50}",
+            "$description": "color-text-accent-blue-intense — Tinted accent text by hue. blue Highest emphasis / solid treatment."
+          },
+          "minimal": {
+            "$value": "{color.blue.400}",
+            "$description": "color-text-accent-blue-minimal — Tinted accent text by hue. blue Lowest emphasis treatment."
+          },
+          "strong": {
+            "$value": "{color.blue.100}",
+            "$description": "color-text-accent-blue-strong — Tinted accent text by hue. blue Higher emphasis treatment."
+          },
+          "subtle": {
+            "$value": "{color.blue.300}",
+            "$description": "color-text-accent-blue-subtle — Tinted accent text by hue. blue Lower emphasis / softer treatment."
+          },
+          "$value": "{color.blue.200}",
+          "$description": "color-text-accent-blue — Tinted accent text by hue. blue."
+        },
+        "green": {
+          "intense": {
+            "$value": "{color.green.50}",
+            "$description": "color-text-accent-green-intense — Tinted accent text by hue. green Highest emphasis / solid treatment."
+          },
+          "minimal": {
+            "$value": "{color.green.400}",
+            "$description": "color-text-accent-green-minimal — Tinted accent text by hue. green Lowest emphasis treatment."
+          },
+          "strong": {
+            "$value": "{color.green.100}",
+            "$description": "color-text-accent-green-strong — Tinted accent text by hue. green Higher emphasis treatment."
+          },
+          "subtle": {
+            "$value": "{color.green.300}",
+            "$description": "color-text-accent-green-subtle — Tinted accent text by hue. green Lower emphasis / softer treatment."
+          },
+          "$value": "{color.green.200}",
+          "$description": "color-text-accent-green — Tinted accent text by hue. green."
+        },
+        "red": {
+          "intense": {
+            "$value": "{color.red.50}",
+            "$description": "color-text-accent-red-intense — Tinted accent text by hue. red Highest emphasis / solid treatment."
+          },
+          "minimal": {
+            "$value": "{color.red.400}",
+            "$description": "color-text-accent-red-minimal — Tinted accent text by hue. red Lowest emphasis treatment."
+          },
+          "strong": {
+            "$value": "{color.red.100}",
+            "$description": "color-text-accent-red-strong — Tinted accent text by hue. red Higher emphasis treatment."
+          },
+          "subtle": {
+            "$value": "{color.red.300}",
+            "$description": "color-text-accent-red-subtle — Tinted accent text by hue. red Lower emphasis / softer treatment."
+          },
+          "$value": "{color.red.200}",
+          "$description": "color-text-accent-red — Tinted accent text by hue. red."
+        },
+        "teal": {
+          "intense": {
+            "$value": "{color.teal.50}",
+            "$description": "color-text-accent-teal-intense — Tinted accent text by hue. teal Highest emphasis / solid treatment."
+          },
+          "minimal": {
+            "$value": "{color.teal.400}",
+            "$description": "color-text-accent-teal-minimal — Tinted accent text by hue. teal Lowest emphasis treatment."
+          },
+          "strong": {
+            "$value": "{color.teal.100}",
+            "$description": "color-text-accent-teal-strong — Tinted accent text by hue. teal Higher emphasis treatment."
+          },
+          "subtle": {
+            "$value": "{color.teal.300}",
+            "$description": "color-text-accent-teal-subtle — Tinted accent text by hue. teal Lower emphasis / softer treatment."
+          },
+          "$value": "{color.teal.200}",
+          "$description": "color-text-accent-teal — Tinted accent text by hue. teal."
+        },
+        "violet": {
+          "intense": {
+            "$value": "{color.violet.50}",
+            "$description": "color-text-accent-violet-intense — Tinted accent text by hue. violet Highest emphasis / solid treatment."
+          },
+          "minimal": {
+            "$value": "{color.violet.400}",
+            "$description": "color-text-accent-violet-minimal — Tinted accent text by hue. violet Lowest emphasis treatment."
+          },
+          "strong": {
+            "$value": "{color.violet.100}",
+            "$description": "color-text-accent-violet-strong — Tinted accent text by hue. violet Higher emphasis treatment."
+          },
+          "subtle": {
+            "$value": "{color.violet.300}",
+            "$description": "color-text-accent-violet-subtle — Tinted accent text by hue. violet Lower emphasis / softer treatment."
+          },
+          "$value": "{color.violet.200}",
+          "$description": "color-text-accent-violet — Tinted accent text by hue. violet."
+        },
+        "$description": "Tinted accent text by hue."
+      },
+      "action": {
+        "active": {
+          "$value": "{color.gray.50}",
+          "$description": "color-text-action-active — Interactive control roles (buttons, links, toggles). Pressed or active state."
+        },
+        "disabled": {
+          "$value": "{color.gray.600}",
+          "$description": "color-text-action-disabled — Interactive control roles (buttons, links, toggles). Disabled state."
+        },
+        "error": {
+          "active": {
+            "$value": "{color.red.50}",
+            "$description": "color-text-action-error-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Pressed or active state."
+          },
+          "disabled": {
+            "$value": "{color.gray.600}",
+            "$description": "color-text-action-error-disabled — Interactive control roles (buttons, links, toggles). Error / destructive variant. Disabled state."
+          },
+          "hover": {
+            "$value": "{color.red.100}",
+            "$description": "color-text-action-error-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Hover state."
+          },
+          "strong": {
+            "active": {
+              "$value": "{color.red.50}",
+              "$description": "color-text-action-error-strong-active — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment. Pressed or active state."
+            },
+            "hover": {
+              "$value": "{color.red.50}",
+              "$description": "color-text-action-error-strong-hover — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment. Hover state."
+            },
+            "$value": "{color.red.100}",
+            "$description": "color-text-action-error-strong — Interactive control roles (buttons, links, toggles). Error / destructive variant. Higher emphasis treatment."
+          },
+          "$value": "{color.red.200}",
+          "$description": "color-text-action-error — Interactive control roles (buttons, links, toggles). Error / destructive variant."
+        },
+        "hover": {
+          "$value": "{color.gray.100}",
+          "$description": "color-text-action-hover — Interactive control roles (buttons, links, toggles). Hover state."
+        },
+        "strong": {
+          "active": {
+            "$value": "{color.gray.50}",
+            "$description": "color-text-action-strong-active — Interactive control roles (buttons, links, toggles). Higher emphasis treatment. Pressed or active state."
+          },
+          "hover": {
+            "$value": "{color.gray.50}",
+            "$description": "color-text-action-strong-hover — Interactive control roles (buttons, links, toggles). Higher emphasis treatment. Hover state."
+          },
+          "$value": "{color.gray.100}",
+          "$description": "color-text-action-strong — Interactive control roles (buttons, links, toggles). Higher emphasis treatment."
+        },
+        "subtle": {
+          "active": {
+            "$value": "{color.gray.100}",
+            "$description": "color-text-action-subtle-active — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Pressed or active state."
+          },
+          "hover": {
+            "$value": "{color.gray.200}",
+            "$description": "color-text-action-subtle-hover — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment. Hover state."
+          },
+          "$value": "{color.gray.300}",
+          "$description": "color-text-action-subtle — Interactive control roles (buttons, links, toggles). Lower emphasis / softer treatment."
+        },
+        "success": {
+          "active": {
+            "$value": "{color.green.50}",
+            "$description": "color-text-action-success-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Pressed or active state."
+          },
+          "disabled": {
+            "$value": "{color.gray.600}",
+            "$description": "color-text-action-success-disabled — Interactive control roles (buttons, links, toggles). Success / positive variant. Disabled state."
+          },
+          "hover": {
+            "$value": "{color.green.100}",
+            "$description": "color-text-action-success-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Hover state."
+          },
+          "strong": {
+            "active": {
+              "$value": "{color.green.50}",
+              "$description": "color-text-action-success-strong-active — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment. Pressed or active state."
+            },
+            "hover": {
+              "$value": "{color.green.50}",
+              "$description": "color-text-action-success-strong-hover — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment. Hover state."
+            },
+            "$value": "{color.green.100}",
+            "$description": "color-text-action-success-strong — Interactive control roles (buttons, links, toggles). Success / positive variant. Higher emphasis treatment."
+          },
+          "$value": "{color.green.200}",
+          "$description": "color-text-action-success — Interactive control roles (buttons, links, toggles). Success / positive variant."
+        },
+        "$value": "{color.gray.200}",
+        "$description": "color-text-action — Interactive control roles (buttons, links, toggles)."
+      },
+      "brand": {
+        "$value": "{color.gray.200}",
+        "$description": "color-text-brand — Brand accent roles."
+      },
+      "data": {
+        "1": {
+          "$value": "{color.blue.200}",
+          "$description": "color-text-data-1 — Categorical data visualization series. 1."
+        },
+        "2": {
+          "$value": "{color.teal.200}",
+          "$description": "color-text-data-2 — Categorical data visualization series. 2."
+        },
+        "3": {
+          "$value": "{color.amber.200}",
+          "$description": "color-text-data-3 — Categorical data visualization series. 3."
+        },
+        "4": {
+          "$value": "{color.violet.200}",
+          "$description": "color-text-data-4 — Categorical data visualization series. 4."
+        },
+        "5": {
+          "$value": "{color.green.200}",
+          "$description": "color-text-data-5 — Categorical data visualization series. 5."
+        },
+        "6": {
+          "$value": "{color.red.200}",
+          "$description": "color-text-data-6 — Categorical data visualization series. 6."
+        },
+        "$description": "Categorical data visualization series."
+      },
+      "feedback": {
+        "error": {
+          "strong": {
+            "$value": "{color.red.100}",
+            "$description": "color-text-feedback-error-strong — Status messaging roles (error, success, warning, info). Error / destructive variant. Higher emphasis treatment."
+          },
+          "$value": "{color.red.200}",
+          "$description": "color-text-feedback-error — Status messaging roles (error, success, warning, info). Error / destructive variant."
+        },
+        "info": {
+          "strong": {
+            "$value": "{color.teal.100}",
+            "$description": "color-text-feedback-info-strong — Status messaging roles (error, success, warning, info). Informational variant. Higher emphasis treatment."
+          },
+          "$value": "{color.teal.200}",
+          "$description": "color-text-feedback-info — Status messaging roles (error, success, warning, info). Informational variant."
+        },
+        "success": {
+          "strong": {
+            "$value": "{color.green.100}",
+            "$description": "color-text-feedback-success-strong — Status messaging roles (error, success, warning, info). Success / positive variant. Higher emphasis treatment."
+          },
+          "$value": "{color.green.200}",
+          "$description": "color-text-feedback-success — Status messaging roles (error, success, warning, info). Success / positive variant."
+        },
+        "warning": {
+          "strong": {
+            "$value": "{color.amber.100}",
+            "$description": "color-text-feedback-warning-strong — Status messaging roles (error, success, warning, info). Warning / caution variant. Higher emphasis treatment."
+          },
+          "$value": "{color.amber.200}",
+          "$description": "color-text-feedback-warning — Status messaging roles (error, success, warning, info). Warning / caution variant."
+        },
+        "$description": "Status messaging roles (error, success, warning, info)."
+      },
+      "highlight": {
+        "$value": "{color.amber.100}",
+        "$description": "color-text-highlight — Highlight and emphasis washes."
+      },
+      "input": {
+        "disabled": {
+          "$value": "{color.gray.600}",
+          "$description": "color-text-input-disabled — Form field roles. Disabled state."
+        },
+        "subtle": {
+          "$value": "{color.gray.300}",
+          "$description": "color-text-input-subtle — Form field roles. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.100}",
+        "$description": "color-text-input — Form field roles."
+      },
+      "neutral": {
+        "disabled": {
+          "$value": "{color.gray.600}",
+          "$description": "color-text-neutral-disabled — Neutral UI chrome without brand emphasis. Disabled state."
+        },
+        "hover": {
+          "$value": "{color.gray.100}",
+          "$description": "color-text-neutral-hover — Neutral UI chrome without brand emphasis. Hover state."
+        },
+        "selected": {
+          "$value": "{color.gray.200}",
+          "$description": "color-text-neutral-selected — Neutral UI chrome without brand emphasis. Selected state."
+        },
+        "strong": {
+          "hover": {
+            "$value": "{color.gray.50}",
+            "$description": "color-text-neutral-strong-hover — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Hover state."
+          },
+          "selected": {
+            "$value": "{color.gray.100}",
+            "$description": "color-text-neutral-strong-selected — Neutral UI chrome without brand emphasis. Higher emphasis treatment. Selected state."
+          },
+          "$value": "{color.gray.50}",
+          "$description": "color-text-neutral-strong — Neutral UI chrome without brand emphasis. Higher emphasis treatment."
+        },
+        "subtle": {
+          "hover": {
+            "$value": "{color.gray.200}",
+            "$description": "color-text-neutral-subtle-hover — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Hover state."
+          },
+          "selected": {
+            "$value": "{color.gray.300}",
+            "$description": "color-text-neutral-subtle-selected — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment. Selected state."
+          },
+          "$value": "{color.gray.300}",
+          "$description": "color-text-neutral-subtle — Neutral UI chrome without brand emphasis. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.200}",
+        "$description": "color-text-neutral — Neutral UI chrome without brand emphasis."
+      },
+      "on-action": {
+        "disabled": {
+          "$value": "{color.gray.600}",
+          "$description": "color-text-on-action-disabled — Foreground that sits on action backgrounds. Disabled state."
+        },
+        "error": {
+          "disabled": {
+            "$value": "{color.gray.600}",
+            "$description": "color-text-on-action-error-disabled — Foreground that sits on action backgrounds. Error / destructive variant. Disabled state."
+          },
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-text-on-action-error-intense — Foreground that sits on action backgrounds. Error / destructive variant. Highest emphasis / solid treatment."
+          },
+          "$value": "{color.red.100}",
+          "$description": "color-text-on-action-error — Foreground that sits on action backgrounds. Error / destructive variant."
+        },
+        "intense": {
+          "$value": "{color.white}",
+          "$description": "color-text-on-action-intense — Foreground that sits on action backgrounds. Highest emphasis / solid treatment."
+        },
+        "success": {
+          "disabled": {
+            "$value": "{color.gray.600}",
+            "$description": "color-text-on-action-success-disabled — Foreground that sits on action backgrounds. Success / positive variant. Disabled state."
+          },
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-text-on-action-success-intense — Foreground that sits on action backgrounds. Success / positive variant. Highest emphasis / solid treatment."
+          },
+          "$value": "{color.green.100}",
+          "$description": "color-text-on-action-success — Foreground that sits on action backgrounds. Success / positive variant."
+        },
+        "warning": {
+          "disabled": {
+            "$value": "{color.gray.600}",
+            "$description": "color-text-on-action-warning-disabled — Foreground that sits on action backgrounds. Warning / caution variant. Disabled state."
+          },
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-text-on-action-warning-intense — Foreground that sits on action backgrounds. Warning / caution variant. Highest emphasis / solid treatment."
+          },
+          "$value": "{color.amber.100}",
+          "$description": "color-text-on-action-warning — Foreground that sits on action backgrounds. Warning / caution variant."
+        },
+        "$value": "{color.gray.100}",
+        "$description": "color-text-on-action — Foreground that sits on action backgrounds."
+      },
+      "on-feedback": {
+        "error": {
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-text-on-feedback-error-intense — Foreground that sits on feedback backgrounds. Error / destructive variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.red.200}",
+            "$description": "color-text-on-feedback-error-subtle — Foreground that sits on feedback backgrounds. Error / destructive variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.red.100}",
+          "$description": "color-text-on-feedback-error — Foreground that sits on feedback backgrounds. Error / destructive variant."
+        },
+        "info": {
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-text-on-feedback-info-intense — Foreground that sits on feedback backgrounds. Informational variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.teal.200}",
+            "$description": "color-text-on-feedback-info-subtle — Foreground that sits on feedback backgrounds. Informational variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.teal.100}",
+          "$description": "color-text-on-feedback-info — Foreground that sits on feedback backgrounds. Informational variant."
+        },
+        "success": {
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-text-on-feedback-success-intense — Foreground that sits on feedback backgrounds. Success / positive variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.green.200}",
+            "$description": "color-text-on-feedback-success-subtle — Foreground that sits on feedback backgrounds. Success / positive variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.green.100}",
+          "$description": "color-text-on-feedback-success — Foreground that sits on feedback backgrounds. Success / positive variant."
+        },
+        "warning": {
+          "intense": {
+            "$value": "{color.white}",
+            "$description": "color-text-on-feedback-warning-intense — Foreground that sits on feedback backgrounds. Warning / caution variant. Highest emphasis / solid treatment."
+          },
+          "subtle": {
+            "$value": "{color.amber.200}",
+            "$description": "color-text-on-feedback-warning-subtle — Foreground that sits on feedback backgrounds. Warning / caution variant. Lower emphasis / softer treatment."
+          },
+          "$value": "{color.amber.100}",
+          "$description": "color-text-on-feedback-warning — Foreground that sits on feedback backgrounds. Warning / caution variant."
+        },
+        "$description": "Foreground that sits on feedback backgrounds."
+      },
+      "on-input": {
+        "disabled": {
+          "$value": "{color.gray.600}",
+          "$description": "color-text-on-input-disabled — Foreground that sits on input backgrounds. Disabled state."
+        },
+        "subtle": {
+          "$value": "{color.gray.300}",
+          "$description": "color-text-on-input-subtle — Foreground that sits on input backgrounds. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.100}",
+        "$description": "color-text-on-input — Foreground that sits on input backgrounds."
+      },
+      "on-neutral": {
+        "intense": {
+          "$value": "{color.gray.950}",
+          "$description": "color-text-on-neutral-intense — Foreground that sits on neutral backgrounds. Highest emphasis / solid treatment."
+        },
+        "strong": {
+          "$value": "{color.white}",
+          "$description": "color-text-on-neutral-strong — Foreground that sits on neutral backgrounds. Higher emphasis treatment."
+        },
+        "subtle": {
+          "$value": "{color.gray.100}",
+          "$description": "color-text-on-neutral-subtle — Foreground that sits on neutral backgrounds. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.50}",
+        "$description": "color-text-on-neutral — Foreground that sits on neutral backgrounds."
+      },
+      "surface": {
+        "intense": {
+          "$value": "{color.gray.50}",
+          "$description": "color-text-surface-intense — Page and container surface backgrounds. Highest emphasis / solid treatment."
+        },
+        "minimal": {
+          "$value": "{color.gray.400}",
+          "$description": "color-text-surface-minimal — Page and container surface backgrounds. Lowest emphasis treatment."
+        },
+        "strong": {
+          "$value": "{color.gray.100}",
+          "$description": "color-text-surface-strong — Page and container surface backgrounds. Higher emphasis treatment."
+        },
+        "subtle": {
+          "$value": "{color.gray.300}",
+          "$description": "color-text-surface-subtle — Page and container surface backgrounds. Lower emphasis / softer treatment."
+        },
+        "$value": "{color.gray.200}",
+        "$description": "color-text-surface — Page and container surface backgrounds."
+      },
+      "$description": "Foreground text colors, including on-* contrast roles."
+    }
+  }
+}

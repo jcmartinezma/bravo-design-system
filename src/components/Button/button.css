@@ -1,0 +1,214 @@
+.ds-button {
+  --ds-button-bg: transparent;
+  --ds-button-bg-hover: transparent;
+  --ds-button-bg-active: transparent;
+  --ds-button-color: var(--color-text-neutral);
+  --ds-button-color-hover: var(--color-text-neutral);
+  --ds-button-border: transparent;
+  --ds-button-border-hover: transparent;
+  --ds-button-pad-y: var(--spacing-xs);
+  --ds-button-pad-x: var(--spacing-sm);
+  --ds-button-font-size: var(--text-size-xs);
+  --ds-button-line-height: var(--text-leading-xs);
+  --ds-button-min-height: 2.75rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  box-sizing: border-box;
+  min-height: var(--ds-button-min-height);
+  margin: 0;
+  padding: var(--ds-button-pad-y) var(--ds-button-pad-x);
+  border: var(--border-width-sm) solid var(--ds-button-border);
+  border-radius: var(--radius-md);
+  background-color: var(--ds-button-bg);
+  color: var(--ds-button-color);
+  font-family: var(--text-face-base);
+  font-size: var(--ds-button-font-size);
+  font-weight: var(--text-weight-medium);
+  line-height: var(--ds-button-line-height);
+  letter-spacing: var(--text-letter-spacing-sm);
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.ds-button:hover:not(:disabled) {
+  background-color: var(--ds-button-bg-hover);
+  border-color: var(--ds-button-border-hover);
+  color: var(--ds-button-color-hover);
+}
+
+.ds-button:active:not(:disabled) {
+  background-color: var(--ds-button-bg-active);
+}
+
+.ds-button:focus {
+  outline: none;
+}
+
+.ds-button:focus-visible {
+  outline: var(--border-width-md) solid var(--color-outline-focus);
+  outline-offset: var(--spacing-2xs);
+}
+
+.ds-button:disabled,
+.ds-button[aria-disabled='true'] {
+  background-color: var(--color-bg-action-disabled);
+  border-color: var(--color-border-action-disabled);
+  color: var(--color-text-action-disabled);
+  cursor: not-allowed;
+}
+
+.ds-button--primary {
+  --ds-button-bg: var(--color-bg-action-intense);
+  --ds-button-bg-hover: var(--color-bg-action-intense-hover);
+  --ds-button-bg-active: var(--color-bg-action-intense-active);
+  --ds-button-color: var(--color-text-on-action-intense);
+  --ds-button-color-hover: var(--color-text-on-action-intense);
+  --ds-button-border: var(--color-border-action-intense);
+  --ds-button-border-hover: var(--color-border-action-intense-hover);
+}
+
+.ds-button--secondary {
+  --ds-button-bg: var(--color-bg-neutral);
+  --ds-button-bg-hover: var(--color-bg-neutral-hover);
+  --ds-button-bg-active: var(--color-bg-neutral-active);
+  --ds-button-color: var(--color-text-neutral);
+  --ds-button-color-hover: var(--color-text-neutral-hover);
+  --ds-button-border: var(--color-border-neutral);
+  --ds-button-border-hover: var(--color-border-neutral-hover);
+}
+
+.ds-button--ghost {
+  --ds-button-bg: transparent;
+  --ds-button-bg-hover: var(--color-bg-action-subtle-hover);
+  --ds-button-bg-active: var(--color-bg-action-subtle-active);
+  --ds-button-color: var(--color-text-action);
+  --ds-button-color-hover: var(--color-text-action-hover);
+  --ds-button-border: transparent;
+  --ds-button-border-hover: transparent;
+}
+
+.ds-button--danger {
+  --ds-button-bg: var(--color-bg-action-error-intense);
+  --ds-button-bg-hover: var(--color-bg-action-error-intense-hover);
+  --ds-button-bg-active: var(--color-bg-action-error-intense-active);
+  --ds-button-color: var(--color-text-on-action-error-intense);
+  --ds-button-color-hover: var(--color-text-on-action-error-intense);
+  --ds-button-border: var(--color-border-action-error);
+  --ds-button-border-hover: var(--color-border-action-error-hover);
+}
+
+.ds-button--danger:hover:not(:disabled) {
+  filter: brightness(0.92);
+}
+
+.ds-button--danger:active:not(:disabled) {
+  filter: brightness(0.85);
+}
+
+.ds-button--small {
+  --ds-button-pad-y: var(--spacing-2xs);
+  --ds-button-pad-x: var(--spacing-sm);
+  --ds-button-font-size: var(--text-size-xs);
+  --ds-button-line-height: var(--text-leading-xs);
+  --ds-button-min-height: 2rem;
+}
+
+.ds-button--medium {
+  --ds-button-pad-y: var(--spacing-xs);
+  --ds-button-pad-x: var(--spacing-sm);
+  --ds-button-font-size: var(--text-size-xs);
+  --ds-button-line-height: var(--text-leading-xs);
+  --ds-button-min-height: 2.75rem;
+}
+
+.ds-button--large {
+  --ds-button-pad-y: var(--spacing-sm);
+  --ds-button-pad-x: var(--spacing-md);
+  --ds-button-font-size: var(--text-size-sm);
+  --ds-button-line-height: var(--text-leading-sm);
+  --ds-button-min-height: 3.25rem;
+}
+
+.ds-button--icon-only {
+  --ds-button-pad-x: var(--ds-button-pad-y);
+  aspect-ratio: 1;
+  min-width: var(--ds-button-min-height);
+}
+
+.ds-button--icon-only.ds-button--small {
+  --ds-button-pad-y: var(--spacing-2xs);
+  --ds-button-pad-x: var(--spacing-2xs);
+}
+
+.ds-button--icon-only.ds-button--medium {
+  --ds-button-pad-y: var(--spacing-xs);
+  --ds-button-pad-x: var(--spacing-xs);
+}
+
+.ds-button--icon-only.ds-button--large {
+  --ds-button-pad-y: var(--spacing-sm);
+  --ds-button-pad-x: var(--spacing-sm);
+}
+
+.ds-button--loading {
+  position: relative;
+}
+
+.ds-button__content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+}
+
+.ds-button__content--hidden {
+  visibility: hidden;
+}
+
+.ds-button__icon {
+  display: block;
+  width: 1.25em;
+  height: 1.25em;
+  flex-shrink: 0;
+  overflow: visible;
+  color: inherit;
+}
+
+.ds-button__spinner {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 1em;
+  height: 1em;
+  border: var(--border-width-md) solid currentColor;
+  border-right-color: transparent;
+  border-radius: var(--radius-rounded);
+  animation: ds-button-spin var(--motion-speed-normal) var(--motion-easing-linear) infinite;
+}
+
+@keyframes ds-button-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-button {
+    transition: none;
+  }
+
+  .ds-button__spinner {
+    animation: none;
+    border-right-color: currentColor;
+    opacity: 0.7;
+  }
+}

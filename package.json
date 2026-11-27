@@ -1,0 +1,45 @@
+{
+  "name": "bravo-design-system",
+  "author": "JCMartínez",
+  "repository": "https://github.com/jcmartinez/bravo-design-system",
+  "version": "0.2.0",
+  "description": "Bravo Design System - Tokens and React components",
+  "license": "GPL-3.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "tokens:build": "node style-dictionary.config.js"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "5.6.0",
+    "@eslint/js": "^10.0.1",
+    "@storybook/addon-docs": "^10.6.7",
+    "@storybook/addon-mcp": "^10.6.7",
+    "@storybook/addon-vitest": "^10.6.7",
+    "@storybook/react-vite": "^10.6.7",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "@vitest/browser-playwright": "latest",
+    "@vitest/coverage-v8": "latest",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "eslint-plugin-storybook": "^10.6.7",
+    "globals": "^17.13.0",
+    "playwright": "latest",
+    "storybook": "^10.6.7",
+    "style-dictionary": "^5.8.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.72.0",
+    "vite": "^8.3.5",
+    "vitest": "latest"
+  }
+}

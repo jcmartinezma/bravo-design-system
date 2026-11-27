@@ -15,7 +15,7 @@ This starter uses **semantic intent** for doc changes:
 
 | Change | Version bump | Example |
 |--------|--------------|---------|
-| Typo, clarify without changing meaning | Patch | Fix link in color.mdx |
+| Typo, clarify without changing meaning | Patch | Fix link in color.md |
 | New pattern or foundation section | Minor | Add form-validation pattern |
 | Restructure folders or rename files | Major | Move content/ into vision/ |
 
@@ -23,7 +23,7 @@ Tag releases in git when you publish meaningful snapshots of your fork (optional
 
 ## Tokens
 
-Token files live under `docs/tokens/` (`core/`, `semantic/`, `theme/`). See [tokens](../foundations/tokens).
+Token files live under `tokens/` (`core/`, `semantic/`, `theme/`). See [tokens](../foundations/tokens).
 
 - **Patch** — Value tweak that preserves token names (e.g. slightly adjust primary hue).
 - **Minor** — New tokens, new theme variants, backward compatible.

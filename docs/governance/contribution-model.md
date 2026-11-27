@@ -43,6 +43,6 @@ When an AI agent drafts documentation:
 
 ## Related docs
 
-- [CONTRIBUTING.md](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/CONTRIBUTING.md)
+- [CONTRIBUTING.md](https://github.com/jcmartinezma/bravo-design-system/tree/main/CONTRIBUTING.md)
 - [Quality bar](quality-bar)
 - [Decisions backlog](decisions-backlog)

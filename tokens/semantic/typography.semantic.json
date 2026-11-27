@@ -1,0 +1,142 @@
+{
+  "$schema": "../../schemas/dtcg-format.schema.json",
+  "text": {
+    "$description": "Semantic typography roles referencing core font.* tokens",
+    "face": {
+      "$description": "Typeface roles for UI text (font-1 Domine, font-2 Asap, font-3 IBM Plex Mono). Named face to avoid confusion with CSS font-style.",
+      "display": {
+        "$type": "fontFamily",
+        "$value": "{font.family.font-1}, serif",
+        "$description": "text-face-display — headings and display titles"
+      },
+      "base": {
+        "$type": "fontFamily",
+        "$value": "{font.family.font-2}, sans-serif",
+        "$description": "text-face-base — default UI and body copy"
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": "{font.family.font-3}, monospace",
+        "$description": "text-face-mono — code, IDs, and tabular data"
+      }
+    },
+    "size": {
+      "$description": "Text size roles mapped to the core font.size scale (100–700)",
+      "xs": {
+        "$type": "dimension",
+        "$value": "{font.size.100}",
+        "$description": "text-size-xs — captions, badges, and compact labels"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{font.size.200}",
+        "$description": "text-size-sm — secondary body and dense UI text"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{font.size.300}",
+        "$description": "text-size-md — default body size"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{font.size.400}",
+        "$description": "text-size-lg — emphasized body and small headings"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "{font.size.500}",
+        "$description": "text-size-xl — section headings"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "{font.size.600}",
+        "$description": "text-size-2xl — large headings"
+      },
+      "3xl": {
+        "$type": "dimension",
+        "$value": "{font.size.700}",
+        "$description": "text-size-3xl — page titles — largest core step"
+      }
+    },
+    "weight": {
+      "$description": "Text weight roles (core font.weight.03–07 → 400–800)",
+      "normal": {
+        "$type": "fontWeight",
+        "$value": "{font.weight.03}",
+        "$description": "text-weight-normal — regular body weight (400)"
+      },
+      "medium": {
+        "$type": "fontWeight",
+        "$value": "{font.weight.04}",
+        "$description": "text-weight-medium — medium emphasis (500)"
+      },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": "{font.weight.05}",
+        "$description": "text-weight-semibold — strong UI labels (600)"
+      },
+      "bold": {
+        "$type": "fontWeight",
+        "$value": "{font.weight.06}",
+        "$description": "text-weight-bold — headings (700)"
+      },
+      "extrabold": {
+        "$type": "fontWeight",
+        "$value": "{font.weight.07}",
+        "$description": "text-weight-extrabold — display titles (800)"
+      }
+    },
+    "leading": {
+      "$description": "Line-height roles mapped to core font.height (100–700)",
+      "$type": "dimension",
+      "xs": {
+        "$value": "{font.height.100}",
+        "$description": "text-leading-xs — tight leading for the smallest text"
+      },
+      "sm": {
+        "$value": "{font.height.200}",
+        "$description": "text-leading-sm — compact leading for labels and captions"
+      },
+      "md": {
+        "$value": "{font.height.300}",
+        "$description": "text-leading-md — standard leading for short UI text"
+      },
+      "lg": {
+        "$value": "{font.height.400}",
+        "$description": "text-leading-lg — relaxed leading for readable paragraphs"
+      },
+      "xl": {
+        "$value": "{font.height.500}",
+        "$description": "text-leading-xl — open leading for subheadings"
+      },
+      "2xl": {
+        "$value": "{font.height.600}",
+        "$description": "text-leading-2xl — wide leading for large headings"
+      },
+      "3xl": {
+        "$value": "{font.height.700}",
+        "$description": "text-leading-3xl — largest core line height"
+      }
+    },
+    "letterSpacing": {
+      "$description": "Letter-spacing roles mapped to core font.spacing (Figma Semantic: 400–700)",
+      "$type": "dimension",
+      "xs": {
+        "$value": "{font.spacing.400}",
+        "$description": "text-letterSpacing-xs — tightest tracking for compact UI"
+      },
+      "sm": {
+        "$value": "{font.spacing.500}",
+        "$description": "text-letterSpacing-sm — default tracking for body and controls"
+      },
+      "md": {
+        "$value": "{font.spacing.600}",
+        "$description": "text-letterSpacing-md — open tracking for larger UI text"
+      },
+      "lg": {
+        "$value": "{font.spacing.700}",
+        "$description": "text-letterSpacing-lg — widest tracking for display and headings"
+      }
+    }
+  }
+}

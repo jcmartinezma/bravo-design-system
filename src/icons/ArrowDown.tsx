@@ -1,0 +1,16 @@
+import type { SVGProps } from 'react';
+
+/** Arrow Down — source: public/svg/icon-arrow-down.svg */
+export const ArrowDown = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    {...props}
+  >
+    <path d="M11.25 3C11.25 2.58579 11.5858 2.25 12 2.25C12.4142 2.25 12.75 2.58579 12.75 3V18.1895L17.4697 13.4697C17.7626 13.1768 18.2374 13.1768 18.5303 13.4697C18.8232 13.7626 18.8232 14.2374 18.5303 14.5303L12.5303 20.5303C12.2374 20.8232 11.7626 20.8232 11.4697 20.5303L5.46973 14.5303C5.17684 14.2374 5.17684 13.7626 5.46973 13.4697C5.76262 13.1768 6.23738 13.1768 6.53028 13.4697L11.25 18.1895V3Z" fill="currentColor" />
+  </svg>
+);

@@ -21,7 +21,7 @@ If multiple components and layout rules are required, document a **pattern**, no
 
 1. Copy `docs/components/_template/` to `docs/components/{kebab-case-name}/`.
 2. Fill `metadata.json` (Figma ids) and every section of `spec.md`.
-3. Add a link in `docs/README.md`. Do not edit `site/src/data/nav.ts` — the site lists folders automatically.
+3. Add a link in `docs/README.md`.
 
 ### Patterns
 

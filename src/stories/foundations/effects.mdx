@@ -1,0 +1,48 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Effects" />
+
+# Effects
+
+Guidelines for elevation (shadows) and color washes (gradients). These are **composite** tokens — multi-property recipes that reference core and semantic values.
+
+- **Shadows** — depth and elevation for surfaces (cards, menus, modals).
+- **Gradients** — soft washes for heroes, banners, and overlays.
+
+Values live in:
+
+<table>
+  <thead>
+    <tr>
+      <th>Kind</th>
+      <th>File</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shadow composites</td>
+      <td><code>tokens/composite/shadow.composite.json</code></td>
+    </tr>
+    <tr>
+      <td>Shadow primitives</td>
+      <td><code>tokens/core/shadow.core.json</code></td>
+    </tr>
+    <tr>
+      <td>Gradients</td>
+      <td><code>tokens/composite/gradient.composite.json</code></td>
+    </tr>
+  </tbody>
+</table>
+
+## Usage tips
+
+- Prefer composite names (`shadow.sm`, `gradient.primary`) in UI — do not invent one-off blur/offset values.
+- Keep elevation steps few; reserve stronger shadows for temporary surfaces (modals, popovers).
+- Pair gradients with accessible text contrast; do not rely on gradient alone for meaning.
+
+## Related docs
+
+- [Tokens](?path=/docs/foundations-tokens--docs)
+- [Color](?path=/docs/foundations-color--docs)
+- [Motion](?path=/docs/foundations-motion--docs)
+- [Accessibility](?path=/docs/foundations-accessibility--docs)

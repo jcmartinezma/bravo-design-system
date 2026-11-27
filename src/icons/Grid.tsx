@@ -1,0 +1,16 @@
+import type { SVGProps } from 'react';
+
+/** Grid — source: public/svg/icon-grid.svg */
+export const Grid = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    {...props}
+  >
+    <path d="M3.75 15.75H8.25V20.25H4C3.86193 20.25 3.75 20.1381 3.75 20V15.75ZM14.25 20.25H9.75V15.75H14.25V20.25ZM8.25 14.25H3.75V9.75H8.25V14.25ZM14.25 14.25H9.75V9.75H14.25V14.25ZM20.25 14.25H15.75V9.75H20.25V14.25ZM14.25 8.25H9.75V3.75H14.25V8.25ZM20.25 20C20.25 20.1381 20.1381 20.25 20 20.25H15.75V15.75H20.25V20ZM3.75 4C3.75 3.86193 3.86193 3.75 4 3.75H8.25V8.25H3.75V4ZM20.25 8.25H15.75V3.75H20C20.1381 3.75 20.25 3.86193 20.25 4V8.25ZM2.25 20C2.25 20.9665 3.0335 21.75 4 21.75H20C20.9665 21.75 21.75 20.9665 21.75 20V4C21.75 3.0335 20.9665 2.25 20 2.25H4C3.0335 2.25 2.25 3.0335 2.25 4V20Z" fill="currentColor" />
+  </svg>
+);

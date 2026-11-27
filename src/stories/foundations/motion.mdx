@@ -1,0 +1,33 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Motion" />
+
+# Motion
+
+Guidelines for animation duration, easing, and when to animate. Example tokens cover common UI feedback — not every transition type.
+
+## Tokens
+
+Core durations, semantic speed/easing, and composite transitions from:
+
+- `tokens/core/motion.core.json`
+- `tokens/semantic/motion.semantic.json`
+- `tokens/composite/motion.composite.json`
+
+## When to animate
+
+**Do animate:** state changes the user triggered; spatial relationships (drawer, tooltip).
+
+**Do not animate:** critical errors; decorative motion on data-heavy screens; anything that ignores `prefers-reduced-motion`.
+
+## Accessibility
+
+- Motion supports understanding (feedback, orientation) but can distract or harm accessibility if overused.
+- Honor **`prefers-reduced-motion: reduce`** — provide instant or minimal alternatives.
+- Never block interaction until an animation completes unless necessary (and keep it short).
+
+## Related docs
+
+- [Tokens](?path=/docs/foundations-tokens--docs)
+- [Effects](?path=/docs/foundations-effects--docs)
+- [Accessibility](?path=/docs/foundations-accessibility--docs)

@@ -7,11 +7,11 @@ update: August 18, 2026
 
 # Documentation
 
-Human-facing map of this design-system starter. AI agents should start at root [AGENTS.md](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/AGENTS.md).
+Human-facing map of this design-system starter. AI agents should start at root [AGENTS.md](https://github.com/jcmartinezma/bravo-design-system/tree/main/AGENTS.md).
 
 ## Suggested reading path
 
-1. [Get started](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/README.md) — clone, tokens, and the docs site (starter pack). The site also has [`/getting-started`](/getting-started).
+1. [Get started](https://github.com/jcmartinezma/bravo-design-system/tree/main/README.md) — clone, tokens, and Storybook (starter pack).
 2. Vision — principles, voice, writing, agent workflow
 3. Foundations — tokens and guidelines
 4. Components and patterns — specs and examples
@@ -28,7 +28,7 @@ Human-facing map of this design-system starter. AI agents should start at root [
 
 ## Foundations
 
-Guideline docs live here; **values** live under [tokens/](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/tokens).
+Guideline docs live here; **values** live under [tokens/](https://github.com/jcmartinezma/bravo-design-system/tree/main/tokens).
 
 | Doc | Purpose |
 |-----|---------|
@@ -42,7 +42,7 @@ Guideline docs live here; **values** live under [tokens/](https://github.com/jcm
 
 ## Components
 
-Single reusable UI elements. Copy [`components/_template/`](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/components/_template) (`metadata.json` + `spec.md`) to add a new spec. The docs site publishes each complete folder as `/components/{name}` automatically.
+Single reusable UI elements. Copy [`components/_template/`](https://github.com/jcmartinezma/bravo-design-system/tree/main/docs/components/_template) (`metadata.json` + `spec.md`) to add a new spec.
 
 | Doc | Purpose |
 |-----|---------|
@@ -54,7 +54,7 @@ Single reusable UI elements. Copy [`components/_template/`](https://github.com/j
 
 | Doc | Purpose |
 |-----|---------|
-| [_template.md](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/docs/patterns/_template.md) | Template for new patterns |
+| [_template.md](https://github.com/jcmartinezma/bravo-design-system/tree/main/docs/patterns/_template.md) | Template for new patterns |
 | [Empty state (example)](patterns/example-empty-state) | Filled example pattern |
 
 ## Governance
@@ -69,5 +69,4 @@ Single reusable UI elements. Copy [`components/_template/`](https://github.com/j
 ## When you add or rename docs
 
 1. Update **this file** with links.
-2. Update the docs site sidebar in [`site/src/data/nav.ts`](https://github.com/jcmartinezma/bravo-agentic-design-system/tree/main/site/src/data/nav.ts) if the page should appear in navigation (not needed for **components** — complete folders appear automatically).
-3. Follow [quality-bar](governance/quality-bar).
+2. Follow [quality-bar](governance/quality-bar).

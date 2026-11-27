@@ -1,0 +1,16 @@
+import type { SVGProps } from 'react';
+
+/** Check — source: public/svg/icon-check.svg */
+export const Check = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    {...props}
+  >
+    <path d="M19.4453 5.49512C19.724 5.18895 20.1985 5.16678 20.5049 5.44531C20.8111 5.72398 20.8332 6.1985 20.5547 6.50488L10.5547 17.5049C10.4088 17.6652 10.2001 17.7547 9.9834 17.75C9.76676 17.7452 9.56261 17.6469 9.42383 17.4805L4.42383 11.4805C4.15871 11.1623 4.2015 10.689 4.51953 10.4238C4.83768 10.1587 5.31097 10.2015 5.57617 10.5195L10.0244 15.8574L19.4453 5.49512Z" fill="currentColor" />
+  </svg>
+);

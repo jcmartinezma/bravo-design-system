@@ -1,0 +1,16 @@
+import type { SVGProps } from 'react';
+
+/** Arrow Left — source: public/svg/icon-arrow-left.svg */
+export const ArrowLeft = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    {...props}
+  >
+    <path d="M9.46973 5.46973C9.76262 5.17684 10.2374 5.17684 10.5303 5.46973C10.8232 5.76262 10.8232 6.23738 10.5303 6.53028L5.81055 11.25H21C21.4142 11.25 21.75 11.5858 21.75 12C21.75 12.4142 21.4142 12.75 21 12.75H5.81055L10.5303 17.4697C10.8232 17.7626 10.8232 18.2374 10.5303 18.5303C10.2374 18.8232 9.76262 18.8232 9.46973 18.5303L3.46973 12.5303C3.32907 12.3896 3.25 12.1989 3.25 12C3.25 11.8011 3.32907 11.6104 3.46973 11.4697L9.46973 5.46973Z" fill="currentColor" />
+  </svg>
+);
