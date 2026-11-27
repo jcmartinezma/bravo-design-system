@@ -13,8 +13,3 @@ export type {
   ButtonProps,
   ButtonSize,
 } from './Button/Button';
-
-export { Header } from './Header/Header';
-export type { HeaderProps } from './Header/Header';
-
-export { Page } from './Page/Page';
