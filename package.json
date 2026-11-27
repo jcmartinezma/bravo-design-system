@@ -6,6 +6,18 @@
   "description": "Bravo Design System - Tokens and React components",
   "license": "GPL-3.0",
   "type": "module",
+  "files": [
+    "src/styles",
+    "src/icons",
+    "src/fonts",
+    "src/components"
+  ],
+  "exports": {
+    "./styles/*.css": "./src/styles/*.css",
+    "./icons": "./src/icons/index.ts",
+    "./fonts/*": "./src/fonts/*",
+    "./components": "./src/components/index.ts"
+  },
   "scripts": {
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
